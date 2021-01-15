@@ -5,6 +5,7 @@
     scroll-behavior: smooth; 
 } 
 
+/******************* HEADER ******************/
 
 header {
    overflow: :hidden;
@@ -17,6 +18,7 @@ header {
    bottom: 0;
    min-width: 100%;
    min-height: 100%;
+   
 }
 
 .navbar-nav a{
@@ -78,4 +80,91 @@ header {
   font-size: 30px;
   margin:0;
   font-weight: bold;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 5vh;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 35px;
+  height: 35px;
+  border-bottom: 2px solid #3CAEA3;
+  border-right: 2px solid #3CAEA3;
+  z-index: 9;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 2s ease-in-out infinite;
+  -moz-animation: fade_move_down 2s ease-in-out infinite;
+  animation: fade_move_down 2s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/******************* ABOUT ***********************/
+
+.about {
+    padding: 100px 0px 60px;
+    height: 750px;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about p {
+   font-size: 30px;
+}
+
+.about-content{
+    margin-top: 30px;
 }

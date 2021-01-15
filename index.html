@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <!-- style.css For Custom Styling -->
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +23,7 @@
 
 <body>
 
-
+    <!-- header starts -->
     <header class="fix">
         <video src="video/video.mp4" class="vid-bg" autoplay loop muted></video>
         <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
@@ -38,11 +38,14 @@
                 <a class="nav-link font-weight-bold nav-items" href="#" >Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-weight-bold nav-items" href="#">About</a>
+                <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
             </li>
-
+       
             <li class="nav-item">
                 <a class="nav-link  font-weight-bold nav-items" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  font-weight-bold nav-items" href="#">Membership</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link  font-weight-bold nav-items" href="#">Contact</a>
@@ -57,7 +60,36 @@
             <p> Algo Phantoms is an Open Source organization focusses on Data Structure and Algorithms
     </div>
 
+    <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+  </div>
+  <a class="smoothscroll" href="#about">
+    <div class="scroll-down"></div>
+  </a>
+
 </header>
+
+<!-- header ends -->
+
+<!-- about starts -->
+<section id="about" class="container about">
+  <div class="inner-about">
+    <h1 class="text-center">About Us</h1>
+    
+    <p class="about-content">
+     “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
+
+     <br> <br>
+     <p>
+        We are an organization of people who focusses on Data Structure and Algorithms.It is our goal to provide access to well written, well explained programs and knowledge that improve people's lives. We want to enable people to adapt and change code according to their own ideas through an Open Access approach.We bring amazing people together to code algorithms and share our work for the benefit of all.
+
+
+    </p>
+  </div>
+</section>
 
 
 </body>

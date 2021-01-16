@@ -4,57 +4,92 @@
     box-sizing: border-box;
     scroll-behavior: smooth; 
 } 
+body{
+  overflow-x:hidden!important;
+}
 
 /******************* HEADER ******************/
 
-.bgimg {
-    background-image: url('../images/Neuron-1.jpg');
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-}
-.brand1{
-   color: #3CAEA3;
-   padding-right: .5rem;
-}
-.headerset {
-    padding-top: 15.6rem;
-    box-sizing: border-box;
+header {
+   overflow: :hidden;
+   height: 100vh;
 }
 
-.headerset h2 {
-    font-size: 2.6rem;
-      color: #b8d5cd;
+.vid-bg {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   min-width: 100%;
+   min-height: 100%;
 
 }
-.headerset h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    font-color: #3CAEA3;
-}
 
+.navbar-nav a{
+   font-size:18px;
+   font-weight: bold;
 
-.headerset {
-    padding-top: 15.5rem
-    box-sizing: border-box;
-    z-index:7;
-}
-
-.headerset h2 {
-    font-size: 2.6rem;
-    
-}
-.headerset h1 {
-    font-size: 5.1rem;
-    
-    font-weight: bold;
 }
 .nav-col{
    background-color:#0e2431;
    opacity: .8;
 
 }
+
+.navbar-light .navbar-brand{
+  color:white;
+   font-size:35px;
+   font-weight:bold;
+}
+.brand1{
+   color: #3CAEA3;
+   padding-right: .5rem;
+}
+.navbar-light .navbar-brand:hover{
+	color:white;
+}
+.nav-items{
+  color:white !important;
+  margin-left: 3rem;
+  padding-right: 2rem !important;
+}
+ .navbar-nav .nav-link{
+   color:#fff;
+}
+.navbar-nav{
+  text-align:center;
+}
+.nav-link{
+   padding:.2rem 1rem;
+}
+ 
+ .nav-items:hover{
+     color: #3CAEA3!important;
+ }
+.banner-text{
+  position: absolute;
+  top:35%;
+  text-align:center;
+  left:15%;
+}
+
+.banner-text .main-head{
+  color: #fff;
+  font-size:4rem;
+  margin:0;
+
+}
+
+.banner-text .main-head span{
+	color: #3CAEA3;
+}
+
+.banner-text p{
+  color: #b8d5cd;
+  font-size: 30px;
+  margin:0;
+  font-weight: bold;
+}
+
 .scroll-down {
   position: absolute;
   left: 50%;
@@ -123,16 +158,15 @@
 }
 
 /******************* ABOUT ***********************/
+
 .about {
     padding: 100px 0px 60px;
     height: 750px;
 }
+
 .about h1 {
     font-size: 50px;
     font-weight: bold;
-}
-.setting {
-    margin-top:50px;
 }
 hr{
     border: 1px solid #3CAEA3;
@@ -141,76 +175,70 @@ hr{
     margin: auto;
 
 }
+.about p {
+   font-size: 30px;
+}
+
+.about-content{
+    margin-top: 50px;
+}
 
 /**************** MEMBERSHIP ****************/
-
-.color-block{
-  position: absolute;
-  height: 50%;
-  padding: 0;
-  color:#fff;
-}
-.block-left{
-   background-color: #3CAEA3;
-}
-.block-right{
-  right:0;
-}
-.heading {
-   position: absolute;
-   font-color:#fff;
-   z-index: 1;
-   margin-left: 750px;
-   margin-top:30px;
-   padding: 10px;
-   border-radius: 8px;
-   background-color: #fff;
-}
-
-.image {
-   height: 50px;
-   width: 50px;
-   margin: 70px 90px;
-}
-.small-block {
-
+#feature {
+    background:rgb(70, 129, 163);
    background-image: linear-gradient(to right top, #49b1ad, #37aea0, #2aaa90, #26a67d, #2ca169);
-    height: 200px;
-    width:700px;
-    margin:auto;
-    top:40%;
-    left:14%;
-    position: absolute;
-    transition: all .5s ease-in-out;
-    border-radius: 20px;
 }
-.small-block:hover {
-   box-shadow: 3px 3px 10px #ccc;
-   transform: translateY(-10px);
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.15) !important;
 }
-.visit {
-   background-color: #fff;
-   padding:2px;
-    height: 100px;
-    width:300px;
-    margin:auto;
-    margin-top:50px;
-    left:14%;
-    z-index:1;
-    
+.p-1 {
+  padding: 0.25rem !important;
 }
-.visit a{
-   text-decoration: none;
-   color:black;
-   font-weight: bold;
-    font-size: 30px;
+.visit-here{
+   font-size: 3rem;
+   
 }
-.visit-here {
-   display: block;
-   position: absolute;
-    background-color: #fff;
-   border: 2px solid darkgreen;
-    margin:20px 33px;
-    padding:2px 40px;
+.visit-here a{
+    text-decoration: none;
+    list-style: none;
+    color:#e5d8bf;
+}
+.visit-here  a:hover{
+    text-decoration: none;
+    list-style: none;
+    color:#fff;
 }
 
+
+/*********** footer ***********/
+.email {
+   left:60%;
+}
+.fas-email {
+   font-size:300%;
+
+}
+.e-add {
+   font-size:200%; 
+}
+
+/* for scroll to top button */
+#button{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+}
+
+.mt-small-2{
+    margin-top: 0rem!important;
+}
+.mt-small-5{
+    margin-top: 0rem!important;
+}
+.mb-small-2{
+    margin-bottom: 0rem!important;
+}
+.mb-small-5{
+    margin-bottom: 0rem!important;
+}

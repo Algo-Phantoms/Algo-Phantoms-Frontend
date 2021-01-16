@@ -184,7 +184,7 @@ hr{
 }
 
 /**************** MEMBERSHIP ****************/
-#feature {
+#member {
     background:rgb(70, 129, 163);
    background-image: linear-gradient(to right top, #49b1ad, #37aea0, #2aaa90, #26a67d, #2ca169);
 }
@@ -241,4 +241,50 @@ hr{
 }
 .mb-small-5{
     margin-bottom: 0rem!important;
+}
+
+
+/*
+...........responsive.............*/
+
+@media(min-width: 575px) and (max-width: 767px){
+    
+    .about {
+        height: 1100px ;
+    }
+
+}
+@media(min-width: 460px) and (max-width: 574px) {
+    .about {
+       height:900px;
+       padding:0 20px;
+    }
+}
+@media (max-width:479px){
+
+  .navbar-light .navbar-brand{
+ 
+   font-size:20px;
+   
+}
+
+  .banner-text {
+     left:2%;
+   }
+   .banner-text p {
+      font-size: 20px;
+   }
+   .banner-text .main-head{
+ 
+     font-size:2rem;
+    }
+
+    .about {
+      height : 900px;
+      padding-left: 30px;
+    }
+    .about p {
+       font-size: 20px;
+    }
+
 }

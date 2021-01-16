@@ -7,86 +7,54 @@
 
 /******************* HEADER ******************/
 
-header {
-   overflow: :hidden;
-   height: 100vh;
+.bgimg {
+    background-image: url('../images/Neuron-1.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.brand1{
+   color: #3CAEA3;
+   padding-right: .5rem;
+}
+.headerset {
+    padding-top: 15.6rem;
+    box-sizing: border-box;
 }
 
-.vid-bg {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   min-width: 100%;
-   min-height: 100%;
+.headerset h2 {
+    font-size: 2.6rem;
+      color: #b8d5cd;
 
 }
+.headerset h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    font-color: #3CAEA3;
+}
 
-.navbar-nav a{
-   font-size:18px;
-   font-weight: bold;
 
+.headerset {
+    padding-top: 15.5rem
+    box-sizing: border-box;
+    z-index:7;
+}
+
+.headerset h2 {
+    font-size: 2.6rem;
+    
+}
+.headerset h1 {
+    font-size: 5.1rem;
+    
+    font-weight: bold;
 }
 .nav-col{
    background-color:#0e2431;
    opacity: .8;
 
 }
-
-.navbar-light .navbar-brand{
-  color:white;
-   font-size:35px;
-   font-weight:bold;
-}
-.brand1{
-   color: #3CAEA3;
-   padding-right: .5rem;
-}
-.navbar-light .navbar-brand:hover{
-	color:white;
-}
-.nav-items{
-  color:white !important;
-  margin-left: 3rem;
-  padding-right: 2rem !important;
-}
- .navbar-nav .nav-link{
-   color:#fff;
-}
-.navbar-nav{
-  text-align:center;
-}
-.nav-link{
-   padding:.2rem 1rem;
-}
- 
- .nav-items:hover{
-     color: #3CAEA3!important;
- }
-.banner-text{
-  position: absolute;
-  top:35%;
-  text-align:center;
-  left:18%;
-}
-
-.banner-text h2{
-  color: #fff;
-  font-size:85px;
-  margin:0;
-
-}
-
-.banner-text h2 span{
-	color: #3CAEA3;
-}
-
-.banner-text p{
-  color: #b8d5cd;
-  font-size: 30px;
-  margin:0;
-  font-weight: bold;
-}
-
 .scroll-down {
   position: absolute;
   left: 50%;
@@ -155,15 +123,16 @@ header {
 }
 
 /******************* ABOUT ***********************/
-
 .about {
     padding: 100px 0px 60px;
     height: 750px;
 }
-
 .about h1 {
     font-size: 50px;
     font-weight: bold;
+}
+.setting {
+    margin-top:50px;
 }
 hr{
     border: 1px solid #3CAEA3;
@@ -171,13 +140,6 @@ hr{
     width:80px;
     margin: auto;
 
-}
-.about p {
-   font-size: 30px;
-}
-
-.about-content{
-    margin-top: 50px;
 }
 
 /**************** MEMBERSHIP ****************/

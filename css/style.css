@@ -26,6 +26,11 @@ header {
    font-weight: bold;
 
 }
+.nav-col{
+   background-color:#0e2431;
+   opacity: .8;
+
+}
 
 .navbar-light .navbar-brand{
   color:white;
@@ -246,3 +251,4 @@ hr{
     margin:20px 33px;
     padding:2px 40px;
 }
+

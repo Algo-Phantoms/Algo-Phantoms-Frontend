@@ -18,7 +18,7 @@ header {
    bottom: 0;
    min-width: 100%;
    min-height: 100%;
-   
+
 }
 
 .navbar-nav a{
@@ -160,11 +160,85 @@ header {
     font-size: 50px;
     font-weight: bold;
 }
+hr{
+    border: 1px solid #3CAEA3;
+    display: block;
+    width:80px;
+    margin: auto;
 
+}
 .about p {
    font-size: 30px;
 }
 
 .about-content{
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+/**************** MEMBERSHIP ****************/
+
+.color-block{
+  position: absolute;
+  height: 50%;
+  padding: 0;
+  color:#fff;
+}
+.block-left{
+   background-color: #3CAEA3;
+}
+.block-right{
+  right:0;
+}
+.heading {
+   position: absolute;
+   font-color:#fff;
+   z-index: 1;
+   margin-left: 750px;
+   margin-top:30px;
+   padding: 10px;
+   border-radius: 8px;
+   background-color: #fff;
+}
+
+.image {
+   height: 50px;
+   width: 50px;
+   margin: 70px 90px;
+}
+.small-block {
+
+    background-color: #B4D6C1;
+    height: 200px;
+    width:700px;
+    margin:auto;
+    top:40%;
+    left:14%;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+}
+.small-block:hover {
+   box-shadow: 3px 3px 10px #ccc;
+   transform: translateY(-10px);
+}
+.visit {
+   background-color: #d3ccaB;
+    height: 100px;
+    width:300px;
+    margin:auto;
+    margin-top:50px;
+    left:14%;
+    
+}
+.visit a{
+   text-decoration: none;
+   color:#fff;
+   font-weight: bold;
+    font-size: 30px;
+}
+.visit-here {
+   display: block;
+   position: absolute;
+    margin-top:25px;
+    margin-left:70px;
 }

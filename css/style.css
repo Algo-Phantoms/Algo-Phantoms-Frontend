@@ -207,7 +207,7 @@ hr{
 }
 .small-block {
 
-    background-color: #B4D6C1;
+   background-image: linear-gradient(to right top, #49b1ad, #37aea0, #2aaa90, #26a67d, #2ca169);
     height: 200px;
     width:700px;
     margin:auto;
@@ -222,23 +222,27 @@ hr{
    transform: translateY(-10px);
 }
 .visit {
-   background-color: #d3ccaB;
+   background-color: #fff;
+   padding:2px;
     height: 100px;
     width:300px;
     margin:auto;
     margin-top:50px;
     left:14%;
+    z-index:1;
     
 }
 .visit a{
    text-decoration: none;
-   color:#fff;
+   color:black;
    font-weight: bold;
     font-size: 30px;
 }
 .visit-here {
    display: block;
    position: absolute;
-    margin-top:25px;
-    margin-left:70px;
+    background-color: #fff;
+   border: 2px solid darkgreen;
+    margin:20px 33px;
+    padding:2px 40px;
 }

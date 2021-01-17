@@ -1,8 +1,8 @@
 *{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; 
 } 
 body{
   overflow-x:hidden!important;
@@ -37,8 +37,8 @@ header {
 
 .navbar-light .navbar-brand{
   color:white;
-   font-size:35px;
-   font-weight:bold;
+  font-size:35px;
+  font-weight:bold;
 }
 .brand1{
    color: #3CAEA3;
@@ -52,7 +52,7 @@ header {
   margin-left: 3rem;
   padding-right: 2rem !important;
 }
- .navbar-nav .nav-link{
+.navbar-nav .nav-link{
    color:#fff;
 }
 .navbar-nav{
@@ -61,10 +61,10 @@ header {
 .nav-link{
    padding:.2rem 1rem;
 }
- 
- .nav-items:hover{
-     color: #3CAEA3!important;
- }
+
+.nav-items:hover{
+   color: #3CAEA3!important;
+}
 .banner-text{
   position: absolute;
   top:35%;
@@ -119,61 +119,61 @@ header {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
-  }
-  50% {
+}
+50% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     -webkit-transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
-  }
+}
 }
 
 @-moz-keyframes fade_move_down {
   0% {
     -moz-transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
-  }
-  50% {
+}
+50% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     -moz-transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
-  }
+}
 }
 
 @keyframes fade_move_down {
   0% {
     transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
-  }
-  50% {
+}
+50% {
     opacity: 1;
-  }
-  100% {
+}
+100% {
     transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
-  }
+}
 }
 
 /******************* ABOUT ***********************/
 
 .about {
-    padding: 100px 0px 60px;
-    height: 750px;
+  padding: 100px 0px 60px;
+  height: 750px;
 }
 
 .about h1 {
-    font-size: 50px;
-    font-weight: bold;
-    backdrop-filter:blur(20px);
+  font-size: 50px;
+  font-weight: bold;
+  backdrop-filter:blur(20px);
 }
 hr{
-    border: 1px solid #3CAEA3;
-    display: block;
-    width:80px;
-    margin: auto;
+  border: 1px solid #3CAEA3;
+  display: block;
+  width:80px;
+  margin: auto;
 
 }
 .about p {
@@ -181,40 +181,40 @@ hr{
 }
 
 .about-content{
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /**************** MEMBERSHIP ****************/
 #member {
-    background:rgb(70, 129, 163);
-   background-image: linear-gradient(to right top, #49b1ad, #37aea0, #2aaa90, #26a67d, #2ca169);
+  background:rgb(70, 129, 163);
+  background-image: linear-gradient(to right top, #49b1ad, #37aea0, #2aaa90, #26a67d, #2ca169);
 }
 .shadow{
-    box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.15) !important;
+  box-shadow: 0 .5rem 1rem rgba(0, 0,0, 0.15) !important;
 }
 .p-1 {
   padding: 0.25rem !important;
 }
 .visit-here{
    font-size: 3rem;
-   
+
 }
 .visit-here a{
-    text-decoration: none;
-    list-style: none;
-    color:#e5d8bf;
+  text-decoration: none;
+  list-style: none;
+  color:#e5d8bf;
 }
 .visit-here  a:hover{
-    text-decoration: none;
-    list-style: none;
-    color:#fff;
+  text-decoration: none;
+  list-style: none;
+  color:#fff;
 }
 
 /************* TEAM **************/
 
 .team {
-     margin-top: 200px; 
-  }
+   margin-top: 200px; 
+}
 .wrapper {
    width:1152px;
    display: -webkit-flex;
@@ -231,17 +231,17 @@ hr{
 }
 
 .round-1 {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width:14rem;
-    height: 14rem;
-    border-radius: 50%;
-    box-shadow: 0 0 40px #3CAEA3;
-    background: linear-gradient(-180deg, #22ffed, #49b1ad);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width:14rem;
+  height: 14rem;
+  border-radius: 50%;
+  box-shadow: 0 0 40px #3CAEA3;
+  background: linear-gradient(-180deg, #22ffed, #49b1ad);
 
- }
- .round-2 {
+}
+.round-2 {
    position: absolute;
    top: 50%;
    right: 4%;
@@ -250,9 +250,9 @@ hr{
    border-radius: 50%;
    box-shadow: 0 0 50px #5622ff;
    background: linear-gradient(-180deg, #5622ff, #49b1ad);
- }
+}
 
- .box {
+.box {
    width: 350px;
    height: 500px;
    display: -webkit-flex;
@@ -271,44 +271,49 @@ hr{
    border: 2px solid #0000002a;
    text-align: center; 
    backdrop-filter:blur(20px);
- }
+}
+.box-raghav {
+  margin:auto;
+}
+.profile-img {
+  width:200px;
+  height:500px;
+  border-radius:30%;
+  overflow: hidden;
+  object-fit:cover;
 
- .profile-img {
-    width:200px;
-    height:500px;
-    border-radius:30%;
-    overflow: hidden;
-    object-fit:cover;
+}
 
- }
+.profile-img img {
+  width: 100%;
+  height:100%;
+}
 
- .profile-img img {
-    width: 100%;
-    height:100%;
- }
-
- .box h2 {
+.box h2 {
    color: #ffffff60;
    text-transform:  uppercase;
    margin: 15px 0;
- }
- .box p{
+}
+.custom-size {
+  font-size:30px;
+}
+.box p{
    color : #ffffff90;
    font-size: 14px;
- }
- .socials {
+}
+.socials {
    margin-top: 35px;
 
- }
- .socials i{
-    margin: 0 10px;
-    font-size: 25px;
-   
- }
- .socials a {
-    text-decoration: none;
-    color:#ffffff90;
- }
+}
+.socials i{
+  margin: 0 10px;
+  font-size: 25px;
+
+}
+.socials a {
+  text-decoration: none;
+  color:#ffffff90;
+}
 
 /*********** footer ***********/
 .email {
@@ -324,23 +329,23 @@ hr{
 
 /* for scroll to top button */
 #button{
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    z-index: 100;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 100;
 }
 
 .mt-small-2{
-    margin-top: 0rem!important;
+  margin-top: 0rem!important;
 }
 .mt-small-5{
-    margin-top: 0rem!important;
+  margin-top: 0rem!important;
 }
 .mb-small-2{
-    margin-bottom: 0rem!important;
+  margin-bottom: 0rem!important;
 }
 .mb-small-5{
-    margin-bottom: 0rem!important;
+  margin-bottom: 0rem!important;
 }
 
 
@@ -348,44 +353,48 @@ hr{
 ...........responsive.............*/
 
 @media(min-width: 575px) and (max-width: 767px){
-    
-    .about {
-        height: 1100px ;
-    }
+
+  .about {
+    height: 1100px ;
+}
 
 }
 @media(min-width: 460px) and (max-width: 574px) {
-    .about {
-       height:900px;
-       padding:0 20px;
-    }
+  .about {
+     height:900px;
+     padding:0 20px;
+ }
 }
 @media (max-width:479px){
 
+   .header {
+      height: 70vh;
+  }
   .navbar-light .navbar-brand{
- 
+
    font-size:20px;
-   
+
 }
 
-  .banner-text {
-     left:2%;
-   }
-   .banner-text p {
-      font-size: 20px;
-   }
-   .banner-text .main-head{
- 
-     font-size:2rem;
-    }
 
-    .about {
-      height : 900px;
-      padding-left: 30px;
-    }
-    .about p {
-       font-size: 20px;
-    }
+.banner-text {
+   left:2%;
+}
+.banner-text p {
+  font-size: 20px;
+}
+.banner-text .main-head{
+
+   font-size:2rem;
+}
+
+.about {
+  height : 900px;
+  padding-left: 30px;
+}
+.about p {
+   font-size: 20px;
+}
 
 }
 
@@ -393,50 +402,83 @@ hr{
 
 @media (max-width: 1200px) {
    .wrapper {
-       max-width: 1152px;
-   }
+     max-width: 900px;
+ }
 }
 @media (max-width: 992px) {
-   .wrapper {
-       max-width: 960px;
-   }
-   .round-1 {
-      display: none;
-   }
+ .wrapper {
+   max-width: 700px;
+   flex-direction: column;
+}
+.round-1 {
+  display: none;
+}
+.box {
+  margin-bottom:20px;
+}
 }
 @media (max-width: 720px) {
    .wrapper {
-       max-width: 720px;
-       flex-direction: column;
-   }
+     max-width: 700px;
+     flex-direction: column;
+ }
 
-   .box {
-      margin-bottom: 30px;
-      width:400px;
-      height: 400px;
-   }
-   .round-1 {
-      display: none;
-   }
+ .box {
+  margin-bottom: 30px;
+  width:400px;
+  height: 400px;
+}
+.round-1 {
+  display: none;
+}
 }
 @media (max-width: 576px) {
    .wrapper {
-       max-width: 540px;
-       flex-direction: column;
-   }
+     max-width: 400px;
+     flex-direction: column;
+ }
+ .round-1 {
+  display: none;
 }
-@media (max-width: 320px) {
+.round-1 {
+  display: none;
+}
+.box{
+  width: 300px;
+  height: 400px;
+}
+.box h2, .custom-size {
+  font-size: 15px;
+  }.
+  .box p{
+    font-size: 10px;
+}
+.box i{
+    font-size: 15px;
+}
+}
+@media (max-width: 380px) {
    .wrapper {
-       max-width: 30px;
-       flex-direction: column;
-   }
-   .box h2{
-      font-size: 15px;
-   }
-   .box p{
-      font-size: 10px;
-   }
-   .box i{
-      font-size: 15px;
-   }
+     max-width: 30px;
+     flex-direction: column;
+ }
+ .round-1 {
+  display: none;
+}
+.box{
+  width: 300px;
+  height: 400px;
+}
+.box-raghav {
+  margin:0;
+}
+.box h2, .custom-size {
+  font-size: 15px;
+}
+.box p{
+  font-size: 10px;
+}
+.box i{
+  font-size: 15px;
+}
 }

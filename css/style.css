@@ -440,7 +440,7 @@ hr{
  .round-1 {
   display: none;
 }
-.round-1 {
+.round-2 {
   display: none;
 }
 .box{
@@ -463,6 +463,9 @@ hr{
      flex-direction: column;
  }
  .round-1 {
+  display: none;
+}
+.round-2 {
   display: none;
 }
 .box{

@@ -40,11 +40,11 @@
 ## 😎Maintainers
 <table>
   <tbody><tr>
-    <td align="center"><a href="https://github.com/todi-2000"><img alt="" src="https://avatars.githubusercontent.com/todi-2000" width="100px;"><br><sub><b> Mansi Todi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=geekquad" title="Code">💻 🖋</a></td> </a></td>
+    <td align="center"><a href="https://github.com/todi-2000"><img alt="" src="https://avatars.githubusercontent.com/todi-2000" width="100px;"><br><sub><b> Mansi Todi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=todi-2000" title="Code">💻 🖋</a></td> </a></td>
     <td align="center"><a href="https://github.com/diyajaiswal11"><img alt="" src="https://avatars.githubusercontent.com/diyajaiswal11" width="100px;"><br><sub><b>
- Diya Jaiswal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
- <td align="center"><a href="https://github.com/Shruti3004"><img alt="" src="https://avatars.githubusercontent.com/Shruti3004" width="100px;"><br><sub><b> Shruti Agarwal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=major-beast" title="Code">💻 🖋</a></td></a></td>
-     <td align="center"><a href="https://github.com/rudrakshi99"><img alt="" src="https://avatars.githubusercontent.com/rudrakshi99" width="100px;"><br><sub><b> Rudrakshi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=geekquad" title="Code">💻 🖋</a></td> </a></td>
+ Diya Jaiswal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=diyajaiswal11" title="Code">💻 🖋</a></td></a></td>
+ <td align="center"><a href="https://github.com/Shruti3004"><img alt="" src="https://avatars.githubusercontent.com/Shruti3004" width="100px;"><br><sub><b> Shruti Agarwal </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=Shruti3004" title="Code">💻 🖋</a></td></a></td>
+     <td align="center"><a href="https://github.com/rudrakshi99"><img alt="" src="https://avatars.githubusercontent.com/rudrakshi99" width="100px;"><br><sub><b> Rudrakshi </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=rudrakshi99" title="Code">💻 🖋</a></td> </a></td>
   </tr>
 </tbody></table>
 

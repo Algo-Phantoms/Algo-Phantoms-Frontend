@@ -11,7 +11,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Phantoms-Frontend?style=social) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Phantoms-Frontend?style=social)
 
-**Website of Algo Phantoms, an Open Source organization which focusses on Data Structure and Algorithms**.
+**💻 Algo-Phantoms-Backend is an Website that provides pathways and quizzes along with a code editor to help you towards your DSA journey.📰🔥**.
 
 ## 🔥 Features
 
@@ -26,6 +26,7 @@
 - CSS
 - Bootstrap
 - Javascript
+- Vanilla Js
 
 ## Contribution Guidelines ⚙️
 

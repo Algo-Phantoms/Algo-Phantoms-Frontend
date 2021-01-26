@@ -27,6 +27,15 @@
 - Bootstrap
 - Javascript
 
+## Contribution Guidelines ⚙️
+
+* Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
+* You can only work on issues that you have been assigned to you.
+* If you want to contribute, we prefer that you create an issue before making a PR and link your PR to that issue.
+* If you have modified/added code work, make sure the code compiles before submitting.
+* Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
+* Do not update the **[README.md](https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/blob/master/README.md).**
+
 ## 😎Maintainers
 <table>
   <tbody><tr>
@@ -40,7 +49,7 @@
 
 ## Code Of Conduct:
 
-You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-ScriptML/blob/main/CODE_OF_CONDUCT.md).
+You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Phantoms-Frontend/blob/master/CODE_OF_CONDUCT.md).
 
 ## License 📝 
 

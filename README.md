@@ -11,7 +11,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/Algo-Phantoms/Algo-Phantoms-Frontend?style=social) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Algo-Phantoms/Algo-Phantoms-Frontend?style=social)
 
-**💻 Algo-Phantoms-Backend is a Website that provides pathways and quizzes along with a code editor to help you towards your DSA journey.📰🔥**.
+**💻 Algo-Phantoms-Frontend is a Website that provides pathways and quizzes along with a code editor to help you towards your DSA journey.📰🔥**.
 
 ## 🔥 Features
 

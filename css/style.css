@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+li {
+  list-style: none !important;
+}
+
 /******************* HEADER ******************/
 
 header {
@@ -68,8 +72,7 @@ header {
 .banner-text {
   position: absolute;
   top: 35%;
-  text-align: center;
-  left: 15%;
+  z-index: 1;
 }
 
 .banner-text .main-head {
@@ -159,8 +162,7 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  padding: 100px 0px 60px;
-  height: 750px;
+  padding: 150px 0px;
 }
 
 .about h1 {
@@ -175,43 +177,11 @@ hr {
   margin: auto;
 }
 .about p {
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .about-content {
   margin-top: 50px;
-}
-
-/**************** MEMBERSHIP ****************/
-#member {
-  background: rgb(70, 129, 163);
-  background-image: linear-gradient(
-    to right top,
-    #49b1ad,
-    #37aea0,
-    #2aaa90,
-    #26a67d,
-    #2ca169
-  );
-}
-.shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-.p-1 {
-  padding: 0.25rem !important;
-}
-.visit-here {
-  font-size: 3rem;
-}
-.visit-here a {
-  text-decoration: none;
-  list-style: none;
-  color: #e5d8bf;
-}
-.visit-here a:hover {
-  text-decoration: none;
-  list-style: none;
-  color: #fff;
 }
 
 /************* TEAM **************/
@@ -274,6 +244,8 @@ hr {
   border: 2px solid #0000002a;
   text-align: center;
   backdrop-filter: blur(20px);
+  margin-bottom: 50px !important;
+  margin-top: 40px !important;
 }
 .box-raghav {
   margin: auto;
@@ -325,6 +297,22 @@ hr {
 .e-add {
   font-size: 200%;
 }
+#footer {
+  padding: 100px 0px 40px 0px;
+  background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
+  /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+}
+.subscribe-box {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.subscribe-button {
+  background: #3caea3 !important;
+}
+.copyright-text {
+  font-size: 14px;
+  letter-spacing: 0.6px !important;
+}
 
 /* for scroll to top button */
 #button {
@@ -368,20 +356,11 @@ hr {
   .navbar-light .navbar-brand {
     font-size: 20px;
   }
-
-  .banner-text {
-    left: 2%;
-  }
   .banner-text p {
     font-size: 20px;
   }
   .banner-text .main-head {
     font-size: 2rem;
-  }
-
-  .about {
-    height: 900px;
-    padding-left: 30px;
   }
   .about p {
     font-size: 20px;
@@ -480,4 +459,13 @@ hr {
 
 .bg-black {
   background: black !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-heading {
+    font-size: 40px !important;
+  }
+  .margin-top-mobile {
+    padding-top: 15px;
+  }
 }

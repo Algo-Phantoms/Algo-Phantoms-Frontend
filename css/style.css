@@ -79,25 +79,29 @@ header {
 
 .banner-text {
     position: absolute;
-    top: 35%;
+    top: 42%;
     z-index: 1;
 }
 
 .banner-text .main-head {
     color: #fff;
-    font-size: 4rem;
-    margin: 0;
+    font-size: 4.1rem;
+    margin-left: 30px;
+    text-align: left;
 }
 
 .banner-text .main-head span {
-    color: #3caea3;
+    color: #04C59B;
 }
 
 .banner-text p {
     color: #b8d5cd;
     font-size: 30px;
-    margin: 0;
+    margin-left: 30px;
+    margin-top: -10px;
     font-weight: bold;
+    text-align: left;
+
 }
 
 .scroll-down {

@@ -355,6 +355,10 @@ hr {
     z-index: 100;
 }
 
+.btn-outline-dark:hover {
+  background-color: white;
+}
+
 .mt-small-2 {
     margin-top: 0rem !important;
 }

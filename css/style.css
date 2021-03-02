@@ -99,6 +99,13 @@ header {
     margin: 0;
     font-weight: bold;
 }
+.btn-Contact{
+    background-color: #3CAEA3;
+    border: 1px solid #3CAEA3 ;
+    width: 100%;
+    cursor: pointer;
+   
+}
 
 .scroll-down {
     position: absolute;

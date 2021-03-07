@@ -253,6 +253,19 @@
         const tilt = $('.box').tilt({
             scale: 1.01
         });
+const toggle_switch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+const current_theme = localStorage.getItem('theme');
+
+if (current_theme) {
+    document.documentElement.setAttribute('theme', current_theme);
+  
+    if (current_theme === 'dark') {
+        toggle_switch.checked = true;
+    }
+}
+
+toggle_switch.addEventListener('change', switchTheme, false);
     </script>
 </body>
 

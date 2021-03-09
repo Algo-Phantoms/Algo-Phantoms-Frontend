@@ -72,6 +72,21 @@ header {
 .nav-link {
     padding: 0.2rem 1rem;
 }
+.navbar-nav  ul{
+    width:250px;
+    height: max-content;
+    background-color: transparent; 
+    text-align: center;
+    position: absolute;
+    top: 90px;
+    visibility: hidden;
+    transition: top .3s;
+}
+.navbar-nav li:hover > ul{
+    top: 60px;
+    visibility: visible;
+    line-height: 25px;
+}
 
 .nav-items:hover {
     color: #3caea3 !important;
@@ -331,6 +346,9 @@ hr {
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 
+.list-group a{
+    color: white;
+}
 .subscribe-box {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 5px;
@@ -379,6 +397,10 @@ hr {
     .about {
         height: 1100px;
     }
+    .navbar-nav ul{
+        top: 90px;
+        left: 15%;
+       } 
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -496,9 +518,8 @@ hr {
         font-size: 10px;
     }
     .box i {
-        font-size: 15px;
-    }
-}
+        font-size: 15px;}   
+     }
 
 .bg-black {
     background: black !important;

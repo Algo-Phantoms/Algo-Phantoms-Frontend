@@ -20,6 +20,8 @@
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
     <title>Algo Phantoms</title>
 
+    
+
 </head>
 
 <body>
@@ -103,12 +105,17 @@
                         <div class="input-group">
                             <input type="text" class="form-control py-3" placeholder="Enter your Email">
                             <div class="input-group-append">
-                                <div class="input-group-text subscribe-button text-white px-5 font-weight-bold">
-                                    Contact Us
-                                </div>
+                                <input type="submit" value= "Contact Us" onclick="hizoClick()" class="input-group-text subscribe-button text-white px-5 font-weight-bold">     
+                                <script>
+                                    function hizoClick() {
+                                      alert("your email has been sent successfully!!");
+                                    }
+                                    </script>    
+                            </div>
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -164,4 +171,6 @@
 
 </body>
 
+
 </html>
+

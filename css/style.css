@@ -166,6 +166,7 @@ header {
 }
 
 
+
 /*animated scroll arrow animation*/
 
 @-webkit-keyframes fade_move_down {
@@ -219,17 +220,18 @@ header {
 
 .about h1 {
     font-size: 50px;
+    
     font-weight: bold;
     backdrop-filter: blur(20px);
 }
 
-hr {
+/*hr {
     border: 1px solid #3caea3;
     display: block;
     width: 80px;
     margin: auto;
 }
-
+*/
 .about p {
     font-size: 23px;
 }
@@ -447,7 +449,41 @@ hr {
         font-size: 20px;
     }
 }
-
+#coding {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+      justify-content: center; 
+  }
+  #left, #right{
+    animation: typing 0.2s cubic-bezier(.18,.85,.72,.22) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: rotateZ(-10deg);
+    }
+    100% {
+      transform: rotateZ(10deg);
+    }
+  }
+  @keyframes move-head {
+   0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  #head {
+    animation: move-head 1s cubic-bezier(.41,.16,.24,.71) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
 
 /**** team responsive ****/
 

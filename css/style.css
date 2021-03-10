@@ -237,7 +237,9 @@ hr {
 .about-content {
     margin-top: 50px;
 }
-
+.backtotop{
+    scroll-behavior: smooth;
+}
 
 /************* TEAM **************/
 

@@ -390,11 +390,20 @@ hr {
 
 /* for scroll to top button */
 
-#button {
+#topbutton {
     position: fixed;
     right: 5%;
     bottom: 5%;
     z-index: 100;
+    background-color: #4fddcf;
+    border-radius:50%;
+    transition: transform 0.5s;
+    
+}
+
+#topbutton:hover {
+   background-color:#3caea3;
+   transform: translateY(-15px);
 }
 
 .mt-small-2 {

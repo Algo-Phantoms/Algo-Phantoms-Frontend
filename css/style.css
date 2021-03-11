@@ -395,6 +395,7 @@ hr {
     right: 5%;
     bottom: 5%;
     z-index: 100;
+    border-color: #22ffed;
 }
 
 .mt-small-2 {

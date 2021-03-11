@@ -171,29 +171,95 @@ header {
 
 /******************* ABOUT ***********************/
 
-.about {
-    padding: 150px 0px;
+.heading{
+    text-align: center;
+    margin:auto;
+    font-size: 35px;
+    padding: 20px 0;
+    color: #195751;
+    letter-spacing: 1.5px;
 }
 
-.about h1 {
-    font-size: 50px;
-    font-weight: bold;
-    backdrop-filter: blur(20px);
-}
-
-hr {
-    border: 1px solid #3caea3;
+hr{
+    border: 2px solid rgb(26, 26, 70);
     display: block;
-    width: 80px;
+    width: 90px;
     margin: auto;
 }
 
-.about p {
-    font-size: 23px;
+.about-content{
+    margin-top: 30px;
+    text-align: center;
+    color: #0e2431;
+    font-size: 20px;
+}
+.about-content b{
+    color: rgb(26, 26, 70);
+    font-weight: bolder;
+}
+.box-container{
+    display: grid;
+    grid-auto-rows: minmax(80px, auto);
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr)); 
+    padding-left: 30px; 
+  margin-top: 10px; 
+  align-content: center;
+    
 }
 
-.about-content {
-    margin-top: 50px;
+.box-container .box{
+padding: 10px;
+height: 350px;
+width: 90%;
+border-radius: 20px;
+background: aliceblue;
+border: 2px solid aliceblue; 
+box-shadow: 0 0 2px 2px rgb(187, 187, 187);
+text-align: center;
+transition: 0.5s;
+position: relative;
+}
+.box-container .box:hover{
+    transform: scale(1) ;
+    box-shadow: 0 0 2px 2px #195751;
+    background: rgb(252, 248, 248);
+    z-index: 2;
+}
+.box-container .box .icon{
+    margin-top: 10px;
+}
+.box-container .box .icon span{
+    margin-top: 10px 0;
+    font-size: 30px;
+    color:  rgb(26, 26, 70);
+}
+
+.box-container .box .title{
+    color: #2d837a;
+    font-size: 25px;
+    letter-spacing: 1.2px;
+}
+
+.box-container .box p{
+   font-size: 17px;
+   color: rgb(26, 26, 70);
+   padding: 10px;
+}
+
+.box-container .box a{
+   text-decoration: none;
+   color:rgb(26, 26, 70);
+   display: block;
+   padding: 10px 0;
+   font-size: 17px;
+   cursor: pointer;
+   font-weight: bold;
+   letter-spacing: 0.7px;
+}
+
+.box-container .box a:hover{
+    color: #1c665f;
+    
 }
 
 

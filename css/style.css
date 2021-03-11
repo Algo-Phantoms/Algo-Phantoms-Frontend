@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 /******************* PRELOADER ******************/
 #preloader{
     width: 100%;
@@ -123,6 +124,8 @@ header {
     position: absolute;
     top: 35%;
     z-index: 1;
+    margin-left:6rem;
+    margin-right:6rem;
 }
 
 .banner-text .main-head {
@@ -554,3 +557,82 @@ hr {
         padding-top: 15px;
     }
 }
+/******************* Social media sidebar******************/
+[class^="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+#social-sidebar {
+	left: 0;
+	position: fixed;
+	top: 30%;
+}
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+ 
+#social-sidebar a {
+	background: rgba(31, 30, 30, 0.7);
+	color: #fff;
+    text-decoration: none;
+	display: block;
+	height: 50px;
+	width: 50px;  
+	font-size: 24px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;
+    cursor: pointer;
+}
+#social-sidebar a:hover span {
+	left: 120%;
+	opacity: 1;
+}
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+	border-radius: 3px;
+	line-height: 24px;
+	left: -100%;
+	margin-top: -16px;
+	opacity: 0;
+	padding: 4px 8px;
+	position: absolute;
+	transition: opacity .3s, left .4s;
+	top: 50%;
+	z-index: -1;
+}
+ 
+#social-sidebar a span:before {
+	content: "";
+	display: block;
+	height: 8px;
+  width: 8px;
+	left: -4px;
+	margin-top: -4px;
+	position: absolute;
+	top: 50%;
+	transform: rotate(45deg);
+}
+ 
+#social-sidebar a[class*="twitter"]:hover,
+#social-sidebar a[class*="twitter"] span,
+#social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+ 
+#social-sidebar a[class*="facebook"]:hover,
+#social-sidebar a[class*="facebook"] span,
+#social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
+ 
+#social-sidebar a[class*="gplus"]:hover,
+#social-sidebar a[class*="gplus"] span,
+#social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+ 
+#social-sidebar a[class*="instagrem"]:hover,
+#social-sidebar a[class*="instagrem"] span,
+#social-sidebar a[class*="instagrem"] span:before {background: #ea4c89;}
+ 
+#social-sidebar a[class*="linkedin"]:hover,
+#social-sidebar a[class*="linkedin"] span,
+#social-sidebar a[class*="linkedin"] span:before {background: #0a416e;}
+ 
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}

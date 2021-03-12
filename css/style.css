@@ -460,8 +460,18 @@ hr {
   letter-spacing: 0.6px !important;
 }
 
-/* for scroll to top button */
+/** for scroll to top button **/
+.backtop {
+  box-sizing: border-box;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  bottom: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
 
+<<<<<<< HEAD
 #back-to-top-btn {
   position: fixed;
   bottom: 5%;
@@ -486,10 +496,35 @@ hr {
 }
 
 #button {
+=======
+.backtop a {
+>>>>>>> Back to Top button fixed
   position: fixed;
+  position: sticky;
+  top: -5rem;
+  bottom: 5%;
+  margin-bottom: -30rem;
+  transform: translateY(100vh);
+  backface-visibility: hidden;
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  pointer-events: all;
+  outline: none;
+  overflow: hidden;
+  color: #09756c;
+}
+.backtop #button {
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
   right: 5%;
   bottom: 5%;
-  z-index: 100;
+  border: 1px solid #09756c;
+}
+.backtop:hover #button {
+  background-color: #49b1ad;
+  color: #0e2431;
 }
 
 .mt-small-2 {

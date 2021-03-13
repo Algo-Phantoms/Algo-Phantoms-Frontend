@@ -171,8 +171,17 @@ header {
 
 /******************* ABOUT ***********************/
 
+
 .about {
-    padding: 150px 0px;
+  height: 800px;
+  padding: 6.8% 0% 7%;
+  text-align: center;
+
+}
+
+
+h1 {
+  text-align: center;
 }
 
 .about h1 {
@@ -180,6 +189,14 @@ header {
     font-weight: bold;
     backdrop-filter: blur(20px);
 }
+
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+
 
 hr {
     border: 1px solid #3caea3;
@@ -190,10 +207,24 @@ hr {
 
 .about p {
     font-size: 23px;
+
 }
 
 .about-content {
     margin-top: 50px;
+    text-align: center;
+}
+
+
+
+.slide-image {
+  width: 15%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 0% 0% 15%;
 }
 
 

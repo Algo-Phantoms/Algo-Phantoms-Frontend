@@ -172,6 +172,7 @@ header {
 /******************* ABOUT ***********************/
 
 
+
 .about {
   height: 800px;
   padding: 6.8% 0% 7%;
@@ -217,6 +218,7 @@ hr {
 
 
 
+
 .slide-image {
   width: 15%;
   border-radius: 50%;
@@ -224,7 +226,7 @@ hr {
 }
 
 .carousel-item {
-  padding: 0% 0% 15%;
+  padding: 5% 0% 15%;
 }
 
 

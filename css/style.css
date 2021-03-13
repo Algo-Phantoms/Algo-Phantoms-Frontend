@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 /******************* PRELOADER ******************/
 #preloader{
     width: 100%;
@@ -28,7 +32,6 @@
     position: absolute;
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
     animation: rot 1s linear infinite;
    border-right: 4px solid #3caea3;
    border-left: 4px solid #fff;
@@ -389,12 +392,27 @@ hr {
 
 
 /* for scroll to top button */
-
-#button {
+#back-to-top-btn {
     position: fixed;
-    right: 5%;
     bottom: 5%;
-    z-index: 100;
+    right: 3%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition:all 0.5s ease-in-out;
+    align-items: center;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #333;
+    color: #FFF;
+    border: 2px solid #FFF;
 }
 
 .mt-small-2 {

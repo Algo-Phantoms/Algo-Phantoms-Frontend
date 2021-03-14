@@ -238,6 +238,34 @@ hr {
     margin-top: 50px;
 }
 
+/******************* LEARN MORE ABOUT DATA STRUCTURES ***********************/
+.DS {
+    padding: 0px 0px;
+}
+ 
+.DS h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+ 
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+ 
+.DS .card-body
+ {color: #fff;
+  background-color: #004e47;
+ 
+}
+ 
+.card-img-top {
+    height:250px;
+}
+
 
 /************* TEAM **************/
 

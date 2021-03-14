@@ -1,48 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
 
 /******************* PRELOADER ******************/
-#preloader{
+#preloader {
     width: 100%;
     height: 100vh;
-    background:linear-gradient(#3caea3,#0e2431,#3caea3);
+    background: linear-gradient(#3caea3, #0e2431, #3caea3);
     display: grid;
     place-items: center;
     position: fixed;
     z-index: 9999;
 }
-.loader-div{
+.loader-div {
     width: 10rem;
     height: 10rem;
-   position: relative;
-   border-radius: 50%;
+    position: relative;
+    border-radius: 50%;
 }
-.heading{
+.heading {
     position: absolute;
-    color:#fff;
+    color: #fff;
     font-size: 2rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.loader{
+.loader {
     position: absolute;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
     animation: rot 1s linear infinite;
-   border-right: 4px solid #3caea3;
-   border-left: 4px solid #fff;
+    border-right: 4px solid #3caea3;
+    border-left: 4px solid #fff;
 }
-@keyframes rot{
-    from{
+@keyframes rot {
+    from {
         transform: rotate(0deg);
     }
-    to{
+    to {
         transform: rotate(360deg);
     }
-}     
+}
 body {
-    font-family: "Poppins", sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
     overflow-x: hidden;
 }
 
@@ -56,7 +56,6 @@ body {
 li {
     list-style: none !important;
 }
-
 
 /******************* HEADER ******************/
 
@@ -123,6 +122,7 @@ header {
     position: absolute;
     top: 35%;
     z-index: 1;
+    width: 100%;
 }
 
 .banner-text .main-head {
@@ -164,7 +164,6 @@ header {
     -moz-animation: fade_move_down 2s ease-in-out infinite;
     animation: fade_move_down 2s ease-in-out infinite;
 }
-
 
 /*animated scroll arrow animation*/
 
@@ -210,7 +209,6 @@ header {
     }
 }
 
-
 /******************* ABOUT ***********************/
 
 .about {
@@ -237,7 +235,6 @@ hr {
 .about-content {
     margin-top: 50px;
 }
-
 
 /************* TEAM **************/
 
@@ -317,7 +314,6 @@ hr {
     object-fit: cover;
 }
 
-
 /* .profile-img img {
   width: 100%;
   height: 100%;
@@ -351,7 +347,6 @@ hr {
     text-decoration: none;
     color: #ffffff90;
 }
-
 
 /*********** footer ***********/
 
@@ -387,7 +382,6 @@ hr {
     letter-spacing: 0.6px !important;
 }
 
-
 /* for scroll to top button */
 
 #button {
@@ -412,7 +406,6 @@ hr {
 .mb-small-5 {
     margin-bottom: 0rem !important;
 }
-
 
 /*
 ...........responsive.............*/
@@ -447,7 +440,6 @@ hr {
         font-size: 20px;
     }
 }
-
 
 /**** team responsive ****/
 

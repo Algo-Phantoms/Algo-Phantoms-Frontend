@@ -167,15 +167,24 @@
         </div>
     </footer>
 
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    
+    <script>
+        const backToTopButton = document.querySelector("#back-to-top-btn");
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset > 500) { //make the button visible
+                backToTopButton.style.display = "block";
+            }
+            else { // hide the button
+                backToTopButton.style.display = "none";
+            }
+        });
 
-
-
-    <div class="backtop">
-        <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
-            <i class="fas fa-chevron-up text-dark"></i>
-        </a>
-    </div>
-
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo(0,0);
+        });
+    </script>
 </body>
 
 </html>

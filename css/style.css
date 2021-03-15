@@ -394,6 +394,11 @@ hr {
     background: #3caea3 !important;
 }
 
+.subscribe-button:hover{ 
+    background-color:#439b98 !important;
+    cursor: pointer;
+}
+
 .copyright-text {
     font-size: 14px;
     letter-spacing: 0.6px !important;

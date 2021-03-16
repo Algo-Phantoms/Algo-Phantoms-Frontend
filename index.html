@@ -18,16 +18,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+    
     <title>Algo Phantoms</title>
 
-    
-
-<script>
-     window.onload=function(){
-    var preloader=document.getElementById("preloader")
-    preloader.style.display='none';
-  }
-</script>
+    <script>
+        window.onload=function() {
+            var preloader=document.getElementById("preloader")
+            preloader.style.display='none';
+        }
+    </script>
 
 </head>
 
@@ -73,7 +72,7 @@
 
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
-            <p> Algo Phantoms is an Open Source organization focusses on Data Structure and Algorithms</p>
+            <p class="below-head"> Algo Phantoms is an <span >Open Source organization</span> focusses on <span>  Data Structure and Algorithms</span></p>
         </div>
 
         <a class="smoothscroll" href="#about">
@@ -89,6 +88,28 @@
     </header>
 
     <!-- header ends -->
+     <!--social media sidebar starts-->
+     <ul id="social-sidebar">
+        <li>
+          <a class="entypo-twitter"><span>Twitter</span></a>
+        </li>
+        <li>
+          <a class="entypo-facebook"><span>Facebook</span></a>
+        </li>
+        <li>
+          <a class="entypo-gplus"><span>Google+</span></a>
+        </li>
+        <li>
+          <a class="entypo-instagrem"><span>Instagram</span></a>
+        </li>
+        <li>
+          <a class="entypo-linkedin"><span>LinkedIn</span></a>
+        </li>
+        <li>
+          <a class="entypo-github"><span>Github</span></a>
+        </li>
+      </ul>
+    <!--social media sidebae ends-->
 
     <!-- about starts -->
     <section id="about" class="about">
@@ -196,11 +217,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
                             <div class="input-group-append">
-                                <div class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -226,14 +247,17 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
                     <ul class="list-group">
-                        <a class="text-white mb-lg-3"href="https://www.codechef.com/ide">Code Editor</a>
-                        <a class="text-white mb-lg-3"href="https://www.geeksforgeeks.org/data-structure-gq/">Quizzes</a>
-                        <a class="text-white mb-lg-3"href="https://github.com/Algo-Phantoms/Algo-Tree">DSA Guidance</a>
+
+                        <a class="text-white mb-lg-3"href="https://www.codechef.com/ide"target="_blank">Code Editor</a>
+                        <a class="text-white mb-lg-3"href="https://www.geeksforgeeks.org/data-structure-gq/"target="_blank">Quizzes</a>
+                        <a class="text-white mb-lg-3"href="https://github.com/Algo-Phantoms/Algo-Tree"target="_blank">DSA Guidance</a>
+                        <a class="text-white mb-lg-3"href="https://dare2compete.com/"target="_blank">Opportunities</a>
+
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
-                    <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+                    <a href="https://github.com/Algo-Phantoms"target="_blank"title="github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
                       </a>
                 </div>
             </div>
@@ -245,14 +269,9 @@
         </div>
     </footer>
 
-
-
-
-    <div class="backtop">
-        <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
-            <i class="fas fa-chevron-up text-dark"></i>
-        </a>
-    </div>
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <script src="js/index.js"></script>
 
 </body>
 

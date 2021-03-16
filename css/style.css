@@ -130,7 +130,7 @@ header {
 .banner-text .main-head {
     color: #fff;
     font-size: 4rem;
-    margin: 0;
+    margin-left: 2vw;
 }
 
 .banner-text .main-head span {
@@ -140,8 +140,15 @@ header {
 .banner-text p {
     color: #b8d5cd;
     font-size: 30px;
-    margin: 0;
     font-weight: bold;
+}
+
+.below-head{
+    margin-left: 3vw;
+}
+
+.below-head span{
+    color: #3caea3;
 }
 
 .scroll-down {
@@ -391,12 +398,23 @@ hr {
 
 .subscribe-button {
     background: #3caea3 !important;
+    cursor: pointer;
+    width: auto;
 }
+
+
+.subscribe-button:hover{
+    background-color: transparent !important;
+    transition: 0.4s;
+}
+
+
 
 .subscribe-button:hover{ 
     background-color:#439b98 !important;
     cursor: pointer;
 }
+
 
 .copyright-text {
     font-size: 14px;

@@ -18,16 +18,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+    
     <title>Algo Phantoms</title>
 
-    
-
-<script>
-     window.onload=function(){
-    var preloader=document.getElementById("preloader")
-    preloader.style.display='none';
-  }
-</script>
+    <script>
+        window.onload=function() {
+            var preloader=document.getElementById("preloader")
+            preloader.style.display='none';
+        }
+    </script>
 
 </head>
 
@@ -192,22 +191,8 @@
 
     <!-- Back to top button -->
     <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
-    
-    <script>
-        const backToTopButton = document.querySelector("#back-to-top-btn");
-        window.addEventListener("scroll", () => {
-            if(window.pageYOffset > 500) { //make the button visible
-                backToTopButton.style.display = "block";
-            }
-            else { // hide the button
-                backToTopButton.style.display = "none";
-            }
-        });
+    <script src="/js/index.js"></script>
 
-        backToTopButton.addEventListener("click", () => {
-            window.scrollTo(0,0);
-        });
-    </script>
 </body>
 
 </html>

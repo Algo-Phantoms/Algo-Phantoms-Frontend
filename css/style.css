@@ -109,6 +109,7 @@ header {
 
 .navbar-nav {
     text-align: center;
+    width: 75% !important;
 }
 
 .nav-link {

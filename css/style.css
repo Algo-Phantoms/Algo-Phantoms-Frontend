@@ -216,11 +216,14 @@ header {
 .about {
     padding: 150px 0px;
 }
-
+.about{
+    background-image: url('../images/about_us.jpg');
+    background-size: cover;
+    color: white;
+}
 .about h1 {
     font-size: 50px;
     font-weight: bold;
-    backdrop-filter: blur(20px);
 }
 
 hr {

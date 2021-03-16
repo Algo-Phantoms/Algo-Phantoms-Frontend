@@ -6,11 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
     <!-- style.css For Custom Styling -->
     <link rel="stylesheet" href="css/style.css">
@@ -18,26 +25,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+
     <title>Algo Phantoms</title>
+    <script>
+        window.onload = function () {
+            var preloader = document.getElementById("preloader")
+            preloader.style.display = 'none';
+        }
+    </script>
+
 
 </head>
 
 <body>
-
+    <!-- preloader starts  -->
+    <div id="preloader">
+        <div class="loader-div">
+            <div class="loader"></div>
+            <div class="heading">
+                Loading
+            </div>
+        </div>
+    </div>
     <!-- header starts -->
     <header class="fix">
         <video src="video/video.mp4" class="vid-bg" autoplay loop muted></video>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
-            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px" height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+                    height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link font-weight-bold nav-items" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link font-weight-bold nav-items" href="#">Home <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
@@ -49,6 +75,14 @@
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+                        </div>
                 </ul>
 
             </div>
@@ -56,7 +90,8 @@
 
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
-            <p> Algo Phantoms is an Open Source organization focusses on Data Structure and Algorithms</p>
+            <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
+                    Structure and Algorithms</span></p>
         </div>
 
         <a class="smoothscroll" href="#about">
@@ -72,6 +107,28 @@
     </header>
 
     <!-- header ends -->
+    <!--social media sidebar starts-->
+    <ul id="social-sidebar">
+        <li>
+            <a class="entypo-twitter"><span>Twitter</span></a>
+        </li>
+        <li>
+            <a class="entypo-facebook"><span>Facebook</span></a>
+        </li>
+        <li>
+            <a class="entypo-gplus"><span>Google+</span></a>
+        </li>
+        <li>
+            <a class="entypo-instagrem"><span>Instagram</span></a>
+        </li>
+        <li>
+            <a class="entypo-linkedin"><span>LinkedIn</span></a>
+        </li>
+        <li>
+            <a class="entypo-github"><span>Github</span></a>
+        </li>
+    </ul>
+    <!--social media sidebae ends-->
 
     <!-- about starts -->
     <section id="about" class="about">
@@ -80,13 +137,17 @@
             <hr>
 
             <p class="about-content">
-                “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
+                “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe
+                        Quinn</b></i>
 
                 <br> <br>
-                <p class="text-justify">
-                    We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and change code according
-                    to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
-                </p>
+            <p class="text-justify">
+                We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide
+                access to well written, well-explained programs and knowledge that improve people's lives. We want to
+                enable people to adapt and change code according
+                to their own ideas through an Open Access approach. We bring amazing people together to code algorithms
+                and share our work for the benefit of all.
+            </p>
 
         </div>
     </section>
@@ -101,11 +162,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
                             <div class="input-group-append">
-                                <div class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -131,15 +192,24 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
                     <ul class="list-group">
-                        <li class="text-white mb-lg-3">Code Editor</li>
-                        <li class="text-white mb-lg-3">Quizzes</li>
-                        <li class="text-white mb-lg-3">DSA Guidance</li>
+
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code
+                            Editor</a>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/"
+                            target="_blank">Quizzes</a>
+                        <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree"
+                            target="_blank">DSA Guidance</a>
+                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
-                    <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-                      </a>
+
+                    <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true"
+                            style="background:#3caea3; border-radius: 50%;"></i>
+
+                    </a>
                 </div>
             </div>
             <hr style="background: white;" class="mt-5">
@@ -150,17 +220,9 @@
         </div>
     </footer>
 
-
-
-
-    <div class="backtop">
-        <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
-            <i class="fas fa-chevron-up text-dark"></i>
-        </a>
-    </div>
-
-
-
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <script src="js/index.js"></script>
 
 </body>
 

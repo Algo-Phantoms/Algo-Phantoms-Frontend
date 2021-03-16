@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(https://weloveiconfonts.com/api/?family=entypo);
+
 /******************* PRELOADER ******************/
 #preloader{
     width: 100%;
@@ -14,8 +14,8 @@
 .loader-div{
     width: 10rem;
     height: 10rem;
-   position: relative;
-   border-radius: 50%;
+    position: relative;
+    border-radius: 50%;
 }
 .heading{
     position: absolute;
@@ -29,7 +29,6 @@
     position: absolute;
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
     animation: rot 1s linear infinite;
    border-right: 4px solid #3caea3;
    border-left: 4px solid #fff;
@@ -213,6 +212,15 @@ header {
     }
 }
 
+::-webkit-scrollbar{
+    width: 15px;                                                             /* adjusting the width of the scrollbar */
+}
+::-webkit-scrollbar-track{
+    background: #212529;                                                   /* adding background to the scrollbar */
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(300deg,#17a2b8, #20c997);                /* adding linear color to the scroll-thumb */
+}
 
 /******************* ABOUT ***********************/
 
@@ -385,6 +393,11 @@ hr {
     background: #3caea3 !important;
 }
 
+.subscribe-button:hover{ 
+    background-color:#439b98 !important;
+    cursor: pointer;
+}
+
 .copyright-text {
     font-size: 14px;
     letter-spacing: 0.6px !important;
@@ -392,12 +405,27 @@ hr {
 
 
 /* for scroll to top button */
-
-#button {
+#back-to-top-btn {
     position: fixed;
-    right: 5%;
     bottom: 5%;
-    z-index: 100;
+    right: 3%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition:all 0.5s ease-in-out;
+    align-items: center;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #333;
+    color: #FFF;
+    border: 2px solid #FFF;
 }
 
 .mt-small-2 {
@@ -572,7 +600,7 @@ hr {
 #social-sidebar a {
 	background: rgba(31, 30, 30, 0.7);
 	color: #fff;
-    text-decoration: none;
+  text-decoration: none;
 	display: block;
 	height: 50px;
 	width: 50px;  
@@ -580,14 +608,14 @@ hr {
 	line-height: 50px;
 	position: relative;
 	text-align: center;
-    cursor: pointer;
+  cursor: pointer;
 }
 #social-sidebar a:hover span {
 	left: 120%;
 	opacity: 1;
 }
 #social-sidebar a span {
-  font: 12px "Open Sans", sans-serif;
+  font: 12px "Poppins", sans-serif;
   text-transform: uppercase;
 	border-radius: 3px;
 	line-height: 24px;

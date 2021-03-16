@@ -258,7 +258,11 @@ hr {
 
 /******************* LEARN MORE ABOUT DATA STRUCTURES ***********************/
 .DS {
-    padding: 0px 0px;
+    padding-top: 5%;
+    border-bottom: 3px solid #146b61;
+    border-top: 3px solid #146b61;
+    margin: 2%;
+
 }
  
 .DS h1 {
@@ -276,7 +280,7 @@ hr {
  
 .DS .card-body
  {color: #fff;
-  background-color: #004e47;
+  background-image : linear-gradient(130deg, #05272e7c 40%, #1a3d39 100%);;
  
 }
  

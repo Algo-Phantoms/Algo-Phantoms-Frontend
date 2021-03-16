@@ -243,7 +243,8 @@
     </div>
     <!--footer ends here-->
 
-
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
 
     </section>
 
@@ -252,6 +253,20 @@
     <script>
         const tilt = $('.box').tilt({
             scale: 1.01
+        });
+
+        const backToTopButton = document.querySelector("#back-to-top-btn");
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset > 500) { //make the button visible
+                backToTopButton.style.display = "block";
+            }
+            else { // hide the button
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo(0,0);
         });
     </script>
 </body>

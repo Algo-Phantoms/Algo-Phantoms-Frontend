@@ -181,6 +181,8 @@ header {
 .banner-text p {
   color: #b8d5cd;
   font-size: 30px;
+  margin: 0;
+  margin-left: 5%;
   font-weight: bold;
 }
 

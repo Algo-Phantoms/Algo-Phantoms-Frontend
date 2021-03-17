@@ -284,7 +284,6 @@ header {
 .about h1 {
   font-size: 50px;
   font-weight: bold;
-  backdrop-filter: blur(20px);
 }
 
 hr {
@@ -541,6 +540,16 @@ hr {
   .about {
     height: 900px;
     padding: 0 20px;
+  }
+
+  .banner-text .main-head {
+    font-size: 50px;
+  }
+  .banner-text .below-head {
+    font-size: 30px;
+  }
+  #social-sidebar {
+    display: none;
   }
 }
 

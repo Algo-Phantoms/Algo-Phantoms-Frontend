@@ -217,21 +217,20 @@ header {
 .about {
     padding: 150px 0px;
 }
-
 .about h1 {
     font-size: 50px;
-    
     font-weight: bold;
     backdrop-filter: blur(20px);
 }
 
-/*hr {
+hr {
+    margin:auto;
+
     border: 1px solid #3caea3;
-    display: block;
+    display:block;
     width: 80px;
-    margin: auto;
 }
-*/
+
 .about p {
     font-size: 23px;
 }

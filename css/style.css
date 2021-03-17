@@ -257,6 +257,77 @@ hr {
 }
 
 
+
+/******************issue.104*****************/
+ table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  align:centre;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+decor{
+  font-style: Arial ;
+  font-size:40px ;
+  text-shadow: 2px 2px #ff0000;
+}
+
+th:hover {
+background-color: #f2f2f2;
+}
+
+th, td {
+  text-align: left;
+  padding: 25px;
+   font-style: Arial ;
+  font-size:20px ;
+  text-shadow: 2px 2px #0000;
+}
+
+a:Link{
+   color:#000000;
+}
+
+a:visited {
+  color:#000000;
+}
+
+a:Hover{
+   color:#000000;
+}
+
+tr:nth-child(odd) {
+  background-color: #009999;
+}
+
+hr {
+    border: 0.5px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+
+p1{
+display: block;
+margin-bottom:10em;
+}
+
+
+
+
+
+
 /************* TEAM **************/
 
 .team {

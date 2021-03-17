@@ -472,8 +472,6 @@ hr {
   pointer-events: none;
   backface-visibility: hidden;
 }
-
-<<<<<<< HEAD
 #back-to-top-btn {
   position: fixed;
   bottom: 5%;
@@ -498,9 +496,6 @@ hr {
 }
 
 #button {
-=======
-.backtop a {
->>>>>>> Back to Top button fixed
   position: fixed;
   position: sticky;
   top: -5rem;
@@ -515,18 +510,6 @@ hr {
   outline: none;
   overflow: hidden;
   color: #09756c;
-}
-.backtop #button {
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  right: 5%;
-  bottom: 5%;
-  border: 1px solid #09756c;
-}
-.backtop:hover #button {
-  background-color: #49b1ad;
-  color: #0e2431;
 }
 
 .mt-small-2 {

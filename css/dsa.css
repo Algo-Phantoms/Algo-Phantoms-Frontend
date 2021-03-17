@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(130deg, #05272e 40%, #183a36 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-family: "Courier New", Courier, monospace;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.dsa {
+  width: 90%;
+  height: 80vh;
+  margin: 20px 5%;
+  margin-bottom: 20px;
+  overflow: scroll;
+  outline: 1px solid #000;
+}
+
+.button1 {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  margin: 0px 5%;
+  border: 2px solid #fff;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  background: transparent;
+  -webkit-transition: outline-offset 0.1s;
+  transition: outline-offset 0.1s;
+}
+
+.button1:hover {
+  outline-offset: 2px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=dsa.css.map */

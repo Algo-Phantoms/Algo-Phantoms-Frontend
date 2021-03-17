@@ -42,13 +42,14 @@
     }
 }     
 body {
-    font-family: "Poppins", sans-serif !important;
+    
     overflow-x: hidden;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif !important;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -56,9 +57,37 @@ body {
 li {
     list-style: none !important;
 }
+/******************SCROLLBAR***************/
+::-webkit-scrollbar
+{
+    background: #0e2431;
+}
 
+::-webkit-scrollbar-thumb
+{
+    background: #3caea3;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: #03423c;
+    border-radius: 10px;
+}
 
 /******************* HEADER ******************/
+.landing
+{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+}
 
 header {
     overflow: hidden;
@@ -589,3 +618,16 @@ hr {
         padding-top: 15px;
     }
 }
+/* @media only screen and (min-width: 600px)
+{
+    .landing
+    {
+        font-size: 0.5em imp !important;
+
+    }
+    #landingheader
+    {
+        font-size: 2em;
+    }
+   
+} */

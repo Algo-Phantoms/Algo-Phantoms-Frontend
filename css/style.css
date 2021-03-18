@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
-@import url(https://weloveiconfonts.com/api/?family=entypo);
 
 /******************* PRELOADER ******************/
+
 #preloader {
   width: 100%;
   height: 100vh;
@@ -41,6 +41,47 @@
     transform: rotate(360deg);
   }
 }
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#3caea3,#0e2431,#3caea3);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    z-index: 9999;
+}
+.loader-div{
+    width: 10rem;
+    height: 10rem;
+   position: relative;
+   border-radius: 50%;
+}
+.heading{
+    position: absolute;
+    color:#fff;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loader{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    animation: rot 1s linear infinite;
+   border-right: 4px solid #3caea3;
+   border-left: 4px solid #fff;
+}
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}     
+
 body {
   font-family: "Poppins", sans-serif !important;
   overflow-x: hidden;
@@ -107,6 +148,7 @@ header {
 }
 
 .navbar-nav {
+
   text-align: center;
   width: 75% !important;
 }
@@ -120,6 +162,7 @@ header {
 }
 
 .banner-text {
+
   position: absolute;
   top: 35%;
   z-index: 1;
@@ -131,13 +174,19 @@ header {
   color: #fff;
   font-size: 4rem;
   margin-left: 2vw;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
 }
+
+
 
 .banner-text .main-head span {
   color: #3caea3;
 }
 
 .banner-text p {
+
   color: #b8d5cd;
   font-size: 30px;
   font-weight: bold;
@@ -148,8 +197,12 @@ header {
 }
 
 .below-head span {
-  color: #3caea3;
+    color: #b8d5cd;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
 }
+
 
 .scroll-down {
   position: absolute;
@@ -173,6 +226,8 @@ header {
   -moz-animation: fade_move_down 2s ease-in-out infinite;
   animation: fade_move_down 2s ease-in-out infinite;
 }
+
+
 
 /*animated scroll arrow animation*/
 
@@ -218,6 +273,7 @@ header {
   }
 }
 
+
 ::-webkit-scrollbar {
   width: 15px; /* adjusting the width of the scrollbar */
 }
@@ -232,18 +288,19 @@ header {
   ); /* adding linear color to the scroll-thumb */
 }
 
+
 /******************* ABOUT ***********************/
 
 .about {
   padding: 150px 0px;
 }
-
 .about h1 {
   font-size: 50px;
   font-weight: bold;
 }
 
 hr {
+
   border: 1px solid #3caea3;
   display: block;
   width: 80px;
@@ -396,6 +453,7 @@ hr {
 }
 
 .subscribe-button {
+
   background: #3caea3 !important;
   cursor: pointer;
   width: auto;
@@ -404,12 +462,9 @@ hr {
 .subscribe-button:hover {
   background-color: transparent !important;
   transition: 0.4s;
+    cursor: pointer;
 }
 
-.subscribe-button:hover {
-  background-color: #439b98 !important;
-  cursor: pointer;
-}
 
 .copyright-text {
   font-size: 14px;
@@ -417,6 +472,7 @@ hr {
 }
 
 /* for scroll to top button */
+
 #back-to-top-btn {
   position: fixed;
   bottom: 5%;
@@ -438,6 +494,13 @@ hr {
   background-color: #333;
   color: #fff;
   border: 2px solid #fff;
+
+#button {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 100;
+
 }
 
 .mt-small-2 {
@@ -499,6 +562,43 @@ hr {
     font-size: 20px;
   }
 }
+
+#coding {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+      justify-content: center; 
+  }
+  #left, #right{
+    animation: typing 0.2s cubic-bezier(.18,.85,.72,.22) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: rotateZ(-10deg);
+    }
+    100% {
+      transform: rotateZ(10deg);
+    }
+  }
+  @keyframes move-head {
+   0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  #head {
+    animation: move-head 1s cubic-bezier(.41,.16,.24,.71) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+
 
 /**** team responsive ****/
 
@@ -598,6 +698,7 @@ hr {
 }
 
 @media (max-width: 768px) {
+
   .mobile-heading {
     font-size: 40px !important;
   }
@@ -700,3 +801,12 @@ hr {
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
+
+    .mobile-heading {
+        font-size: 40px !important;
+    }
+    .margin-top-mobile {
+        padding-top: 15px;
+    }
+}
+

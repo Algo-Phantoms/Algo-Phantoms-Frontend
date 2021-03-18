@@ -6,64 +6,56 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
     <!-- style.css For Custom Styling -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    
 
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
-
     <title>Algo Phantoms</title>
-    <script>
-        window.onload = function () {
-            var preloader = document.getElementById("preloader")
-            preloader.style.display = 'none';
-        }
-    </script>
 
+    
+
+<script>
+     window.onload=function(){
+    var preloader=document.getElementById("preloader")
+    preloader.style.display='none';
+  }
+</script>
 
 </head>
 
 <body>
-    <!-- preloader starts  -->
+ <!-- preloader starts  -->
     <div id="preloader">
-        <div class="loader-div">
-            <div class="loader"></div>
-            <div class="heading">
+       <div class="loader-div">
+           <div class="loader"></div>
+             <div class="heading">
                 Loading
-            </div>
+             </div>
         </div>
     </div>
-    <!-- header starts -->
+<!-- header starts -->
     <header class="fix">
         <video src="video/video.mp4" class="vid-bg" autoplay loop muted></video>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
-            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
-                    height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px" height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link font-weight-bold nav-items" href="#">Home <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link font-weight-bold nav-items" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
@@ -75,14 +67,6 @@
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
-                        </div>
                 </ul>
 
             </div>
@@ -90,8 +74,7 @@
 
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
-            <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
-                    Structure and Algorithms</span></p>
+            <p> Algo Phantoms is an Open Source organization focusses on Data Structure and Algorithms</p>
         </div>
 
         <a class="smoothscroll" href="#about">
@@ -107,49 +90,48 @@
     </header>
 
     <!-- header ends -->
-    <!--social media sidebar starts-->
-    <ul id="social-sidebar">
-        <li>
-            <a class="entypo-twitter"><span>Twitter</span></a>
-        </li>
-        <li>
-            <a class="entypo-facebook"><span>Facebook</span></a>
-        </li>
-        <li>
-            <a class="entypo-gplus"><span>Google+</span></a>
-        </li>
-        <li>
-            <a class="entypo-instagrem"><span>Instagram</span></a>
-        </li>
-        <li>
-            <a class="entypo-linkedin"><span>LinkedIn</span></a>
-        </li>
-        <li>
-            <a class="entypo-github"><span>Github</span></a>
-        </li>
-    </ul>
-    <!--social media sidebae ends-->
 
     <!-- about starts -->
     <section id="about" class="about">
         <div class="container">
             <h1 class="text-center">About Us</h1>
             <hr>
-
+            <svg id="coding" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374.02 251.41">
+                <title>animation</title>
+                <circle cx="185.76" cy="122.34" r="115.34" style="fill: black"/>
+                <g id="head">
+                  <path d="M293.3,317.35a17.34,17.34,0,0,0-2.09-9.64c-4.65-7.93-9-23.37-15.67-38.16a25.7,25.7,0,0,0-3.67-5.93,83.49,83.49,0,0,0-9.23-9.5c-10.71-9.27-23.46-11.58-26.32-11.79V242h.23c0,.29-.09.3-.17.31s-.2,0,.65.72v93.1c-.9,14.32,9.85,25.85,22.94,25.56h0A22.65,22.65,0,0,0,277.86,352c6-8.45,13.77-21.12,15.21-32.16A24.49,24.49,0,0,1,293.3,317.35Z" transform="translate(-56.67 -185.6)" style="stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M248.42,238.85a53.18,53.18,0,0,0-23.69,11.47,89.19,89.19,0,0,0-12.61,13.91,27,27,0,0,0-2.92,5c-6.14,13.67-10.52,27.33-14.8,34.63-1.9,3.24-2.35,7.11-1.82,11.28,1.42,11.25,10,24.38,16.57,33a23.67,23.67,0,0,0,15.64,9.49c14.29,1.83,26.49-10.36,26.49-25.72V239.51A15.87,15.87,0,0,1,248.42,238.85Z" transform="translate(-56.67 -185.6)" style="stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <polygon points="194.41 162.44 176.12 162.44 177.1 178.03 195.39 178.03 194.41 162.44" style="fill: #fd916f;stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M251.75,359.28c0,2.1-4.07,3.8-9.08,3.8s-9.37-2.5-9.37-4.6,4.35-2.37,9.37-2.37S251.75,357.19,251.75,359.28Z" transform="translate(-56.67 -185.6)" style="fill: #fd916f;stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M221.82,311.3c0,5.55-3.93,10-8.78,10s-10.15-6.62-10.15-12.16,1.75-7.92,6.59-7.92S221.82,305.76,221.82,311.3Z" transform="translate(-56.67 -185.6)" style="fill: #c17b62"/>
+                  <path d="M264.73,311.3c0,5.55,3.92,10,8.77,10s10.15-6.62,10.15-12.16-1.74-7.92-6.59-7.92S264.73,305.76,264.73,311.3Z" transform="translate(-56.67 -185.6)" style="fill: #c17b62"/>
+                  <path d="M278.22,295.32c0,28-15.54,56-34.7,56s-34.72-27.92-34.72-56,15.55-44.83,34.72-44.83S278.22,267.28,278.22,295.32Z" transform="translate(-56.67 -185.6)" style="fill: #d9ad89"/>
+                  <path d="M293.88,315.63a.71.71,0,0,0,0-.25c0-.43-.07-.86-.11-1.32l-.1-1.12a126.37,126.37,0,0,0-2.16-13.23c-7.74-34.51-15.18-49.47-21-54.44-2.19-1.87-10.42-6.42-17.09-7.44a27.8,27.8,0,0,0-3.36-.5,1,1,0,0,1-.34-.08l-4.87-2.32a3.2,3.2,0,0,0-4.55,2.4h0l-.16,0c-.12,0,.42-1.23.37-1.23s-.64,1.21-.64,1.21v0c-35.28,4.87-46.79,41.86-47.12,76.27a.91.91,0,0,0,1.34.8c30.55-16.38,26.73-19.21,61.76-15.9,9.09.86,13.59-.19,21.46,2.75,8.88,3.32,14.13,8.81,16.24,16.08C293.64,316.78,293.75,316.2,293.88,315.63Z" transform="translate(-56.67 -185.6)" style="fill: #36476f;stroke: #0e1a32;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path id="earphones" d="M278,314.79s4.81,44.64-35.56,44.8-33.86-44.8-33.86-44.8" transform="translate(-56.67 -185.6)" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 4px"/>
+                </g>
+                <g id="rest">
+                  <path id="body" d="M389.24,435c-30.83-63.54-77.64-72.2-77.64-72.2V362H184.14s-44.9,7-78.7,72.09H189.7Z" transform="translate(-56.67 -185.6)" style="fill: #36476f;stroke: #0e1a32;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <rect x="122.21" y="231.3" width="131.76" height="14.6" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M310.69,426.63H179.59c-2.47,0-4.5-2.32-4.5-5.16V332.75H315.18v88.72C315.18,424.31,313.16,426.63,310.69,426.63Z" transform="translate(-56.67 -185.6)" style="fill: #565c68;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M316,431.5a2.36,2.36,0,0,1-2.27,2.43H177.05a2.36,2.36,0,0,1-2.27-2.43h0c0-1.35,1-2.44,2-4.87H313.44c1.49,2.43,2.51,3.52,2.51,4.87Z" transform="translate(-56.67 -185.6)" style="fill: #606c71;stroke: #000;stroke-miterlimit: 10;stroke-width: 4px"/>
+                  <path d="M293.72,335s16.61,49.37-10.26,57-45.19,11.19-54.86,10.18-21.89-10.18-29.52-16.8-19.53-16.61-20.2-23.32,4.71-24.85,22.82-27.07S293.72,335,293.72,335Z" transform="translate(-56.67 -185.6)" style="fill: #373e46"/>
+                  <ellipse cx="187.01" cy="197.24" rx="6.27" ry="6.71" style="fill: #989fa4"/>
+                </g>
+                <line id="left" x1="118.43" y1="232.25" x2="73.23" y2="224.9" style="fill: #fff;stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                <line id="right" x1="257.88" y1="232.25" x2="303.07" y2="224.9" style="fill: #fff;stroke: #0d1932;stroke-miterlimit: 10;stroke-width: 4px"/>
+                <line y1="249.4" x2="374.02" y2="249.4" style="fill: none;stroke: #0e1a32;stroke-miterlimit: 10;stroke-width: 4px"/>
+              </svg>
             <p class="about-content">
-                “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe
-                        Quinn</b></i>
-
-                <br> <br>
-            <p class="text-justify">
-                We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide
-                access to well written, well-explained programs and knowledge that improve people's lives. We want to
-                enable people to adapt and change code according
-                to their own ideas through an Open Access approach. We bring amazing people together to code algorithms
-                and share our work for the benefit of all.
+              “Algorithms are not arbiters of objective truth and fairness simply because they're math.-”<i><b>Zoe Quinn</b></i></div>
+          <br> <br>
+                <p class="text-justify">
+                   <p> We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and change code according
+                    to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
+                </p>
             </p>
-
         </div>
+     
     </section>
     <!-- about ends -->
 
@@ -162,11 +144,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <form action="">
                         <div class="input-group">
-                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="text" class="form-control py-3" placeholder="Enter your Email">
                             <div class="input-group-append">
-                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <div class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
-                                </button>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -192,24 +174,15 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
                     <ul class="list-group">
-
-                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code
-                            Editor</a>
-                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/"
-                            target="_blank">Quizzes</a>
-                        <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree"
-                            target="_blank">DSA Guidance</a>
-                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
-
+                        <a class="text-white mb-lg-3"href="https://www.codechef.com/ide">Code Editor</a>
+                        <a class="text-white mb-lg-3"href="https://www.geeksforgeeks.org/data-structure-gq/">Quizzes</a>
+                        <a class="text-white mb-lg-3"href="https://github.com/Algo-Phantoms/Algo-Tree">DSA Guidance</a>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
-
-                    <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true"
-                            style="background:#3caea3; border-radius: 50%;"></i>
-
-                    </a>
+                    <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true" style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
+                      </a>
                 </div>
             </div>
             <hr style="background: white;" class="mt-5">
@@ -220,9 +193,14 @@
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
-    <script src="js/index.js"></script>
+
+
+
+    <div class="backtop">
+        <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
+            <i class="fas fa-chevron-up text-dark"></i>
+        </a>
+    </div>
 
 </body>
 

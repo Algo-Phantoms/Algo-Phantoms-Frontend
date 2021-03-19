@@ -487,13 +487,8 @@ hr {
     .navbar-light .navbar-brand {
         font-size: 20px;
     }
-    .banner-text{
-        margin: 1em;
-        margin-left: 3em;
-        padding: 0;
-    }
     .banner-text p {
-        font-size: 1rem;
+        font-size: 20px;
     }
     .banner-text .main-head {
         font-size: 2rem;

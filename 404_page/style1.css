@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:darkslateblue;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.wrapper{
+    text-align: center
+}
+.wrapper h1{
+    text-align: left;
+    margin:40px 0;
+    font-size:2.5rem;
+    color: white;
+}
+.wrapper img{
+    width:700px;
+    max-width:60%;
+    float: right;
+    align-items: flex-start;
+}
+    
+    
+
+
+.wrapper h4{
+    margin:40px 0 20px;
+    font-size:1.2rem;
+    color: white;
+}
+.main-btn{
+    padding:15px;
+    background-color: #145fcf;
+    color:#fff;
+    border:none;
+    font-weight:700;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.glitch_word_box {
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    -webkit-animation: disappear 1s linear;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -moz-animation: disappear 1s linear;
+    -moz-animation-iteration-count: infinite, infinite;
+    -o-animation: disappear 1s linear;
+    -o-animation-iteration-count: infinite, infinite;
+  }
+  
+  .glitch_word_box .glitch_word0 {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .glitch_word_box .glitch_word1 {
+    color: red;
+    font-weight: bolder;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    z-index: -1;
+    -webkit-animation: animate_glitch_1 .2s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: animate_glitch_1 .2s linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: animate_glitch_1 .2s linear;
+    -o-animation-iteration-count: infinite;
+  }
+  
+  .glitch_word_box .glitch_word2 {
+    color: blue;
+    font-weight: bolder;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    z-index: -1;
+    -webkit-animation: animate_glitch_2 .3s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: animate_glitch_2 .3s linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: animate_glitch_2 .3s linear;
+    -o-animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-webkit-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+  @-moz-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-moz-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+  @-o-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-o-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+ 
+  @media (max-width: 600px) {
+    body {
+      margin: 0 5vw;
+    }
+  }
+  
+  #Polygon-1,
+  #Polygon-2,
+  #Polygon-3,
+  #Polygon-4,
+  #Polygon-4,
+  #Polygon-5 {
+    animation: float 2s infinite ease-in-out alternate;
+  }
+  
+  #Polygon-2 {
+    animation-delay: .2s;
+  }
+  
+  #Polygon-3 {
+    animation-delay: .4s;
+  }
+  
+  #Polygon-4 {
+    animation-delay: .6s;
+  }
+  
+  #Polygon-5 {
+    animation-delay: .8s;
+  }
+  
+  
+
+@media (max-width:767px){
+    .wrapper h2{ 
+        font-size:2rem;
+    }
+    .wrapper h4{ 
+        font-size:1rem;
+    }
+}

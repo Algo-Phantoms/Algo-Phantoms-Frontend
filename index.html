@@ -25,18 +25,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
 
     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+
     <title>Algo Phantoms</title>
+    <script>
+        window.onload = function () {
+            var preloader = document.getElementById("preloader")
+            preloader.style.display = 'none';
+        }
+    </script>
+
 
 </head>
 
 <body>
-
+    <!-- preloader starts  -->
+    <div id="preloader">
+        <div class="loader-div">
+            <div class="loader"></div>
+            <div class="heading">
+                Loading
+            </div>
+        </div>
+    </div>
     <!-- header starts -->
     <header class="fix">
         <video src="video/video.mp4" class="vid-bg" autoplay loop muted></video>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+<<<<<<< HEAD
             <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px" height="50px">
                 <span class="brand1"> <strong>Algo</span>Phantoms</strong>
+=======
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+                    height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+>>>>>>> upstream/master
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,14 +93,24 @@
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
                     </li>
-                </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+                            <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+                        </div>
+                    </ul>
 
             </div>
         </nav>
 
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
-            <p> Algo Phantoms is an Open Source organization focusses on Data Structure and Algorithms</p>
+            <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
+                    Structure and Algorithms</span></p>
         </div>
 
         <a class="smoothscroll" href="#about">
@@ -95,6 +126,28 @@
     </header>
 
     <!-- header ends -->
+    <!--social media sidebar starts-->
+    <ul id="social-sidebar">
+        <li>
+            <a class="entypo-twitter"><span>Twitter</span></a>
+        </li>
+        <li>
+            <a class="entypo-facebook"><span>Facebook</span></a>
+        </li>
+        <li>
+            <a class="entypo-gplus"><span>Google+</span></a>
+        </li>
+        <li>
+            <a class="entypo-instagrem"><span>Instagram</span></a>
+        </li>
+        <li>
+            <a class="entypo-linkedin"><span>LinkedIn</span></a>
+        </li>
+        <li>
+            <a class="entypo-github"><span>Github</span></a>
+        </li>
+    </ul>
+    <!--social media sidebae ends-->
 
     <!-- about starts -->
     <section id="about" class="about">
@@ -128,11 +181,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
                             <div class="input-group-append">
-                                <div class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
-                                </div>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -141,33 +194,38 @@
         </div>
         <div class="container mt-5 pt-lg-5">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-lg-3 col-12">
-                    <div class="">
-                        <img src="./images/icon.png" alt="" class="img-fluid mb-lg-4" width="100px" height="100px">
+                <div class="col-md-3 col-sm-6 col-lg-3 col-12 container-img-box">
+                    <div class=" box-img">
+                        <img src="./images/icon.png" alt="" class="img-fluid mb-lg-4">
                     </div>
                     <p class="text-white">An Open Source organization focuses on Data Structure and Algorithms.</p>
                 </div>
-                <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1 container-useful-links">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
                     <ul>
-                        <a class="text-white mb-lg-3" href="#about">About</a><br>
-                        <a class="text-white mb-lg-3" href="./team.html">Our Team</a><br>
-                        <a class="text-white mb-lg-3" href="#footer">Contact</a>
+                        <a class="mb-lg-3" href="#about">About</a><br>
+                        <a class="mb-lg-3" href="./team.html">Our Team</a><br>
+                        <a class="mb-lg-3" href="#footer">Contact</a><br>
+                        <a class="mb-lg-3" href="./sitemap.html">SiteMap</a>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-12 container-features">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
                     <ul class="list-group">
-                        <li class="text-white mb-lg-3"><a href="#"> Code Editor </a></li>
-                        <li class="text-white mb-lg-3"> <a href="#"> Quizzes </a></li>
-                        <li class="text-white mb-lg-3"> <a href="#"> DSA Guidance </a></li>
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code
+                            Editor</a>
+                        <a class="mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/"
+                            target="_blank">Quizzes</a>
+                        <a class="mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree"
+                            target="_blank">DSA Guidance</a>
+                        <a class="mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 Follow">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
                     <a href="https://github.com/Algo-Phantoms"><i class="fa fa-github p-2 text-white" aria-hidden="true"
-                            style="background: rgba(0, 0, 0, 0.15); border-radius: 50%;"></i>&nbsp;&nbsp;
-                    </a>
+                            style="background:#3caea3; border-radius: 50%;"></i> </a>
                 </div>
             </div>
             <hr style="background: white;" class="mt-5">
@@ -177,12 +235,9 @@
 
         </div>
     </footer>
-
-    <div class="backtop">
-        <a id="button" href="#top" class="btn btn-lg btn-outline-dark" role="button">
-            <i class="fas fa-chevron-up text-dark"></i>
-        </a>
-    </div>
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <script src="js/index.js"></script>
 
 </body>
 

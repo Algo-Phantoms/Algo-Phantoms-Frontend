@@ -471,12 +471,24 @@ hr {
     .about {
         height: 1100px;
     }
+    .banner-text p {
+        font-size: 1.5rem;
+    }
+    .banner-text .main-head {
+        font-size: 2.5rem;
+    }
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
     .about {
         height: 900px;
         padding: 0 20px;
+    }
+    .banner-text p {
+        font-size: 1.5rem;
+    }
+    .banner-text .main-head {
+        font-size: 2.5rem;
     }
 }
 

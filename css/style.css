@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 
 /******************* PRELOADER ******************/
 
@@ -53,8 +54,8 @@
 .loader-div{
     width: 10rem;
     height: 10rem;
-   position: relative;
-   border-radius: 50%;
+    position: relative;
+    border-radius: 50%;
 }
 .heading{
     position: absolute;
@@ -68,7 +69,6 @@
     position: absolute;
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
     animation: rot 1s linear infinite;
    border-right: 4px solid #3caea3;
    border-left: 4px solid #fff;
@@ -149,8 +149,9 @@ header {
 
 .navbar-nav {
 
-  text-align: center;
-  width: 75% !important;
+    text-align: center;
+    width: 75% !important;
+
 }
 
 .nav-link {
@@ -177,9 +178,9 @@ header {
     position: absolute;
     top: 35%;
     z-index: 1;
+    margin-left:6rem;
+    margin-right:6rem;
 }
-
-
 
 .banner-text .main-head span {
   color: #3caea3;
@@ -199,8 +200,16 @@ header {
 .below-head span {
     color: #b8d5cd;
     font-size: 30px;
-    margin: 0;
     font-weight: bold;
+}
+
+
+.below-head{
+    margin-left: 3vw;
+}
+
+.below-head span{
+    color: #3caea3;
 }
 
 
@@ -226,7 +235,6 @@ header {
   -moz-animation: fade_move_down 2s ease-in-out infinite;
   animation: fade_move_down 2s ease-in-out infinite;
 }
-
 
 
 /*animated scroll arrow animation*/
@@ -288,23 +296,32 @@ header {
   ); /* adding linear color to the scroll-thumb */
 }
 
+::-webkit-scrollbar{
+    width: 15px;                                                             /* adjusting the width of the scrollbar */
+}
+::-webkit-scrollbar-track{
+    background: #212529;                                                   /* adding background to the scrollbar */
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(300deg,#17a2b8, #20c997);                /* adding linear color to the scroll-thumb */
+}
 
 /******************* ABOUT ***********************/
 
 .about {
   padding: 150px 0px;
 }
+
 .about h1 {
   font-size: 50px;
   font-weight: bold;
 }
 
 hr {
-
-  border: 1px solid #3caea3;
-  display: block;
-  width: 80px;
-  margin: auto;
+    border: 1px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
 }
 
 .about p {
@@ -454,6 +471,7 @@ hr {
 
 .subscribe-button {
 
+
   background: #3caea3 !important;
   cursor: pointer;
   width: auto;
@@ -462,7 +480,26 @@ hr {
 .subscribe-button:hover {
   background-color: transparent !important;
   transition: 0.4s;
+    cursor: pointer;}
+
+
+.subscribe-button:hover{
+    background-color: transparent !important;
+    transition: 0.4s;
+}
+
+
+
+.subscribe-button:hover{ 
+    background-color:#439b98 !important;
     cursor: pointer;
+}
+
+
+.copyright-text {
+    font-size: 14px;
+    letter-spacing: 0.6px !important;
+
 }
 
 
@@ -472,6 +509,7 @@ hr {
 }
 
 /* for scroll to top button */
+
 
 #back-to-top-btn {
   position: fixed;
@@ -495,13 +533,6 @@ hr {
   color: #fff;
   border: 2px solid #fff;
 
-#button {
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    z-index: 100;
-
-}
 
 .mt-small-2 {
   margin-top: 0rem !important;
@@ -562,6 +593,7 @@ hr {
     font-size: 20px;
   }
 }
+
 
 #coding {
     width: 30%;
@@ -809,4 +841,3 @@ hr {
         padding-top: 15px;
     }
 }
-

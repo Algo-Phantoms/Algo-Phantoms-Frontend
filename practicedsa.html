@@ -2,8 +2,93 @@
 <html lang="en">
 
 <head>
+     <!-- Required meta tags -->
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+ 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+ 
+     <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
     <title>Practice Questions</title>
+
     <style>
+      
+ header {
+    overflow: hidden;
+    height: 20vh;
+}
+
+.vid-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-col {
+    background-color: #0e2431;
+    opacity: 0.8;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.brand1 {
+    color: #3caea3;
+    padding-right: 0.5rem;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.nav-items {
+    color: white !important;
+    margin-left: 3rem;
+    padding-right: 2rem !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+    width: 75% !important;
+}
+
+.nav-link {
+    padding: 0.2rem 1rem;
+}
+
+.nav-items:hover {
+    color: #3caea3 !important;
+}
+
+
         body {
             background-color: #3caea3;
             margin: 10px 10px 10px 10px;
@@ -16,10 +101,80 @@
 
         }
     </style>
+    <script>
+        window.onload = function () {
+            var preloader = document.getElementById("preloader")
+            preloader.style.display = 'none';
+        }
+    </script>
+
 
 </head>
 
 <body>
+
+
+     <!-- header starts -->
+     <header class="fix">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+                    height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+                            <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+                        </div>
+                    </ul>
+
+            </div>
+        </nav>
+       <!--
+        <div class="banner-text text-center">
+            <p class="main-head">We are <span>Programmers</span></p>
+            <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
+                    Structure and Algorithms</span></p>
+        </div>
+
+        <a class="smoothscroll" href="#about">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </a>
+        </div>
+        <a class="smoothscroll" href="#about">
+            <div class="scroll-down"></div>
+        </a>
+    -->
+    </header>
+
+    <!-- header ends -->
 
         <iframe title="PracticeDSA" style="border:none" width="1400px" height="3000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDw1bOBFu39nOauhGWbF1vMF7ZkfLlyC8HUl1BxcB1sZwWrHhAYLk0iYUu1a-_Ow/pubhtml?widget=true&amp;headers=false"></iframe>
 

@@ -2,6 +2,9 @@
 @import url(https://weloveiconfonts.com/api/?family=entypo);
 
 /******************* PRELOADER ******************/
+html{
+    scroll-behavior: smooth;
+}
 #preloader{
     width: 100%;
     height: 100vh;
@@ -426,7 +429,7 @@ hr {
 /* for scroll to top button */
 #back-to-top-btn {
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     right: 3%;
     font-size: 2rem;
     width: 50px;
@@ -436,8 +439,14 @@ hr {
     cursor: pointer;
     border: 2px solid #333;
     border-radius: 5px;
-    transition:all 0.5s ease-in-out;
+    transition:all 0.4s ease-in;
     align-items: center;
+    opacity: 0;
+}
+#back-to-top-btn.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 #back-to-top-btn:hover,

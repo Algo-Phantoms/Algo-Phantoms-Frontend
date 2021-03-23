@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url("https://weloveiconfonts.com/api/?family=entypo");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  color:white;
+  background-image: url("./images/book_background.jpg");
+  background-size: cover;
+}
+
+.list--wrapper {
+  position: relative;
+  color:white;
+  margin: auto 2em;
+  max-width: 1140px;
+}
+
+.list--title {
+  margin: 50px 0 25px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid;
+}
+
+.list {
+  counter-reset: list;
+  list-style: none;
+  padding: 0;
+}
+
+.list--item {
+  counter-increment: list;
+  position: relative;
+  padding-left: 1.4em;
+  font-size: 28px;
+}
+
+.list--item::before {
+  content: counter(list);
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  font-size: 0.4em;
+  font-weight: 700;
+  line-height: 2em;
+  text-align: center;
+  color: #141414;
+  background-color: #fff;
+}
+
+.list--link {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.list--link__header {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 6px;
+  font-size: inherit;
+}
+
+.list--link__description {
+  max-width: 650px;
+  margin: 0 0 25px;
+  padding: 10px 13px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  font-family:monospace;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #141414;
+}
+
+@media (min-width: 575px) {
+  .list--item {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 767px) {
+  .list--item {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 991px) {
+  .list--item {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .list--link__header {
+    padding-right: 20px;
+  }
+
+  .list--link__header span {
+    position: relative;
+    padding: 0 10px 0 0;
+  }
+  .list--link__header span::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: calc(800px - 100%);
+    border-bottom: 1px solid;
+  }
+  .list--link:hover .list--link__header span::after,
+  .list--link:focus .list--link__header span::after{
+    display: block;
+  }
+  .list--link__description {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    transform: translate3d(0, -50%, 0);
+    max-width: calc(100% - 500px);
+    padding: 10px 13px;
+    border: 1px solid;
+    z-index: 2;
+  }
+  .list--link:hover .list--link__description,
+  .list--link:focus .list--link__description {
+    display: block;
+  }
+}
+#footer {
+  margin-top:20vh;
+  padding: 100px 0px 40px 0px;
+  background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
+  /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+}
+.email {
+  left: 60%;
+}
+
+.fas-email {
+  font-size: 300%;
+}
+
+.e-add {
+  font-size: 200%;
+}
+.subscribe-box {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.subscribe-button {
+  background: #3caea3 !important;
+  cursor: pointer;
+  width: auto;
+}
+
+
+.subscribe-button:hover{
+  background-color: transparent !important;
+  transition: 0.4s;
+}
+
+
+
+.subscribe-button:hover{ 
+  background-color:#439b98 !important;
+  cursor: pointer;
+}
+
+
+.copyright-text {
+  font-size: 14px;
+  letter-spacing: 0.6px !important;
+}
+
+.socials {
+  margin-top: 35px;
+}
+
+.socials i {
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff90;
+}
+
+
+@media (min-width: 1199px) {
+  .list--item {
+    font-size: 36px;
+  }
+}

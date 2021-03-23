@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+    <title>404 NOT FOUND</title>
+
+ 
+   
+     <style>
+          *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:darkslateblue;
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.wrapper{
+    text-align: center
+}
+.wrapper h1{
+    text-align: left;
+    margin:40px 0;
+    font-size:3.5rem;
+    color: white;
+}
+.wrapper img{
+    width:550px;
+    max-width:60%;
+    float: right;
+    align-items: flex-end;
+}
+    
+    
+
+
+.wrapper h4{
+    margin:40px 0 20px;
+    font-size:1.5rem;
+    height: 4rem;
+    color: white;
+}
+.main-btn{
+    padding:15px;
+    background-color: #145fcf;
+    color:#fff;
+    border:none;
+    font-weight:700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+  
+    
+}
+.glitch_word_box {
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    -webkit-animation: disappear 1s linear;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -moz-animation: disappear 1s linear;
+    -moz-animation-iteration-count: infinite, infinite;
+    -o-animation: disappear 1s linear;
+    -o-animation-iteration-count: infinite, infinite;
+  }
+  
+  .glitch_word_box .glitch_word0 {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .glitch_word_box .glitch_word1 {
+    color: red;
+    font-weight: bolder;
+    left: -2px;
+    position: absolute;
+    top: -2px;
+    width: 100%;
+    z-index: -1;
+    -webkit-animation: animate_glitch_1 .2s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: animate_glitch_1 .2s linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: animate_glitch_1 .2s linear;
+    -o-animation-iteration-count: infinite;
+  }
+  
+  .glitch_word_box .glitch_word2 {
+    color: blue;
+    font-weight: bolder;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    z-index: -1;
+    -webkit-animation: animate_glitch_2 .3s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: animate_glitch_2 .3s linear;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: animate_glitch_2 .3s linear;
+    -o-animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-webkit-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+  @-moz-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-moz-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+  @-o-keyframes disappear {
+    0% {
+      opacity: 0;
+    }
+    2% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes animate_glitch_1 {
+    0% {
+      top: 1px;
+      left: 1px;
+    }
+    25% {
+      top: 3px;
+      left: 2px;
+    }
+    50% {
+      top: -1px;
+      left: -4px;
+    }
+    75% {
+      top: 2px;
+      left: 5px;
+    }
+    100% {
+      top: 1px;
+      left: -2px;
+    }
+  }
+  
+  @-o-keyframes animate_glitch_2 {
+    0% {
+      top: -1px;
+      left: -1px;
+    }
+    25% {
+      top: -3px;
+      left: -2px;
+    }
+    50% {
+      top: 1px;
+      left: 4px;
+    }
+    100% {
+      top: -1px;
+      left: -1px;
+    }
+  }
+  
+ 
+  @media (max-width: 600px) {
+    body {
+      margin: 0 5vw;
+    }
+  }
+  
+  #Polygon-1,
+  #Polygon-2,
+  #Polygon-3,
+  #Polygon-4,
+  #Polygon-4,
+  #Polygon-5 {
+    animation: float 2s infinite ease-in-out alternate;
+  }
+  
+  #Polygon-2 {
+    animation-delay: .2s;
+  }
+  
+  #Polygon-3 {
+    animation-delay: .4s;
+  }
+  
+  #Polygon-4 {
+    animation-delay: .6s;
+  }
+  
+  #Polygon-5 {
+    animation-delay: .8s;
+  }
+  
+  
+
+@media (max-width:767px){
+    .wrapper h2{ 
+        font-size:2rem;
+    }
+    .wrapper h4{ 
+        font-size:1rem;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
+            <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        </g>
+    </svg>
+    <div class="wrapper">
+        <div class="glitch_word_box">
+            <div class="line"></div>
+            <h1 id="word" class="glitch_word0">Oops!Page not found</h1>
+            <h1 id="word1" class="glitch_word1">Oops!Page not found</h1>
+            <h1 id="word2" class="glitch_word2">Oops!Page not found</h1>
+          </div>
+    
+         <div>
+            
+          <h4>We can't find the page you're looking for.</h4>
+          <img src="images/404_img.png" alt="logo">
+          
+          <a style="text-decoration: none;" class="main-btn" href="index.html" role="button">GO BACK HOME</a>
+         
+          
+          
+    </div>
+</body>
+</html>

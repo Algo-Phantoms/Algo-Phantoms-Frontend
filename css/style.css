@@ -454,14 +454,17 @@ hr {
     /* border: 2px solid red; */
     position: relative;
     left: 5%;
+    transform: scale(1);
   
 }
 .container-img-box .box-p{
     width: 100%;
     margin-top: 5rem;
+   
 }
 .container-img-box:hover > .box-img img{
-    transform: rotate(120deg);
+    cursor: pointer;
+    transform: scale(0);
    
 }
 
@@ -583,8 +586,7 @@ hr {
    }
   .container-features, .container-useful-links{  
   
-   text-align: start;
-       
+      text-align: start;  
        position:relative;
        top: 50%;
      margin-left: 2rem;

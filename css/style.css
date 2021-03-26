@@ -88,6 +88,65 @@ header {
     font-weight: bold;
 }
 
+/* Animated search-bar */
+
+nav .searchbar {
+    position: absolute;/*change*/
+    margin-left: 19rem;
+}
+
+/* Styling the search box where the 
+    input would be given */
+nav .searchbar input[type="text"] {
+    outline: none;
+    border:0;
+    padding: 0;
+    width: 0px;
+    height: 30px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Styling the search bar icon */
+nav .searchbar .icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -5px;
+    width: 35px;
+    height: 100%;
+    background: none;
+    border-radius: 3px; 
+    color: #fff;
+    transition: all 0.5s 0.3s ease;
+}
+  
+nav .searchbar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+  
+nav .searchbar .icon.active {
+    background:  #062333;
+    transition: all 0.3s ease;
+}
+  
+nav .searchbar input[type="text"].active {
+    width: 200px;
+    padding: 0 40px;
+    transition: all 0.5s 0.2s ease;
+}
+  
+
+
+
+
+
+
 .brand1 {
     color: #3caea3;
     padding-right: 0.5rem;
@@ -99,8 +158,8 @@ header {
 
 .nav-items {
     color: white !important;
-    margin-left: 3rem;
-    padding-right: 2rem !important;
+    margin-left: 2rem;
+    padding-right: 1rem !important;
 }
 
 .navbar-nav .nav-link {

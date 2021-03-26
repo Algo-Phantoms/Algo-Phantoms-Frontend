@@ -2,28 +2,85 @@
 <html lang="en">
 
 <head>
-    <title>Complete RoadMap to DSA</title>
+    <title>DSA RoadMap | Algo-Phantoms</title>
+    <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+
     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
         body {
-            background-color: #3caea3;
+            background-color: black;
             margin: 10px 10px 10px 10px;
         }
 
         .button1 {
-            color: black;
-            font-size: medium;
-            border-radius: 8px;
+            margin-left: 0px ;
+            border: none;
+            padding: 15px;
+            margin: 5px;
+            font-family: "Poppins", sans-serif ;
+            font-size: 1rem;
+            background-color: #3caea3;
+            font-weight: 700!important;
+            color: #21455a;
+            transition: all;
+            transition-duration: 0.3s;
 
         }
+        .button1:hover {
+
+            background-color: #21455a;
+            color: #3caea3;
+            
+        }
+
+
+        .frame {
+            box-sizing: border-box;
+            min-width: 100%;
+            padding: 5px;
+        }
+
+
+        ::-webkit-scrollbar{
+            width: 15px;                                                             
+        }
+        ::-webkit-scrollbar-track{
+            background: #212529;                                                   
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(300deg,#17a2b8, #20c997);                
+        }
+        .heading{
+            color: teal;
+            font-family: "Poppins", sans-serif ;
+            display: flex;
+            align-items: center;
+            font-size: 2.3rem;
+            height: 60px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .logo{
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+        
     </style>
 
 </head>
 
 <body>
 
-    <iframe title="DSA" style="border:none" width="1400" height="635"
+    <div class="heading">
+        <a class="logo" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+            height="50px"></a>
+        <span>RoadMap to DSA</span>
+    </div>
+    <div class="frame">
+    <iframe title="DSA" style="border:none" width="1325" height="590"
         src="https://whimsical.com/embed/L7xNuV2ZRSsLd6vrVtyvrQ"></iframe>
-
+    </div>
     <button class="button1" onclick="goBack()">Go Back</button>
 
     <script>

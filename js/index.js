@@ -14,12 +14,3 @@ backToTopButton.addEventListener("click", () => {
     window.scrollTo(0,0);
 });
 
-
-let emailInput = document.getElementById('emailInput');
-
-
-let contact  = document.getElementById('contact');
-contact.addEventListener('click' , () => {
-    alert("Thanks for  Submitting ! We will get to you soon");
-});
-

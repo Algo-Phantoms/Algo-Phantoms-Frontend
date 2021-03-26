@@ -33,6 +33,17 @@
             preloader.style.display = 'none';
         }
     </script>
+    <!--Linking the script for search bar animation-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+    <script>
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".icon").toggleClass("active");
+                $("input[type='text']").toggleClass("active");
+            });
+        });
+    </script>
 
 
 </head>
@@ -89,6 +100,16 @@
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
 
                         </div>
+                        <!--Placing the search bar as a list item-->
+                        <li class="searchbar">
+                        <div class="searchbar">
+            <input type="text" placeholder="search">
+            <div class="icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+
                     </ul>
 
             </div>

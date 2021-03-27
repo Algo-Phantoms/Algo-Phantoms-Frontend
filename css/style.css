@@ -138,9 +138,11 @@ header {
 }
 
 .nav-items {
-  color: white !important;
-  margin-left: 3rem;
-  padding-right: 2rem !important;
+
+    color: white !important;
+    margin-left: 2.65rem;
+    padding-right: 2rem !important;
+
 }
 
 .navbar-nav .nav-link {
@@ -303,7 +305,7 @@ header {
     background: #212529;                                                   /* adding background to the scrollbar */
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(300deg,#17a2b8, #20c997);                /* adding linear color to the scroll-thumb */
+    background: linear-gradient(300deg,#078ea3, #07b4b4);                /* adding linear color to the scroll-thumb */
 }
 
 /******************* ABOUT ***********************/

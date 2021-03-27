@@ -451,7 +451,6 @@ hr {
 .container-img-box{
 
     text-align: center;
-    /* border: 2px solid red; */
     position: relative;
     left: 5%;
     transform: scale(1);
@@ -462,16 +461,10 @@ hr {
     margin-top: 5rem;
    
 }
-.container-img-box:hover > .box-img img{
-    cursor: pointer;
-    transform: scale(0);
-   
-}
-
 
 .row a:hover{
     text-decoration: none;
-    color: red;
+   color: #3caea3;
     font-size: 20px;
     font-weight: bold;
 }

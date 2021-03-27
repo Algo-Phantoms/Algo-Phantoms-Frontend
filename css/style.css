@@ -123,7 +123,6 @@ header {
 .banner-text {
     position: absolute;
     top: 35%;
-    width: 100%;
     z-index: 1;
     margin-left:6rem;
     margin-right:6rem;

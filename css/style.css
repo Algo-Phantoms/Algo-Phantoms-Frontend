@@ -258,6 +258,73 @@ hr {
 }
 
 
+/******************* FEATURES ***********************/
+
+.features-icon {
+    font-size: 36px;
+    margin: 12px 0;
+    background-image: linear-gradient(to top, #3caea3 0%, #330867 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features p {
+    font-size: 15px;
+    color: #05272e;
+}
+
+.features h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.features h3 {
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid rgba(5, 39, 46, 0.3);
+}
+
+.features card-text {
+    padding: 10px 15px;
+}
+
+.features a.btn {
+    background: #3caea3 !important;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    margin: 6px 0;
+
+}
+
+.features a.btn:hover {
+    background-color: #086762 !important;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.features .card-body {
+    padding: 10px 30px !important;
+}
+
+.features .card {
+    padding: 12px;
+    border-bottom: 4px solid #3caea3;   
+}
+
+.features .card:hover {
+    border-bottom: 4px solid #086762;
+}
+
+.features hr {
+    border: 0.5px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+
 /************* TEAM **************/
 
 .team {

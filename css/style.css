@@ -415,7 +415,15 @@ hr {
     background-color:#439b98 !important;
     cursor: pointer;
 }
-
+#follow{
+    color:#fff;
+    background-color: #3caea3;
+}
+#follow:hover{
+    color:#17a2b8;
+    background-color: white;
+    border-radius: 50%;
+}
 
 .copyright-text {
     font-size: 14px;

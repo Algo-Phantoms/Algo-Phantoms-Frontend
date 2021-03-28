@@ -1,0 +1,170 @@
+body {
+        background-color: rgba(67, 136, 113, 0.932);
+        color: black;
+        font-size: 18px;
+}
+
+.wrapper {
+        text-align: center;
+}
+
+.button {
+        top: 50%;
+}
+
+textarea {
+        color: rgb(0, 0, 0);
+        background-color: white;
+}
+
+
+.bgclr {
+        background-color: black;
+}
+
+
+.dark-mode {
+        background-color: rgb(0, 0, 0);
+        color: rgb(0, 255, 55);
+}
+
+h2 {
+        font-size: 24px;
+}
+
+@media (max-width:600px) {
+        h2.responsive {
+                font-size: 18px;
+        }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+        margin: 25;
+        align-content: center;
+}
+
+.des {
+        position: relative;
+        padding: 25px 30px;
+        margin: 40px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        overflow: hidden;
+
+}
+
+a:hover {
+        background: #03e9f4;
+        color: #050801;
+        box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+a:nth-child(1) {
+        filter: hue-rotate(270deg);
+}
+
+a:nth-child(2) {
+        filter: hue-rotate(110deg);
+}
+
+a span {
+        position: absolute;
+
+}
+
+
+
+body {
+        font-family: brandon-grotesque, sans-serif;
+        font-style: normal;
+}
+
+.scale-in-bl {
+        -webkit-animation: scale-in-bl 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: scale-in-bl 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-bl {
+        0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+
+        100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+}
+
+@keyframes scale-in-bl {
+        0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+
+        100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+}
+
+.scale-out-bl {
+        -webkit-animation: scale-out-bl 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: scale-out-bl 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale-out-bl {
+        0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+
+        100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+}
+
+@keyframes scale-out-bl {
+        0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+
+        100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+                opacity: 1;
+        }
+}

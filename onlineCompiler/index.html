@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FB Meta Tags  -->
+    <meta property="og:title" content="Online Code Compiler Free">
+    <meta property="og:description"
+        content="Offering best and fastest compilation with TheProgrammingX API based Compiler ">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="http://theprogrammingx.uk/index.html">
+    <!-- Twitter Meta Tags  -->
+    <meta name="twitter:title" content="Online Code Compiler Free">
+    <meta name="twitter:description"
+        content=" Offering best and fastest compilation with TheProgrammingX API based Compiler.">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Frustrated with local compilers issues? then just use our online compiler, which compiles your code fast and error freindly. Support all compiler with 60+ languages for free!." />
+    <!--JS, css imported -->
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Online Compiler</title>
+</head>
+
+<body style="font-family: monospace; margin: 8px;">
+    <h1 class="responsive" align="center">Online Compiler</h1>
+
+    <div class="wrapper">
+        <button onclick="darkMode(); toggleBtn()" id="myDIV" class="button">Darkmode</button>
+    </div>
+    <h4 align="center">Write Code</h4>
+
+    <div class="wrapper">
+        <textarea id="source" align="center" style="width: calc(50% - 8px); height: 50%; resize: vertical">
+#include <iostream>
+#include <string>
+
+int main()
+{
+    std::string name;
+    std::cin >> name;
+
+    std::cout << "HeY Peeps! " << name << "!\n";
+    std::cerr << "Welcome to Algo Phantom " << name << ".\n";
+    std::cout << "Let's Practise" << " some questions! "<< name <<".\n";
+
+    return 0;
+}
+        </textarea>
+    </div>
+
+    <div class="wrapper">
+        <h4 align="center">Language</h4>
+        <select id="lang">
+            <option>Bash</option>
+            <option>C#</option>
+            <option selected>C++</option>
+            <option>C</option>
+            <option>Java</option>
+            <option>Python</option>
+            <option>Ruby</option>
+        </select>
+    </div>
+    <div class="wrapper">
+        <h4 align="center">Input</h4>
+        <textarea align="center" id="input" style="width: calc(50% - 8px); height: 10%;">CodingGeek</textarea>
+        </br></br>
+    </div>
+
+    <div class="wrapper">
+        <button id="run" onclick="run()">
+            <a class="des" style="text-align:center">
+                Run</a></button>
+    </div>
+    <br>
+    <h4 align="center">Output</h4>
+    <div class="wrapper">
+        <textarea readonly id="output" style="width: 50%; height: 60%;"></textarea>
+    </div>
+
+
+
+
+</body>
+
+
+</html>

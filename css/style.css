@@ -415,15 +415,23 @@ hr {
     background-color:#439b98 !important;
     cursor: pointer;
 }
-#follow{
+.socialicon{
     color:#fff;
+    cursor: pointer;
     background-color: #3caea3;
+    
 }
-#follow:hover{
-    color:#17a2b8;
+.socialicon:hover{
+    text-decoration: none;
+    color: #3caea3;
+   
     background-color: white;
     border-radius: 50%;
 }
+.socialicons a:hover{
+text-decoration: none;
+}
+
 
 .copyright-text {
     font-size: 14px;

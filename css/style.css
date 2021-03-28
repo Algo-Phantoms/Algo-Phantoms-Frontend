@@ -464,13 +464,12 @@ hr {
 
 .row a:hover{
     text-decoration: none;
-   color: #3caea3;
+     color: #3caea3;
     font-size: 20px;
     font-weight: bold;
 }
 .container-useful-links{
 
-    /* border: 2px solid white; */
     text-align: center;
     line-height: 40px;
     

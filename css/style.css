@@ -503,7 +503,6 @@ hr {
     .header {
         height: 70vh;
     }
-    
     .navbar-light .navbar-brand {
         font-size: 20px;
     }
@@ -515,11 +514,8 @@ hr {
     }
     .about p {
         font-size: 20px;
-    }
-    
+    }   
 }
-
-
 /**** team responsive ****/
 
 @media (max-width: 1200px) {

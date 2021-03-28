@@ -119,6 +119,13 @@ header {
 .nav-items:hover {
     color: #3caea3 !important;
 }
+.dropdown-menu{
+  background-color:#000;
+}
+.dropdown-item{
+    color:#3caea3;
+
+}
 
 .banner-text {
     position: absolute;
@@ -467,9 +474,15 @@ hr {
 /*
 ...........responsive.............*/
 
-@media (min-width: 575px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width: 1200px) {
     .about {
         height: 1100px;
+    }
+    .dropdown-menu{
+        width:40vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
     }
 }
 
@@ -478,12 +491,19 @@ hr {
         height: 900px;
         padding: 0 20px;
     }
+    .dropdown-menu{
+        width:50vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
 }
 
 @media (max-width: 479px) {
     .header {
         height: 70vh;
     }
+    
     .navbar-light .navbar-brand {
         font-size: 20px;
     }
@@ -496,6 +516,7 @@ hr {
     .about p {
         font-size: 20px;
     }
+    
 }
 
 

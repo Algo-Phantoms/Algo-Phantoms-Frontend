@@ -13,5 +13,3 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
     window.scrollTo(0,0);
 });
-
-con

@@ -2,9 +2,6 @@
 @import url(https://weloveiconfonts.com/api/?family=entypo);
 
 /******************* PRELOADER ******************/
-html{
-    scroll-behavior: smooth;
-}
 #preloader{
     width: 100%;
     height: 100vh;

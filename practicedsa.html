@@ -4,24 +4,105 @@
 <head>
     <title>Practice Questions</title>
     <style>
+
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+        @import url(https://weloveiconfonts.com/api/?family=entypo);
+                
+        ::-webkit-scrollbar{
+            width: 15px;                                                             /* adjusting the width of the scrollbar */
+        }
+        ::-webkit-scrollbar-track{
+            background: #212529;                                                   /* adding background to the scrollbar */
+        }
+        ::-webkit-scrollbar-thumb{
+            background: linear-gradient(300deg,#078ea3, #07b4b4);                /* adding linear color to the scroll-thumb */
+        }
+
+
+
+
         body {
-            background-color: #3caea3;
+            font-family : poppins ;
+            margin-top: 0;
+            padding-left: 5px;
+            background-color:black;
             margin: 10px 10px 10px 10px;
         }
 
         .button1 {
-            color: black;
-            font-size: medium;
-            border-radius: 8px;
-
+            color:teal;
+            background-color: rgb(117, 243, 243);
+            font-size: 1.2rem;
+            border: none;
+            padding: 12px 15px;
+            transition: all;
+            transition-duration: 0.3s;
+            margin-top: 12px;
         }
+        .button1:hover {
+            color:rgb(117, 243, 243);
+            background-color: teal;
+        }
+
+
+        .heading{
+            display: flex;
+            align-items: center;
+            color: teal;
+        }
+
+        .heading a{
+            margin-right: 12px;
+        }
+
+
+        .intro h2{
+            font-size: 1.5rem;
+            color: teal;
+        }
+        .intro p{
+            font-size: 1.3rem;
+            color: rgb(24, 202, 202);
+        }
+
+        .intro p a{
+            color: rgb(24, 202, 202);
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
 
 <body>
 
-        <iframe title="PracticeDSA" style="border:none" width="1400px" height="3000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDw1bOBFu39nOauhGWbF1vMF7ZkfLlyC8HUl1BxcB1sZwWrHhAYLk0iYUu1a-_Ow/pubhtml?widget=true&amp;headers=false"></iframe>
+        <div class="heading">
+            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50px" height="50px"></a>
+            <h1>DSA Practice Questions</h1>
+        </div>
+
+
+
+        <div class="intro">
+            <h2>1. Love Babbar's Sheet : </h2>
+            <p>This Sheet is created by <a href="#">Love Babbar</a>.</p>
+        </div>
+
+        <iframe title="PracticeDSA" style="border:none ; border-radius: 15px" width="1325px" height="600px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDw1bOBFu39nOauhGWbF1vMF7ZkfLlyC8HUl1BxcB1sZwWrHhAYLk0iYUu1a-_Ow/pubhtml?widget=true&amp;headers=false"></iframe>
+
+        
+
+        <div class="intro">
+            <h2>2. Striver's Sheet : </h2>
+            <p>This Sheet is created by <a href="#">Raj Vikramditya</a>. aka Striver.</p>
+        </div>
+
+        <iframe title="PracticeDSA" style="border:none ; border-radius: 15px" width="1325px" height="600px" src="https://bit.ly/takeUforward_SDE"></iframe>
+
+
+
+        <button class="button1" onclick="goBack()">Go Back</button>
 
     <script>
         function goBack() {

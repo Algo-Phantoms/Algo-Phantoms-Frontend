@@ -375,8 +375,9 @@ hr {
 /*********** footer ***********/
 
 .form-control {
-    margin-bottom: 8px;
-    
+    margin-bottom: 23px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .form-control:hover{
@@ -418,6 +419,8 @@ hr {
     width: auto;
     position: relative;
     height: 45px;
+    margin-left:40px ;
+    margin-right: 40px;
     
 }
 

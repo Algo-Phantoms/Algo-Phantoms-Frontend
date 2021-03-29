@@ -388,31 +388,26 @@ hr {
     transform: scale(1.1);
     box-shadow: 0 0 15px #3caea3;
   }
-  
-  .socials a:hover {
+
+.socials a:hover {
     color: #3caea3;
     box-shadow: 0 0 5px #3caea3;
     text-shadow: 0 0 5px #3caea3;
-  }
-
+}
 
 .box p {
-    color: white;
+    color: #fff;
     font-size: 14px;
-
 }
 
 .socials {
     margin-top: 35px;
 }
 
-
-
 .socials a {
     text-decoration: none;
     color: #ffffff90;
 }
-
 
 /*********** footer ***********/
 

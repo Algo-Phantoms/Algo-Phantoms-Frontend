@@ -343,28 +343,70 @@ hr {
 } */
 
 .box h2 {
-    color: #ffffff60;
+    color: #3caea3;
     text-transform: uppercase;
-    margin: 15px 0;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }
 
 .custom-size {
     font-size: 30px;
 }
 
+.socials a {
+    margin: 0 5px;
+    font-size: 25px;
+    position: relative; 
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    color: #666;
+    transition: .5s;
+  }
+  
+  .socials a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3caea3;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .socials a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #3caea3;
+  }
+  
+  .socials a:hover {
+    color: #3caea3;
+    box-shadow: 0 0 5px #3caea3;
+    text-shadow: 0 0 5px #3caea3;
+  }
+
+
 .box p {
-    color: #ffffff90;
+    color: white;
     font-size: 14px;
+
 }
 
 .socials {
     margin-top: 35px;
 }
 
-.socials i {
-    margin: 0 10px;
-    font-size: 25px;
-}
+
 
 .socials a {
     text-decoration: none;

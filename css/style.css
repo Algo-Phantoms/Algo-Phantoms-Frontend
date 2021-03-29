@@ -163,6 +163,13 @@ header {
 .nav-items:hover {
   color: #3caea3 !important;
 }
+.dropdown-menu{
+  background-color:#000;
+}
+.dropdown-item{
+    color:#3caea3;
+
+}
 
 .banner-text {
 
@@ -461,9 +468,12 @@ hr {
 }
 
 #footer {
-  padding: 100px 0px 40px 0px;
-  background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
-  /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+
+
+    padding: 50px 0px 40px 0px;
+    background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
+    /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+
 }
 
 .subscribe-box {
@@ -514,19 +524,27 @@ hr {
 
 
 #back-to-top-btn {
-  position: fixed;
-  bottom: 5%;
-  right: 3%;
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  color: #333;
-  cursor: pointer;
-  border: 2px solid #333;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-  align-items: center;
+
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition:all 0.4s ease-in;
+    align-items: center;
+    opacity: 0;
+}
+#back-to-top-btn.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+
 }
 
 #back-to-top-btn:hover,
@@ -555,6 +573,7 @@ hr {
 /*
 ...........responsive.............*/
 
+
 @media (min-width: 575px) and (max-width: 767px) {
   .about {
     height: 1100px;
@@ -576,6 +595,28 @@ hr {
   #social-sidebar {
     display: none;
   }
+
+@media (min-width: 575px) and (max-width: 1200px) {
+    .about {
+        height: 1100px;
+    }
+    .dropdown-menu{
+        width:40vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
+}
+
+@media (min-width: 460px) and (max-width: 574px) {
+    
+    .dropdown-menu{
+        width:50vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
+
 }
 
 @media (max-width: 479px) {
@@ -622,10 +663,12 @@ hr {
    0% {
       transform: translateY(0px);
     }
+
     100% {
       transform: translateY(5px);
     }
   }
+  
   #head {
     animation: move-head 1s cubic-bezier(.41,.16,.24,.71) infinite alternate;
     transform-origin: center;
@@ -633,6 +676,11 @@ hr {
   }
   
 
+
+    .about p {
+        font-size: 20px;
+    }   
+}
 
 /**** team responsive ****/
 

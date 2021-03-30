@@ -83,6 +83,10 @@ header {
     opacity: 0.8;
 }
 
+.top{
+    background: transparent;
+}
+
 .navbar-light .navbar-brand {
     color: white;
     font-weight: bold;
@@ -109,22 +113,38 @@ header {
 
 .navbar-nav {
     text-align: center;
-    width: 75% !important;
+    width: 75% !important; 
 }
 
 .nav-link {
     padding: 0.2rem 1rem;
 }
 
+.nav{
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+.nav-item:hover hr:nth-child(2){
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 30%;
+    /* margin-left:auto; */
+    margin-left: 2.65rem;
+    padding-right: 2rem !important;
+}
 .nav-items:hover {
     color: #3caea3 !important;
 }
+/* .dropdown-toggle{
+    display: block;
+} */
 .dropdown-menu{
   background-color:#000;
 }
 .dropdown-item{
     color:#3caea3;
-
 }
 
 .banner-text {
@@ -490,6 +510,12 @@ hr {
     .dropdown-item{
         font-size:1rem;
     }
+    .nav{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    }
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -502,6 +528,12 @@ hr {
     }
     .dropdown-item{
         font-size:1rem;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
     }
 }
 
@@ -521,6 +553,12 @@ hr {
     .about p {
         font-size: 20px;
     }   
+    .nav{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    }
 }
 /**** team responsive ****/
 

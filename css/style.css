@@ -415,22 +415,6 @@ hr {
     background-color: transparent !important;
     transition: 0.4s;
 }
-.socialicon{
-    color:#fff;
-    cursor: pointer;
-    background-color: #3caea3;
-
-}
-.socialicon:hover{
-    text-decoration: none;
-    color: #3caea3;
-
-    background-color: white;
-    border-radius: 50%;
-}
-.socialicons a:hover{
-text-decoration: none;
-}
 
 
 

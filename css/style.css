@@ -265,7 +265,7 @@ hr {
 }
 
 /******************Section-Sharpen your skills*****************/
-.section table{
+.skills-section table{
   border-collapse: collapse;
   border-spacing: 0;
   width: 90%;
@@ -273,45 +273,33 @@ hr {
   align: centre;
 }
 
-center {
-  margin-left: auto; 
-  margin-right: auto;
-}
-
-
-th:hover {
+.skills-section th:hover {
 background-color: #FFF;
 }
 
-th, td {
+.skills-section th, td {
   text-align: left;
   padding: 30px;
   font-weight: bold;
   font-size:20px;
   text-shadow: 2px 2px #0000;
 }
-a:Link{
-   color:#000000;
 
-}
-a:visited {
-  color:#000000;
-}
-a:Hover{
-   color:#000000;
+.skills-section a {
+    color: #05272e;
+  }
+
+.skills-section tr:nth-child(odd) {
+  background-color: #49b1ad;
 }
 
-tr:nth-child(odd) {
-  background-color: #3caea3;
-}
-
-hr {
-    border: 0.5px solid #3caea3;
+.skills-section hr {
+    border: 0.5px solid #49b1ad;
     display: block;
     width: 80px;
     margin: auto;
 }
- h1 {
+.skills-section h1 {
     font-size: 50px;
     font-weight: bold;
     backdrop-filter: blur(20px);

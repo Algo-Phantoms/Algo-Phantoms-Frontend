@@ -381,6 +381,22 @@ hr {
 
 /*********** footer ***********/
 
+.form-control {
+    margin-bottom: 23px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-control:hover{
+    border-bottom: 5px solid #3caea3;
+    height: 50pxpx;
+    transition: ease 0.5s;
+}
+
+.py-4{
+    height: 150px;
+}
+
 .email {
     left: 60%;
 }
@@ -408,6 +424,11 @@ hr {
     background: #3caea3 !important;
     cursor: pointer;
     width: auto;
+    position: relative;
+    height: 45px;
+    margin-left:40px ;
+    margin-right: 40px;
+    
 }
 
 
@@ -421,6 +442,9 @@ hr {
 .subscribe-button:hover{ 
     background-color:#439b98 !important;
     cursor: pointer;
+    box-shadow: 15px 15px 15px 5px rgba(142, 216, 152, 0.15);
+    transform: translateY(-3px);
+    border-radius: 0%;
 }
 
 

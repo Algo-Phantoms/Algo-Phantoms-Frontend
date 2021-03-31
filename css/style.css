@@ -264,6 +264,63 @@ hr {
     margin-top: 50px;
 }
 
+/******************Section-Sharpen your skills*****************/
+.section table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  align: centre;
+}
+
+center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+th:hover {
+background-color: #FFF;
+}
+
+th, td {
+  text-align: left;
+  padding: 30px;
+  font-weight: bold;
+  font-size:20px;
+  text-shadow: 2px 2px #0000;
+}
+a:Link{
+   color:#000000;
+
+}
+a:visited {
+  color:#000000;
+}
+a:Hover{
+   color:#000000;
+}
+
+tr:nth-child(odd) {
+  background-color: #3caea3;
+}
+
+hr {
+    border: 0.5px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+ h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+p1{
+display: block;
+margin-bottom:10em;
+}
+
 
 /************* TEAM **************/
 

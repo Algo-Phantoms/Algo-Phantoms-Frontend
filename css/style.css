@@ -398,6 +398,23 @@ hr {
     background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+/*styling social icons*/
+.socialicon{
+    color:#fff;
+    cursor: pointer;
+    background-color: #3caea3;
+
+}
+.socialicon:hover{
+    text-decoration: none;
+    color: #3caea3;
+
+    background-color: white;
+    border-radius: 50%;
+}
+.socialicons a:hover{
+text-decoration: none;
+}
 
 .subscribe-box {
     background: rgba(0, 0, 0, 0.15);

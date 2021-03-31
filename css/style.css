@@ -316,12 +316,10 @@ hr {
     font-weight: bold;
     backdrop-filter: blur(20px);
 }
-p1{
-display: block;
-margin-bottom:10em;
-}
-
-
+.span{
+    display: block;
+    margin-bottom:10em;
+    }
 /************* TEAM **************/
 
 .team {

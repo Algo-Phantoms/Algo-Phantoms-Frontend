@@ -6,35 +6,30 @@
     padding : 0;
     font-family: Poppins;
 }
-body{ 
-    background:#000000; 
 
+body{ 
+    background:#47d0d4; 
 }
 
 .heading{
     display: flex;
     align-items: center;
-    padding: 15px 12px;
+    padding: 15px 12px 0px 12px;
     font-size: 2.5rem;
-
-
+    box-shadow: 0 8px 6px -6px rgb(106, 188, 202);
+    margin-bottom: 20px;
 }
-
-
-
 
 h1 { 
     text-align:center; 
     font-size: 26px; 
-    color: #42AEA3;
+    color: #015c53;
     margin-left: 12px;
 }
-
 
 .section{
     margin: auto;
     width : 70%;
-
 }
 
 .section p a{
@@ -43,18 +38,16 @@ h1 {
     text-align: center;
 }
 
-
 .section .links a{
     font-size:1.2rem;
-    
 }
+
 .pages , .features , .contact {
     display: flex;
     flex-direction:column;
     margin : 0 2.5rem 0 0;
     align-items: center;
 }
-
 
 .links{
     display: flex;
@@ -71,6 +64,7 @@ h1 {
     margin-left : 475px;
     border-radius: 5px 5px 0 0;
 }
+
 .links a::before{
     content: "";
     display: block;
@@ -82,6 +76,7 @@ h1 {
     margin-bottom: 10px;
     margin-top: 0%;
 }
+
 .section p::after{
     content: "";
     display: block;
@@ -90,7 +85,6 @@ h1 {
     height: 5px;
     margin:auto;
     margin-bottom: 0;
-
 }
 
 .main{
@@ -99,28 +93,33 @@ h1 {
 
 .links a{
     padding: 0;
-
 }
 
 .footer{
     margin-top: 90px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content:center;
-    color: white;
+    color: #015c53;
+    box-shadow: 0 -8px 6px -6px rgb(106, 188, 202);
 }
 
 .footer span {
     margin: 0 12px;
+    color: #015c53;
 }
 
 a{
-    color: #fff;
+    color: #015c53;
     font-weight: bolder;
     text-decoration: none;
+    transition: all;
+    transition-duration: .3s;
 }
+
 a:hover{
-    color: #42AEA3;
+    color: #2b2e2e;
 }
 
 .note{
@@ -133,6 +132,7 @@ a:hover{
         min-width:250px; 
     } 
 }
+
 @media only screen and (max-width:800px) { 
     div.section div { 
         width:50%; 
@@ -142,6 +142,7 @@ a:hover{
         column-count:2; 
     } 
 }
+
 @media only screen and (max-width:500px) { 
     div.section div { 
         width:100%; 

@@ -72,7 +72,22 @@ header {
     min-width: 100%;
     min-height: 100%;
 }
+.hr{
+        border: 1px solid #3caea3;
+        border-radius: 5px;
+        display: block;
+        width: 20%;
+        margin: auto;
+}
 
+.nav-item:hover hr:nth-child(2){
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 30%;
+    /* margin-left:auto;*/
+    margin-left: 2.65rem;
+    padding-right: 2rem !important; 
+}
 .navbar-nav a {
     font-size: 18px;
     font-weight: bold;
@@ -81,6 +96,10 @@ header {
 .nav-col {
     background-color: #0e2431;
     opacity: 0.8;
+}
+
+.top{
+    background: transparent;
 }
 
 .navbar-light .navbar-brand {
@@ -108,8 +127,8 @@ header {
 }
 
 .navbar-nav {
-    text-align: center;
-    width: 75% !important;
+    text-align: right;
+    
 }
 
 .nav-link {
@@ -133,6 +152,13 @@ header {
 
 .nav-items:hover {
     color: #3caea3 !important;
+}
+.dropdown-menu{
+  background-color:#000;
+}
+.dropdown-item{
+    color:#3caea3;
+
 }
 
 .banner-text {
@@ -248,7 +274,19 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-    padding: 150px 0px;
+  height: 650px;
+  padding: 6.8% 0% 7%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
 }
 
 .about h1 {
@@ -270,8 +308,51 @@ hr {
 
 .about-content {
     margin-top: 50px;
+    text-align: center;
 }
 
+/******about end ******** */
+
+/* ******Team ********** */
+.Team {
+  height: 750px;
+  text-align: center;
+  background-image: linear-gradient(to top, #012b2e, #053235, #0a383c, #103f44, #15464b, #17494e, #1a4d52, #1c5055, #1c5055, #1c5055, #1c5055, #1c5055);
+  color: #fff;
+}
+
+.Team h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.Team p {
+    font-size: 20px;
+}
+
+.slide-image {
+  width: 15%;
+  border-radius: 60%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding-top: 20px;
+}
+.carousel-item p{
+  padding:0% 12%;
+  word-spacing: 6px;
+}
+
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 90px;
+    margin: auto;
+}
+
+/* ******Team ends ****** */
 
 /************* TEAM **************/
 
@@ -404,7 +485,26 @@ hr {
 #footer {
     padding: 25px 0px 40px 0px;
      background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%); 
+    padding: 50px 0px 40px 0px;
+    background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+}
+/*styling social icons*/
+.socialicon{
+    color:#fff;
+    cursor: pointer;
+    background-color: #3caea3;
+
+}
+.socialicon:hover{
+    text-decoration: none;
+    color: #3caea3;
+
+    background-color: white;
+    border-radius: 50%;
+}
+.socialicons a:hover{
+text-decoration: none;
 }
 
 .list-group a{
@@ -490,7 +590,7 @@ hr {
 /* for scroll to top button */
 #back-to-top-btn {
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     right: 3%;
     font-size: 2rem;
     width: 50px;
@@ -500,8 +600,14 @@ hr {
     cursor: pointer;
     border: 2px solid #333;
     border-radius: 5px;
-    transition:all 0.5s ease-in-out;
+    transition:all 0.4s ease-in;
     align-items: center;
+    opacity: 0;
+}
+#back-to-top-btn.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 #back-to-top-btn:hover,
@@ -595,10 +701,26 @@ hr {
        } 
 
       
-      
+    }  
       
    
        
+@media (min-width: 575px) and (max-width: 1200px) {
+    .about {
+        height: 1100px;
+    }
+    .dropdown-menu{
+        width:40vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
+    .hr{
+       display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+       display: none;
+    } 
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -606,6 +728,18 @@ hr {
         height: 900px;
         padding: 0 20px;
     }
+    .dropdown-menu{
+        width:50vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 
 @media (max-width: 479px) {
@@ -623,10 +757,14 @@ hr {
     }
     .about p {
         font-size: 20px;
+    }   
+    .hr{
+        display: none;
     }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
-
-
 /**** team responsive ****/
 
 @media (max-width: 1200px) {
@@ -731,6 +869,7 @@ hr {
         padding-top: 15px;
     }
 }
+
 /******************* Social media sidebar******************/
 [class^="entypo-"]:before {
 	font-family: 'entypo', sans-serif;
@@ -810,3 +949,4 @@ hr {
 #social-sidebar a[class*="github"]:hover,
 #social-sidebar a[class*="github"] span,
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+

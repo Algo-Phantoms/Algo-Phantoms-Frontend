@@ -232,14 +232,11 @@ header {
 
 /******************* ABOUT ***********************/
 
-
 .about {
-  height: 800px;
+  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
-
 }
-
 
 h1 {
   text-align: center;
@@ -250,7 +247,6 @@ h1 {
     font-weight: bold;
     backdrop-filter: blur(20px);
 }
-
 
 .about h1 {
     font-size: 50px;
@@ -268,7 +264,6 @@ hr {
 
 .about p {
     font-size: 23px;
-
 }
 
 .about-content {
@@ -276,19 +271,48 @@ hr {
     text-align: center;
 }
 
+/******about end ******** */
 
+/* ******Team ********** */
+.Team {
+  height: 750px;
+  text-align: center;
+  background-image: linear-gradient(to top, #012b2e, #053235, #0a383c, #103f44, #15464b, #17494e, #1a4d52, #1c5055, #1c5055, #1c5055, #1c5055, #1c5055);
+  color: #fff;
+}
 
+.Team h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.Team p {
+    font-size: 20px;
+}
 
 .slide-image {
   width: 15%;
-  border-radius: 50%;
+  border-radius: 60%;
   margin: 20px;
 }
 
 .carousel-item {
-  padding: 5% 0% 15%;
+  padding-top: 20px;
+}
+.carousel-item p{
+  padding:0% 12%;
+  word-spacing: 6px;
 }
 
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 90px;
+    margin: auto;
+}
+
+/* ******Team ends ****** */
 
 /************* TEAM **************/
 

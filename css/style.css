@@ -72,7 +72,22 @@ header {
     min-width: 100%;
     min-height: 100%;
 }
+.hr{
+        border: 1px solid #3caea3;
+        border-radius: 5px;
+        display: block;
+        width: 20%;
+        margin: auto;
+}
 
+.nav-item:hover hr:nth-child(2){
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 30%;
+    /* margin-left:auto;*/
+    margin-left: 2.65rem;
+    padding-right: 2rem !important; 
+}
 .navbar-nav a {
     font-size: 18px;
     font-weight: bold;
@@ -81,6 +96,10 @@ header {
 .nav-col {
     background-color: #0e2431;
     opacity: 0.8;
+}
+
+.top{
+    background: transparent;
 }
 
 .navbar-light .navbar-brand {
@@ -507,6 +526,12 @@ text-decoration: none;
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+       display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+       display: none;
+    } 
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -520,6 +545,12 @@ text-decoration: none;
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 
 @media (max-width: 479px) {
@@ -538,6 +569,12 @@ text-decoration: none;
     .about p {
         font-size: 20px;
     }   
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 /**** team responsive ****/
 

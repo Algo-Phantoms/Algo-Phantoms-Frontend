@@ -39,7 +39,10 @@
             preloader.style.display = 'none';
         }
     </script>
+
+
 </head>
+
 <body>
     <!-- preloader starts  -->
     <div id="preloader">
@@ -53,7 +56,7 @@
     <!-- header starts -->
     <header class="fix">
         <img src="video/background.gif" class="vid-bg" alt="background-gif">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top" id="nav">
             <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
                     height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
             </a>
@@ -67,20 +70,23 @@
                     <li class="nav-item active">
                         <a class="nav-link font-weight-bold nav-items" href="#">Home <span
                                 class="sr-only">(current)</span></a>
+                                <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                        <hr class="hr">
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
+                            <hr class="hr">
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -92,12 +98,34 @@
                         </div>
                         <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                        <hr class="hr">
                     </li>
                     </ul>
 
             </div>
         </nav>
-
+        <script>
+        const navbar=document.getElementById("nav");
+        let scrolled=false;
+        window.onscroll=function(){
+            if(window.pageYOffset>100)
+            {
+                navbar.classList.remove("top");
+                if(!scrolled)
+                {
+                    navbar.style.transform="translateY(-70px)";
+                }
+                setTimeout(function(){
+                 navbar.style.transform = 'translateY(0)';
+                 scrolled = true;
+                },200);
+            }
+            else{
+                navbar.classList.add("top");
+                scrolled=false;
+            }
+        };
+        </script>
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
             <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
@@ -140,30 +168,27 @@
     </ul>
     <!--social media sidebae ends-->
 
-    <!-- about starts -->
-    <section id="about" class="about">
-        <div class="container">
-            <h1 class="text-center">About Us</h1>
-            <hr>
+   <!-- about starts -->
 
-            <p class="about-content">
-                “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe
-                        Quinn</b></i>
+  <section id="about" class="about">
+    <div class="container">
+      <h1 class="text-center">About Us</h1>
+      <hr>
 
-                <br> <br>
-            <p class="text-justify">
-                We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide
-                access to well written, well-explained programs and knowledge that improve people's lives. We want to
-                enable people to adapt and change code according
-                to their own ideas through an Open Access approach. We bring amazing people together to code algorithms
-                and share our work for the benefit of all.
-            </p>
+      <p class="about-content">
+        “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
 
-        </div>
-    </section>
-    <!-- about ends -->
+        <br> <br>
+      <p class="text-justify">
+        We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and
+        change code according
+        to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
+    </div>
+  </section>
 
-    <!--Section-Sharpen your skills starts-->
+  <!-- about ends -->
+
+   <!--Section-Sharpen your skills starts-->
 <section id="sharpen-skills" class="skills-section">
     <div class="container">
         <h1 class="text-center">Sharpen Your Skills</h1>
@@ -191,6 +216,142 @@
     <span class="span"></span>
 <!--Section-Sharpen your skills ends-->
 
+  <!-- ****Team start***** -->
+
+  <section id="Team" class="Team">
+    <div class="container-fluid">
+      <h1 class="text-center">Team</h1>
+      <hr>
+      <div id="about-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="slide-image" src="images/team/2.jpg" alt="Vatsal Profile Image">
+              <p>
+              <h2>VATSAL KESARWANI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a Android Developer and a Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/vatsal-kesarwani/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/plazzy99"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/3.jpeg" alt="Diya Profile Image">
+              <p>
+              <h2>DIYA JAISWAL</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I'm a Backend Developer and a Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/diyajaiswal11/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/diyajaiswal11"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/4.jpeg" alt="Manshi Profile Image">
+              <p>
+              <h2>MANSHI TODI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a Backend Developer and Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/manshi-todi-a017a2178/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/todi-2000"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/6.jpeg" alt="Dheeraj Profile Image">
+              <p>
+              <h2>DHEERAJ KOTWANI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am an Android Developer and a competitve programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/dheerajkotwani/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dheerajkotwani"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/7.jpg" alt="Ayush Profile Image">
+              <p>
+              <h2>AYUSH TIWARI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I have been doing competitive for a quite some time now and I am also a Backend Developer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/ayushtiwari57/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/servermonk"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/1.jpg" alt="Tarun Profile Image">
+              <p>
+              <h2>TARUN YADAV</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am into competitive programming for over 2 years and also DSA enthusiast. I am also a Android developer and currently interning with GeeksForGeeks.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/tarun-yadav-384320175/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tarun26091999"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/9.jpg" alt="Rudrakshi Profile Image">
+              <p>
+              <h2>RUDRAKSHI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a competitve programmer and an Open Source enthusiast. I am also a Web developer and love to work with people who are passionate about building solutions.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/rudrakshi-soni-403031195/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rudrakshi99"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/8.jpeg" alt="Nakul Profile Image">
+              <p>
+              <h2>NAKUL SHARMA</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am an Android Developer and a Competitive Programmer, who loves to add new angle to existing things.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/nakul-19/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nakul-19"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+<!-- ****Team end****** -->
+
+    
     <footer id="footer">
         <div class="container">
             <div class="row subscribe-box py-5">
@@ -239,19 +400,18 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 socialicons">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
-                    <a href="#" target="_blank"><i class="fa fa-github p-2 text-white" aria-hidden="true"
-                            style="background:#3caea3; border-radius: 50%;"></i>
+                    <a href="https://github.com/Algo-Phantoms" target="_blank"><i class="fa fa-github p-2 socialicon" aria-hidden="true"></i>
                     </a>
-                    <a href="#" target="_blank"><i class="fa fa-instagram p-2 text-white" aria-hidden="true"
-                            style="background:#3caea3; border-radius: 50%;"></i>
+                    <a href="#" target="_blank"><i class="fa fa-instagram p-2 socialicon" aria-hidden="true"
+                          ></i>
                     </a>
-                    <a href="#" target="_blank"><i class="fa fa-linkedin p-2 text-white" aria-hidden="true"
-                            style="background:#3caea3; border-radius: 50%;"></i>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin p-2 socialicon" aria-hidden="true"
+                            ></i>
                     </a>
-                    <a href="#" target="_blank"><i class="fa fa-twitter p-2 text-white" aria-hidden="true"
-                            style="background:#3caea3; border-radius: 50%;"></i>
+                    <a href="#" target="_blank"><i class="fa fa-twitter p-2 socialicon" aria-hidden="true"
+                            ></i>
                     </a>
                 </div>
             </div>

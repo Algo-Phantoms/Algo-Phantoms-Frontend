@@ -298,6 +298,54 @@ hr {
 
 /******about end ******** */
 
+
+/********Section-Sharpen your skills starts*********/
+.skills-section table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  align: centre;
+}
+
+.skills-section th:hover {
+background-color: #FFF;
+}
+
+.skills-section th, td {
+  text-align: left;
+  padding: 30px;
+  font-weight: bold;
+  font-size:20px;
+  text-shadow: 2px 2px #0000;
+}
+
+.skills-section a {
+    color: #05272e;
+  }
+
+.skills-section tr:nth-child(odd) {
+  background-color: #49b1ad;
+}
+
+.skills-section hr {
+    border: 0.5px solid #49b1ad;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+.skills-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+.span{
+    display: block;
+    margin-bottom:10em;
+    }
+/*********Section-Sharpen your skills ends**********/
+
+
 /* ******Team ********** */
 .Team {
   height: 750px;
@@ -336,6 +384,8 @@ hr {
     width: 90px;
     margin: auto;
 }
+
+
 
 /* ******Team ends ****** */
 
@@ -816,4 +866,3 @@ text-decoration: none;
 #social-sidebar a[class*="github"]:hover,
 #social-sidebar a[class*="github"] span,
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
-

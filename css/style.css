@@ -72,7 +72,22 @@ header {
     min-width: 100%;
     min-height: 100%;
 }
+.hr{
+        border: 1px solid #3caea3;
+        border-radius: 5px;
+        display: block;
+        width: 20%;
+        margin: auto;
+}
 
+.nav-item:hover hr:nth-child(2){
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 30%;
+    /* margin-left:auto;*/
+    margin-left: 2.65rem;
+    padding-right: 2rem !important; 
+}
 .navbar-nav a {
     font-size: 18px;
     font-weight: bold;
@@ -81,6 +96,10 @@ header {
 .nav-col {
     background-color: #0e2431;
     opacity: 0.8;
+}
+
+.top{
+    background: transparent;
 }
 
 .navbar-light .navbar-brand {
@@ -240,7 +259,19 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-    padding: 150px 0px;
+  height: 650px;
+  padding: 6.8% 0% 7%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
 }
 
 .about h1 {
@@ -262,8 +293,101 @@ hr {
 
 .about-content {
     margin-top: 50px;
+    text-align: center;
 }
 
+/******about end ******** */
+
+
+/********Section-Sharpen your skills starts*********/
+.skills-section table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  align: centre;
+}
+
+.skills-section th:hover {
+background-color: #FFF;
+}
+
+.skills-section th, td {
+  text-align: left;
+  padding: 30px;
+  font-weight: bold;
+  font-size:20px;
+  text-shadow: 2px 2px #0000;
+}
+
+.skills-section a {
+    color: #05272e;
+  }
+
+.skills-section tr:nth-child(odd) {
+  background-color: #49b1ad;
+}
+
+.skills-section hr {
+    border: 0.5px solid #49b1ad;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+.skills-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+.span{
+    display: block;
+    margin-bottom:10em;
+    }
+/*********Section-Sharpen your skills ends**********/
+
+
+/* ******Team ********** */
+.Team {
+  height: 750px;
+  text-align: center;
+  background-image: linear-gradient(to top, #012b2e, #053235, #0a383c, #103f44, #15464b, #17494e, #1a4d52, #1c5055, #1c5055, #1c5055, #1c5055, #1c5055);
+  color: #fff;
+}
+
+.Team h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.Team p {
+    font-size: 20px;
+}
+
+.slide-image {
+  width: 15%;
+  border-radius: 60%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding-top: 20px;
+}
+.carousel-item p{
+  padding:0% 12%;
+  word-spacing: 6px;
+}
+
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 90px;
+    margin: auto;
+}
+
+
+
+/* ******Team ends ****** */
 
 /************* TEAM **************/
 
@@ -507,6 +631,12 @@ text-decoration: none;
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+       display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+       display: none;
+    } 
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -520,6 +650,12 @@ text-decoration: none;
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 
 @media (max-width: 479px) {
@@ -538,6 +674,12 @@ text-decoration: none;
     .about p {
         font-size: 20px;
     }   
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 /**** team responsive ****/
 
@@ -644,6 +786,7 @@ text-decoration: none;
         padding-top: 15px;
     }
 }
+
 /******************* Social media sidebar******************/
 [class^="entypo-"]:before {
 	font-family: 'entypo', sans-serif;

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"> 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_package\apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_package\favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_package\favicon-16x16.png">
@@ -55,7 +56,7 @@
     <!-- header starts -->
     <header class="fix">
         <img src="video/background.gif" class="vid-bg" alt="background-gif">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top" id="nav">
             <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
                     height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
             </a>
@@ -69,13 +70,16 @@
                     <li class="nav-item active">
                         <a class="nav-link font-weight-bold nav-items" href="#">Home <span
                                 class="sr-only">(current)</span></a>
+                                <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
@@ -89,8 +93,8 @@
 
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
+                            <hr class="hr">
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -98,19 +102,43 @@
                                 to Project</a>
 
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+
                             <a class="dropdown-item" href="booklist.html">Suggested Books</a>
+
 
 
 
                         </div>
                         <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                        <hr class="hr">
                     </li>
                     </ul>
 
             </div>
         </nav>
-
+        <script>
+        const navbar=document.getElementById("nav");
+        let scrolled=false;
+        window.onscroll=function(){
+            if(window.pageYOffset>100)
+            {
+                navbar.classList.remove("top");
+                if(!scrolled)
+                {
+                    navbar.style.transform="translateY(-70px)";
+                }
+                setTimeout(function(){
+                 navbar.style.transform = 'translateY(0)';
+                 scrolled = true;
+                },200);
+            }
+            else{
+                navbar.classList.add("top");
+                scrolled=false;
+            }
+        };
+        </script>
         <div class="banner-text text-center">
             <p class="main-head">We are <span>Programmers</span></p>
             <p class="below-head"> Algo Phantoms is an <span>Open Source organization</span> focusses on <span> Data
@@ -153,29 +181,191 @@
     </ul>
     <!--social media sidebae ends-->
 
-    <!-- about starts -->
-    <section id="about" class="about">
-        <div class="container">
-            <h1 class="text-center">About Us</h1>
-            <hr>
+   <!-- about starts -->
 
-            <p class="about-content">
-                “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe
-                        Quinn</b></i>
+  <section id="about" class="about">
+    <div class="container">
+      <h1 class="text-center">About Us</h1>
+      <hr>
 
-                <br> <br>
-            <p class="text-justify">
-                We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide
-                access to well written, well-explained programs and knowledge that improve people's lives. We want to
-                enable people to adapt and change code according
-                to their own ideas through an Open Access approach. We bring amazing people together to code algorithms
-                and share our work for the benefit of all.
-            </p>
+      <p class="about-content">
+        “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
 
-        </div>
+        <br> <br>
+      <p class="text-justify">
+        We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and
+        change code according
+        to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
+    </div>
+  </section>
+
+  <!-- about ends -->
+
+   <!--Section-Sharpen your skills starts-->
+<section id="sharpen-skills" class="skills-section">
+    <div class="container">
+        <h1 class="text-center">Sharpen Your Skills</h1>
+        <hr>
+    <br><br>
+    <table class="center">
+      <tr>
+        <th><i class="fas fa-atom"></i>&nbsp; <a href="#">Data Structures</a></th>
+        <th><i class="fas fa-project-diagram"></i>&nbsp; <a href="#">Algorithms</a></th>
+        <th><i class="fab fa-python"></i>&nbsp; <a href="#">Python</a></th>
+      </tr>
+      <tr>
+         <th><i class="fab fa-cuttlefish"></i>&nbsp; <a href="#">C</a></th>
+        <th><i class="devicon-cplusplus-line-wordmark fa-lg"></i>&nbsp; <a href="#">C++</a></th>
+        <th><i class="fab fa-java fa-lg"></i>&nbsp; <a href="#">Java</a></th>
+      </tr>
+      <tr>
+        <th><i class="fas fa-gem"></i>&nbsp; <a href="#">Ruby</a></th>
+        <th><i class="fas fa-square-root-alt"></i>&nbsp; <a href="#">Mathematics</a></th>
+        <th><i class="fa fa-database"></i>&nbsp; <a href="#">Databases</a></th>
+      </tr>
+      </table>
+    </div>
     </section>
-    <!-- about ends -->
+    <span class="span"></span>
 
+<!--Section-Sharpen your skills ends-->
+
+  <!-- ****Team start***** -->
+
+  <section id="Team" class="Team">
+    <div class="container-fluid">
+      <h1 class="text-center">Team</h1>
+      <hr>
+      <div id="about-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="hover">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="slide-image" src="images/team/2.jpg" alt="Vatsal Profile Image">
+              <p>
+              <h2>VATSAL KESARWANI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a Android Developer and a Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/vatsal-kesarwani/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/plazzy99"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/3.jpeg" alt="Diya Profile Image">
+              <p>
+              <h2>DIYA JAISWAL</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I'm a Backend Developer and a Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/diyajaiswal11/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/diyajaiswal11"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/4.jpeg" alt="Manshi Profile Image">
+              <p>
+              <h2>MANSHI TODI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a Backend Developer and Competitive Programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/manshi-todi-a017a2178/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/todi-2000"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/6.jpeg" alt="Dheeraj Profile Image">
+              <p>
+              <h2>DHEERAJ KOTWANI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am an Android Developer and a competitve programmer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/dheerajkotwani/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/dheerajkotwani"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/7.jpg" alt="Ayush Profile Image">
+              <p>
+              <h2>AYUSH TIWARI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I have been doing competitive for a quite some time now and I am also a Backend Developer.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/ayushtiwari57/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/servermonk"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/1.jpg" alt="Tarun Profile Image">
+              <p>
+              <h2>TARUN YADAV</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am into competitive programming for over 2 years and also DSA enthusiast. I am also a Android developer and currently interning with GeeksForGeeks.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/tarun-yadav-384320175/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tarun26091999"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/9.jpg" alt="Rudrakshi Profile Image">
+              <p>
+              <h2>RUDRAKSHI</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am a competitve programmer and an Open Source enthusiast. I am also a Web developer and love to work with people who are passionate about building solutions.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/rudrakshi-soni-403031195/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rudrakshi99"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+
+            <div class="carousel-item">
+              <img class="slide-image" src="images/team/8.jpeg" alt="Nakul Profile Image">
+              <p>
+              <h2>NAKUL SHARMA</h2>
+              </p>
+              <hr>
+              <br>
+              <p>I am an Android Developer and a Competitive Programmer, who loves to add new angle to existing things.</p>
+              <p class="socials">
+                <a href="https://www.linkedin.com/in/nakul-19/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/nakul-19"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+
+        </a>
+        <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+<!-- ****Team end****** -->
+
+    
     <footer id="footer">
         <div class="container">
             <div class="row subscribe-box py-5">
@@ -221,6 +411,7 @@
                         <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br>
                         <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree" target="_blank">DSA Guidance</a><br>
                         <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a>
                     </ul>
                 </div>
 

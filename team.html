@@ -40,7 +40,7 @@
     <!-- header starts -->
     <section>
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top" id="nav">
             <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
                     height="50px"><span class="brand1">Algo</span>Phantoms
             </a>
@@ -84,6 +84,28 @@
 
             </div>
         </nav>
+        <script>
+            const navbar=document.getElementById("nav");
+            let scrolled=false;
+            window.onscroll=function(){
+                if(window.pageYOffset>100)
+                {
+                    navbar.classList.remove("top");
+                    if(!scrolled)
+                    {
+                        navbar.style.transform="translateY(-70px)";
+                    }
+                    setTimeout(function(){
+                     navbar.style.transform = 'translateY(0)';
+                     scrolled = true;
+                    },200);
+                }
+                else{
+                    navbar.classList.add("top");
+                    scrolled=false;
+                }
+            };
+            </script>
     </section>
 
     <!-- header ends -->
@@ -272,6 +294,8 @@
                         <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br/>
                         <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree" target="_blank">DSA Guidance</a><br/>
                         <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a>
+
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 socialicons">

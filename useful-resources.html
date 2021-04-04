@@ -1,96 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Useful Resources</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-        * {
-  box-sizing: border-box;
-}
-h1{
-    text-align: center;  
-}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-.left {
-  width: 35%;
-  float: left;
-  margin-left: 10%;
-  margin-right: 5%;
-}
-.right {
-  width: 35%;
-  float: left;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-        body{
-            color: white;
-            background-image: url(video/background.gif);
-            height: 100%;
-            background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+    <!-- style.css For Custom Styling -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resources_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <link rel="shortcut icon" href="images/icon.png" type="images/icon.png" />
+
+    <title>Algo Phantoms/Useful Resources</title>
+    <script>
+        window.onload = function () {
+            var preloader = document.getElementById("preloader")
+            preloader.style.display = 'none';
         }
-        a:link {
-  color: Tomato;
-  background-color: transparent;
-  text-decoration: none;
-}
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: green;
-  background-color: transparent;
-  text-decoration: underline;
-}
-    </style>
 </head>
 <body>
-    <h1>Good Free Resources</h1>
-    <div class="left">
-        <h2>Datastructures and Algorithms</h2>
-        <h3>Datastructures :<a href="https://www.youtube.com/watch?v=AT14lCXuMKI&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Jenny's Lectures</a> </h3>
-        <h3>Algorithms :<a href="https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari</a></h3>
-        <h3>Dynamic Programming: <a href="https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go" target="_blank">Aditya Verma</a></h3>
-        <h2>Some Good Free Courses</h2>
-        <h3><a href="https://practice.geeksforgeeks.org/courses/Workshop-DSA?vC=1" target="_blank">11 Weeks Workshop on Data Structures and Algorithms</a></h3>
-        <h3><a href="https://practice.geeksforgeeks.org/courses/fork-cpp?vC=1" target="_blank">Fork CPP</a></h3>
-        <h3><a href="https://practice.geeksforgeeks.org/courses/fork-java" target="_blank">Fork Java</a></h3>
-        <h3><a href="https://practice.geeksforgeeks.org/batch/fork-python" target="_blank">Fork Python</a></h3>
-        <h2>Some Useful Websites</h2>
-        <h3> <a href="https://www.tutorialspoint.com/index.htm" target="_blank">Tutorialspoint</a></h3> <h3><a href="https://www.w3schools.com/">w3schools</a></h3>
-        <h3> <a href="https://cp-algorithms.com/" target="_blank">cp-algorithms</a></h3>
-        <h3> <a href="https://www.learnpython.org/" target="_blank">learnpython.org</a></h3>
-        
+  <div id="preloader">
+    <div class="loader-div">
+        <div class="loader"></div>
+        <div class="heading">
+            Loading
+        </div>
     </div>
-    <div class="right">
-       <h2>Languages</h2>
-        <h3>Python : <a href="https://www.youtube.com/watch?v=aqvDTCpNRek&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME" target="_blank">CodeWithHarry</a></h3>
-        <h3>C++ :<a href="https://www.youtube.com/watch?v=z9bZufPHFLU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ" target="_blank">Apna College, </a><a href="https://www.youtube.com/watch?v=Iuo9PpGE04Y&list=PLLYz8uHU480j37APNXBdPz7YzAi4XlQUF">C++ by Saurabh Shukla Sir</a></h3>
-        <h3>C : <a href="https://www.youtube.com/watch?v=EMEvheCVhMk&list=PL7ersPsTyYt2Q-SqZxTA1D-melSfqBRMW" target="_blank">MySirG.com</a></h3>
-        <h3>Java : <a href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q" target="_blank">CodeWithHarry</a></h3>
-        <h3>JavaScript : <a href="https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP" target="_blank">Akshay Saini</a></h3>
-        <h2>Tech Stacks</h2>
-        <h3>HTML : <a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank">CodeWithHarry, </a> <a href="https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n">Apna College</a></h3>
-        <h3>CSS : <a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank">CodeWithHarry, </a> <a href="https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n">Apna College</a></h3>
-        <h3>Django : <a href="https://www.youtube.com/watch?v=SIyxjRJ8VNY&list=PLsyeobzWxl7r2ukVgTqIQcl-1T0C2mzau" target="_blank">Telusko, </a><a href="https://www.youtube.com/watch?v=5BDgKJFZMl8&list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9">CodeWithHarry</a></h3>
-        <h3>Flask : <a href="https://www.youtube.com/watch?v=DD3ou9sa3Z8&list=PLu0W_9lII9agAiWp6Y41ueUKx1VcTRxmf" target="_blank">CodeWithHarry</a></h3>
-        <h3>MYSQL: <a href="https://www.youtube.com/watch?v=OWfq_JlvJxM&list=PLsyeobzWxl7oJca2fwLyKbDwlKUDPl3RE" target="_blank">Telusko</a></h3>
-        <h3>PHP: <a href="https://www.youtube.com/watch?v=at19OmH2Bg4&list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR" target="_blank">CodeWithHarry</a></h3>
-        <h3>React JS: <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank">Programming with Mosh</a></h3>
+</div>
+
+    <!-- header starts -->
+    <!-- <div class="wall"></div> -->
+    <!-- <img class="wall" src="video/background.gif" class="vid-bg" alt="background-gif"> -->
+    <header class="fix">
+      <!-- <img src="video/background.gif" class="vid-bg" alt="background-gif"> -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+          <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+                  height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link font-weight-bold nav-items" href="#">Home <span
+                              class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                      <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                          role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+
+                          <a class="dropdown-item" href="https://github.com/Algo-Phantoms" target="_blank">Contribute
+                              to Project</a>
+
+                          <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+                          <a class="dropdown-item" href="useful-resources.html">Useful Resources</a>
+
+                      </div>
+                      <li class="nav-item">
+                      <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                  </li>
+                  </ul>
+
+          </div>
+      </nav>
+
+      <h1 style="padding-top: 15vh;">Good Free Resources</h1>
+      <div class="left">
+          <h2>Datastructures and Algorithms</h2>
+          <h3>Datastructures :<a href="https://www.youtube.com/watch?v=AT14lCXuMKI&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Jenny's Lectures</a> </h3>
+          <h3>Algorithms :<a href="https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari</a></h3>
+          <h3>Dynamic Programming: <a href="https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go" target="_blank">Aditya Verma</a></h3>
+          <h2>Some Good Free Courses</h2>
+          <h3><a href="https://practice.geeksforgeeks.org/courses/Workshop-DSA?vC=1" target="_blank">11 Weeks Workshop on Data Structures and Algorithms</a></h3>
+          <h3><a href="https://practice.geeksforgeeks.org/courses/fork-cpp?vC=1" target="_blank">Fork CPP</a></h3>
+          <h3><a href="https://practice.geeksforgeeks.org/courses/fork-java" target="_blank">Fork Java</a></h3>
+          <h3><a href="https://practice.geeksforgeeks.org/batch/fork-python" target="_blank">Fork Python</a></h3>
+          <h2>Some Useful Websites</h2>
+          <h3> <a href="https://www.tutorialspoint.com/index.htm" target="_blank">Tutorialspoint</a></h3> <h3><a href="https://www.w3schools.com/">w3schools</a></h3>
+          <h3> <a href="https://cp-algorithms.com/" target="_blank">cp-algorithms</a></h3>
+          <h3> <a href="https://www.learnpython.org/" target="_blank">learnpython.org</a></h3>
+          
+      </div>
+      <div class="right">
+         <h2>Languages</h2>
+          <h3>Python : <a href="https://www.youtube.com/watch?v=aqvDTCpNRek&list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME" target="_blank">CodeWithHarry</a></h3>
+          <h3>C++ :<a href="https://www.youtube.com/watch?v=z9bZufPHFLU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ" target="_blank">Apna College, </a><a href="https://www.youtube.com/watch?v=Iuo9PpGE04Y&list=PLLYz8uHU480j37APNXBdPz7YzAi4XlQUF">C++ by Saurabh Shukla Sir</a></h3>
+          <h3>C : <a href="https://www.youtube.com/watch?v=EMEvheCVhMk&list=PL7ersPsTyYt2Q-SqZxTA1D-melSfqBRMW" target="_blank">MySirG.com</a></h3>
+          <h3>Java : <a href="https://www.youtube.com/watch?v=ntLJmHOJ0ME&list=PLu0W_9lII9agS67Uits0UnJyrYiXhDS6q" target="_blank">CodeWithHarry</a></h3>
+          <h3>JavaScript : <a href="https://www.youtube.com/watch?v=pN6jk0uUrD8&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP" target="_blank">Akshay Saini</a></h3>
+          <h2>Tech Stacks</h2>
+          <h3>HTML : <a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank">CodeWithHarry, </a> <a href="https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n">Apna College</a></h3>
+          <h3>CSS : <a href="https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank">CodeWithHarry, </a> <a href="https://www.youtube.com/watch?v=l1EssrLxt7E&list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n">Apna College</a></h3>
+          <h3>Django : <a href="https://www.youtube.com/watch?v=SIyxjRJ8VNY&list=PLsyeobzWxl7r2ukVgTqIQcl-1T0C2mzau" target="_blank">Telusko, </a><a href="https://www.youtube.com/watch?v=5BDgKJFZMl8&list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9">CodeWithHarry</a></h3>
+          <h3>Flask : <a href="https://www.youtube.com/watch?v=DD3ou9sa3Z8&list=PLu0W_9lII9agAiWp6Y41ueUKx1VcTRxmf" target="_blank">CodeWithHarry</a></h3>
+          <h3>MYSQL: <a href="https://www.youtube.com/watch?v=OWfq_JlvJxM&list=PLsyeobzWxl7oJca2fwLyKbDwlKUDPl3RE" target="_blank">Telusko</a></h3>
+          <h3>PHP: <a href="https://www.youtube.com/watch?v=at19OmH2Bg4&list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR" target="_blank">CodeWithHarry</a></h3>
+          <h3>React JS: <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank">Programming with Mosh</a></h3>
+      </div>
+
+  </header>
+
+  <!-- header ends -->
+  <!--social media sidebar starts-->
+  <ul id="social-sidebar">
+      <li>
+          <a class="entypo-facebook" href="#" target="_blank"><span>Facebook</span></a>
+      </li>
+      <li>
+          <a class="entypo-github" href="#" target="_blank"><span>Github</span></a>
+      </li>
+      <li>
+          <a class="entypo-gplus" href="#" target="_blank"><span>Google+</span></a>
+      </li>
+      <li>
+          <a class="entypo-instagrem" href="#" target="_blank"><span>Instagram</span></a>
+      </li>
+      <li>
+          <a class="entypo-linkedin" href="#" target="_blank"><span>LinkedIn</span></a>
+      </li>
+      <li>
+          <a class="entypo-twitter" href="#" target="_blank"><span>Twitter</span></a>
+      </li>
+  </ul>
+  <!--social media sidebae ends-->
+  <footer id="footer">
+    <div class="container">
+        <div class="row subscribe-box py-5">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 offset-lg-1">
+                <h2 class="text-white font-weight-bold py-2">Contact Us</h2>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <form action="mailto:algophantom0101@gmail.com">
+                    <div class="input-group">
+                        <input type="email" class="form-control py-3" placeholder="Enter your Email" required>
+                        <div class="input-group-append">
+                            <button type="submit" class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+    <div class="container mt-5 pt-lg-5">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-lg-3 col-12">
+                <div class="">
+                    <img src="images/icon.png" alt="" class="img-fluid mb-lg-4" width="100px" height="100px">
+                </div>
+                <p class="text-white">An Open Source organization focuses on Data Structure and Algorithms.</p>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1">
+                <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
+                <ul>
+                    <a class="text-white mb-lg-3" href="#about">About</a><br>
+                    <a class="text-white mb-lg-3" href="./team.html">Our Team</a><br>
+                    <a class="text-white mb-lg-3" href="#footer">Contact</a><br>
+                    <a class="text-white mb-lg-3" href="./sitemap.html">SiteMap</a>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
+                <ul>
+                    <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a><br>
+                    <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br>
+                    <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree" target="_blank">DSA Guidance</a><br>
+                    <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
+                <a href="#" target="_blank"><i class="fa fa-github p-2 text-white" aria-hidden="true"
+                        style="background:#3caea3; border-radius: 50%;"></i>
+                </a>
+                <a href="#" target="_blank"><i class="fa fa-instagram p-2 text-white" aria-hidden="true"
+                        style="background:#3caea3; border-radius: 50%;"></i>
+                </a>
+                <a href="#" target="_blank"><i class="fa fa-linkedin p-2 text-white" aria-hidden="true"
+                        style="background:#3caea3; border-radius: 50%;"></i>
+                </a>
+                <a href="#" target="_blank"><i class="fa fa-twitter p-2 text-white" aria-hidden="true"
+                        style="background:#3caea3; border-radius: 50%;"></i>
+                </a>
+            </div>
+        </div>
+        <hr style="background: white;" class="mt-5">
+        <div class="text-center text-white mt-lg-4 pt-lg-2 copyright-text">
+            Copyright &copy; 2021 <a href="#" style="color: #3caea3; text-decoration: none;" target="_blank"><span
+                    class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
+    </div>
+</footer>
+
 </body>
 </html>

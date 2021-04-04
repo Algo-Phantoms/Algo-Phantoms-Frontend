@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+  h1{
+      text-align: center;  
+  }
+  
+  
+  .left {
+    width: 35%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .right {
+    width: 35%;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+          body{
+              color: white;
+              background-image: url(video/background.gif);
+              height: 100%;
+              background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+          }
+          a:link {
+    color: Tomato;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .left,.right{
+    z-index: 10;
+  }
+  .vid-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+    min-height: 100%;
+}
+header {
+ overflow: visible; 
+ height: auto;
+   min-height: 115vh; 
+   background:#000;
+}

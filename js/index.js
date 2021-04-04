@@ -13,3 +13,12 @@ window.addEventListener("scroll", () => {
 backToTopButton.addEventListener("click", () => {
     window.scrollTo(0,0);
 });
+
+// faq section 
+
+$("#faqaccordion").on("hide.bs.collapse show.bs.collapse", e => {
+    $(e.target)
+      .prev()
+      .find("i:last-child")
+      .toggleClass("fa-minus fa-plus");
+  });

@@ -346,19 +346,19 @@ background-color: #FFF;
 /*********Section-Sharpen your skills ends**********/
 
 /*********FAQ section starts**********/
+.fnq h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
 
 .fnq .card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
     box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
-    border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 .fnq a {
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     cursor: pointer;
 }

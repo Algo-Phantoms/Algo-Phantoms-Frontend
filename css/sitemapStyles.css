@@ -1,115 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+
 *{ 
     box-sizing:border-box; 
+    margin: 0;
+    padding : 0;
+    font-family: Poppins;
 }
+
 body{ 
     background:#001d1a; 
-    max-width:980px; 
-    margin:0 auto; 
-    padding:5px; 
-    font: 14px "Arial", Tahoma, sans-serif; 
 }
+
+.heading{
+    display: flex;
+    align-items: center;
+    padding: 15px 12px 0px 12px;
+    font-size: 2.5rem;
+    box-shadow: 0 8px 6px -6px rgb(106, 188, 202);
+    margin-bottom: 20px;
+}
+
 h1 { 
     text-align:center; 
     font-size: 26px; 
-    color: #42AEA3;
+    color: #0c8d80;
+    margin-left: 12px;
 }
-div.section { 
-    overflow:hidden; 
-    width:100%; 
-    -moz-column-count:3; 
-    column-count:3; 
-    padding-top:50px; 
+
+.section{
+    margin: auto;
+    width : 70%;
 }
-div.section div { 
-    display:inline-block; 
-    border:#ccc solid 1px; 
-    border-radius:5px; 
-    width:30%; 
-    min-width:300px; 
-    max-width:99%; 
-    margin:16px 1%; 
-    padding:12px; 
-    background: #263836; 
-    box-shadow:0 3px 3px #666; 
+
+.section p a{
+    font-size:2.2rem;
+    display: block;
+    text-align: center;
 }
-div.section div:before { 
-    display:block; 
-    content: ""; 
-    position:relative; 
-    left:50%; 
-    top: 0;
-    width:1px; 
-    height:32px; 
-    margin:-44px 0 12px 4px; 
-    background:#ccc; 
+
+.section .links a{
+    font-size:1.2rem;
 }
-div.section div:hover { 
-    box-shadow:0px 3px 3px 1px #666; 
+
+.pages , .features , .contact {
+    display: flex;
+    flex-direction:column;
+    margin : 0 2.5rem 0 0;
+    align-items: center;
 }
-div.section p { 
-    font-weight:bold; 
-    text-align:center; 
-    overflow:hidden; 
-    position:absolute; 
-    width:100%; 
-    left:0; 
-    margin-top:-50px; 
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-div.section p:after { 
-    display:block; 
-    content: ""; 
-    position:relative; 
-    width:67.5%; 
-    max-width:656px; 
-    height:1px; 
-    box-sizing:border-box; 
-    margin:-14px auto 0 auto; 
-    background:#ccc; 
+
+.section p a::after{
+    content: "";
+    display: block;
+    width: 5px;
+    background: teal;
+    height: 3rem;
+    margin-left : 475px;
+    border-radius: 5px 5px 0 0;
 }
-div.section p a { 
-    color: #fff ;
-    font-weight: bolder ;
-    text-decoration: none ;
-    margin:0 auto; 
-    float:none; 
+
+.links a::before{
+    content: "";
+    display: block;
+    width: 5px;
+    background: teal;
+    height: 3rem;
+    margin:auto;
+    border-radius: 0 0 5px 5px ;
+    margin-bottom: 10px;
+    margin-top: 0%;
 }
-div.section p a:hover{
-    color: #42AEA3;
+
+.section p::after{
+    content: "";
+    display: block;
+    width: 335px;
+    background: teal;
+    height: 5px;
+    margin:auto;
+    margin-bottom: 0;
 }
-div.section p a:after { 
-    display: block; 
-    content: ""; 
-    position:relative; 
-    left:50%; 
-    width:1px; 
-    height:32px; 
-    background:#ccc; 
+
+.main{
+    padding-left: 44px;
 }
+
+.links a{
+    padding: 0;
+}
+
+.footer{
+    margin-top: 90px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #039182;
+    box-shadow: 0 -8px 6px -6px rgb(106, 188, 202);
+}
+
+.footer span {
+    margin: 0 12px;
+    color: #38a59a;
+}
+
 a{
-    color: #fff;
+    color: #039182;
     font-weight: bolder;
     text-decoration: none;
+    transition: all;
+    transition-duration: .3s;
 }
+
 a:hover{
-    color: #42AEA3;
+    color: #51eeee;
 }
-div.footerinfo { 
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    margin-top:16px; 
-    color:#666; 
-    font-size:12px; 
-    text-align:right; 
+
+.note{
+    margin-left: 55rem;
+    font-size: 2.2rem;
 }
-div.footerinfo * { 
-    font-size:12px; 
-}
+
 @media only screen and (max-width:900px) { 
     div.section div { 
         min-width:250px; 
     } 
 }
+
 @media only screen and (max-width:800px) { 
     div.section div { 
         width:50%; 
@@ -119,6 +142,7 @@ div.footerinfo * {
         column-count:2; 
     } 
 }
+
 @media only screen and (max-width:500px) { 
     div.section div { 
         width:100%; 

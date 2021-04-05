@@ -98,7 +98,7 @@ header {
 }
 
 /*.top {
-   background: transparent;
+  /* background: transparent;
 }*/
 
 .navbar-light .navbar-brand {
@@ -140,6 +140,12 @@ header {
 .dropdown-menu {
   background-color: #000;
 }
+@media screen and(min-width:960px) {
+  .dropdown-menu {
+    display: inline-block;
+  }
+}
+
 .dropdown-item {
   color: #3caea3;
 }

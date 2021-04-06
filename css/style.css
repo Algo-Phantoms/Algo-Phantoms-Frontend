@@ -345,6 +345,28 @@ background-color: #FFF;
     }
 /*********Section-Sharpen your skills ends**********/
 
+/*********FAQ section starts**********/
+.fnq h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+
+.fnq .card-header {
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
+}
+
+.fnq a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+
+
+/*********FAQ section ends**********/
+
 
 /* ******Team ********** */
 .Team {
@@ -421,16 +443,7 @@ hr {
     background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
-.round-2 {
-    position: absolute;
-    top: 40%;
-    right: 4%;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    box-shadow: 0 0 50px #5622ff;
-    background: linear-gradient(-180deg, #5622ff, #49b1ad);
-}
+
 
 .box {
     width: 350px;

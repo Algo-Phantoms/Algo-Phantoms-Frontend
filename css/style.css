@@ -72,7 +72,22 @@ header {
     min-width: 100%;
     min-height: 100%;
 }
+.hr{
+        border: 1px solid #3caea3;
+        border-radius: 5px;
+        display: block;
+        width: 20%;
+        margin: auto;
+}
 
+.nav-item:hover hr:nth-child(2){
+    border-bottom: 1px solid #3caea3;
+    display: block;
+    width: 30%;
+    /* margin-left:auto;*/
+    margin-left: 2.65rem;
+    padding-right: 2rem !important; 
+}
 .navbar-nav a {
     font-size: 18px;
     font-weight: bold;
@@ -81,6 +96,10 @@ header {
 .nav-col {
     background-color: #0e2431;
     opacity: 0.8;
+}
+
+.top{
+    background: transparent;
 }
 
 .navbar-light .navbar-brand {
@@ -108,8 +127,8 @@ header {
 }
 
 .navbar-nav {
-    text-align: center;
-    width: 75% !important;
+    text-align: right;
+    
 }
 
 .nav-link {
@@ -240,7 +259,19 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-    padding: 150px 0px;
+  height: 650px;
+  padding: 6.8% 0% 7%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
 }
 
 .about h1 {
@@ -262,8 +293,123 @@ hr {
 
 .about-content {
     margin-top: 50px;
+    text-align: center;
 }
 
+/******about end ******** */
+
+
+/********Section-Sharpen your skills starts*********/
+.skills-section table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  border: 1px solid #ddd;
+  align: centre;
+}
+
+.skills-section th:hover {
+background-color: #FFF;
+}
+
+.skills-section th, td {
+  text-align: left;
+  padding: 30px;
+  font-weight: bold;
+  font-size:20px;
+  text-shadow: 2px 2px #0000;
+}
+
+.skills-section a {
+    color: #05272e;
+  }
+
+.skills-section tr:nth-child(odd) {
+  background-color: #49b1ad;
+}
+
+.skills-section hr {
+    border: 0.5px solid #49b1ad;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+.skills-section h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+.span{
+    display: block;
+    margin-bottom:10em;
+    }
+/*********Section-Sharpen your skills ends**********/
+
+/*********FAQ section starts**********/
+.fnq h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+
+.fnq .card-header {
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.4);
+}
+
+.fnq a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+
+
+/*********FAQ section ends**********/
+
+
+/* ******Team ********** */
+.Team {
+  height: 750px;
+  text-align: center;
+  background-image: linear-gradient(to top, #012b2e, #053235, #0a383c, #103f44, #15464b, #17494e, #1a4d52, #1c5055, #1c5055, #1c5055, #1c5055, #1c5055);
+  color: #fff;
+}
+
+.Team h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.Team p {
+    font-size: 20px;
+}
+
+.slide-image {
+  width: 15%;
+  border-radius: 60%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding-top: 20px;
+}
+.carousel-item p{
+  padding:0% 12%;
+  word-spacing: 6px;
+}
+
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 90px;
+    margin: auto;
+}
+
+
+
+/* ******Team ends ****** */
 
 /************* TEAM **************/
 
@@ -297,16 +443,7 @@ hr {
     background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
-.round-2 {
-    position: absolute;
-    top: 50%;
-    right: 4%;
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    box-shadow: 0 0 50px #5622ff;
-    background: linear-gradient(-180deg, #5622ff, #49b1ad);
-}
+
 
 .box {
     width: 350px;
@@ -330,17 +467,62 @@ hr {
     margin-bottom: 50px !important;
     margin-top: 40px !important;
 }
+.flip-card {
+    background-color:transparent;
+    width: 300px;
+    height: 450px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: right;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(-180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color:#212529;
+    align-items: center;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#212529;
+    color: #fff;
+    font-size: 2rem;
+    transform: rotateY(180deg);
+  }
+
 
 .box-raghav {
     margin: auto;
 }
 
 .profile-img {
+    margin-top: 70px;
     width: 200px !important;
     height: 200px !important;
     border-radius: 5px !important;
     overflow: hidden;
     object-fit: cover;
+    margin-left: 50px;
 }
 
 
@@ -350,34 +532,71 @@ hr {
 } */
 
 .box h2 {
-    color: #ffffff60;
+    color: #3caea3;
     text-transform: uppercase;
-    margin: 15px 0;
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
 }
 
 .custom-size {
     font-size: 30px;
 }
 
+.socials a {
+    margin: 0 5px;
+    font-size: 25px;
+    position: relative; 
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    color: #666;
+    transition: .5s;
+  }
+  
+  .socials a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #3caea3;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .socials a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #3caea3;
+  }
+
+.socials a:hover {
+    color: #3caea3;
+    box-shadow: 0 0 5px #3caea3;
+    text-shadow: 0 0 5px #3caea3;
+}
+
 .box p {
-    color: #ffffff90;
-    font-size: 14px;
+    color: #fff;
+    font-size: 1rem;
 }
 
 .socials {
     margin-top: 35px;
 }
 
-.socials i {
-    margin: 0 10px;
-    font-size: 25px;
-}
-
 .socials a {
     text-decoration: none;
     color: #ffffff90;
 }
-
 
 /*********** footer ***********/
 
@@ -397,6 +616,23 @@ hr {
     padding: 50px 0px 40px 0px;
     background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
+}
+/*styling social icons*/
+.socialicon{
+    color:#fff;
+    cursor: pointer;
+    background-color: #3caea3;
+
+}
+.socialicon:hover{
+    text-decoration: none;
+    color: #3caea3;
+
+    background-color: white;
+    border-radius: 50%;
+}
+.socialicons a:hover{
+text-decoration: none;
 }
 
 .subscribe-box {
@@ -490,6 +726,12 @@ hr {
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+       display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+       display: none;
+    } 
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
@@ -503,6 +745,12 @@ hr {
     .dropdown-item{
         font-size:1rem;
     }
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 
 @media (max-width: 479px) {
@@ -521,6 +769,12 @@ hr {
     .about p {
         font-size: 20px;
     }   
+    .hr{
+        display: none;
+    }
+    .nav-item:hover hr:nth-child(2){
+        display: none;
+    } 
 }
 /**** team responsive ****/
 
@@ -627,6 +881,7 @@ hr {
         padding-top: 15px;
     }
 }
+
 /******************* Social media sidebar******************/
 [class^="entypo-"]:before {
 	font-family: 'entypo', sans-serif;

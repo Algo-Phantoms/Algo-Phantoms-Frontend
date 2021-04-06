@@ -367,50 +367,6 @@ background-color: #FFF;
 
 /*********FAQ section ends**********/
 
-
-/* ******Team ********** */
-.Team {
-  height: 750px;
-  text-align: center;
-  background-image: linear-gradient(to top, #012b2e, #053235, #0a383c, #103f44, #15464b, #17494e, #1a4d52, #1c5055, #1c5055, #1c5055, #1c5055, #1c5055);
-  color: #fff;
-}
-
-.Team h1 {
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 30px;
-}
-
-.Team p {
-    font-size: 20px;
-}
-
-.slide-image {
-  width: 15%;
-  border-radius: 60%;
-  margin: 20px;
-}
-
-.carousel-item {
-  padding-top: 20px;
-}
-.carousel-item p{
-  padding:0% 12%;
-  word-spacing: 6px;
-}
-
-hr {
-    border: 1px solid #3caea3;
-    display: block;
-    width: 90px;
-    margin: auto;
-}
-
-
-
-/* ******Team ends ****** */
-
 /************* TEAM **************/
 
 .team {

@@ -83,7 +83,6 @@ header {
   border-bottom: 1px solid #3caea3;
   display: block;
   width: 30%;
-  /* margin-left:auto;*/
   margin-left: 2.65rem;
   padding-right: 2rem !important;
 }
@@ -94,12 +93,7 @@ header {
 
 .nav-col {
   background-color: #0e2431;
-  /*opacity: 0.8;*/
 }
-
-/*.top {
-  /* background: transparent;
-}*/
 
 .navbar-light .navbar-brand {
   color: white;
@@ -126,7 +120,6 @@ header {
 }
 
 .navbar-nav {
-  /*text-align: right;*/
   text-align: center;
 }
 
@@ -140,12 +133,19 @@ header {
 .dropdown-menu {
   background-color: #000;
 }
-@media screen and(min-width:960px) {
-  .dropdown-menu {
-    display: inline-block;
+@media only screen and (max-width: 991px) {
+  .dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 }
-
+.navbar-nav .dropdown-menu {
+  position: relative;
+  float: none;
+}
 .dropdown-item {
   color: #3caea3;
 }

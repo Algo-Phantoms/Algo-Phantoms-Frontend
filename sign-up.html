@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG_IN</title>
+    <link rel="stylesheet" type="text/css" href="css/style1Signin.css" />
+    <script src="RESOURCES/CSS/JS/script.js"></script>
+  </head>
+  <body>
+    <div class="main-page">
+      <div class="navbar">
+        <div>
+          <img src="images/icon.png" alt="" />
+          <a href="index.html"><span>Algo</span> Phantom</a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li>
+              <button
+                class="loginbtn"
+                onclick="document.getElementById('login-form').style.display='block'"
+                style="width: auto"
+              >
+                Sign In
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" onclick="login()" class="toggle-btn">
+              Sign In
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              Sign Up
+            </button>
+          </div>
+          <form id="login" class="input-group-login">
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Sign In</button>
+          </form>
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter password"
+              required
+            />
+            <input type="checkbox" class="check-box" required /><span>
+              I agree the terms and conditions
+            </span>
+            <button type="submit" class="submit-btn">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+    <script>
+      var modal = document.getElementById("login-form");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

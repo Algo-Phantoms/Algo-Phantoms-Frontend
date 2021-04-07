@@ -237,6 +237,24 @@ header {
     background: linear-gradient(300deg,#078ea3, #07b4b4);                /* adding linear color to the scroll-thumb */
 }
 
+/************ Typing Effect ***********/
+.cursor {
+    animation: blink 0.5s infinite linear;
+}
+
+.cursor .typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
 /******************* ABOUT ***********************/
 
 .about {

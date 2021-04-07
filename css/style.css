@@ -400,6 +400,39 @@ background-color: #FFF;
   word-spacing: 6px;
 }
 
+
+.DS {
+    padding-top: 5%;
+    border-bottom: 3px solid #146b61;
+    border-top: 3px solid #146b61;
+    margin: 2%;
+
+}
+ 
+.DS h1 {
+    font-size: 50px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+}
+ 
+hr {
+    border: 1px solid #3caea3;
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+ 
+.DS .card-body
+ {color: #fff;
+  background-image : linear-gradient(130deg, #05272e7c 40%, #1a3d39 100%);;
+ 
+}
+ 
+.card-img-top {
+    height:250px;
+}
+
+=======
 hr {
     border: 1px solid #3caea3;
     display: block;
@@ -408,8 +441,6 @@ hr {
 }
 
 
-
-/* ******Team ends ****** */
 
 /************* TEAM **************/
 

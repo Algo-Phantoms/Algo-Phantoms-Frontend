@@ -990,6 +990,17 @@ HEAD .round-2 {
 
 #social-sidebar a[class*="github"]:hover,
 #social-sidebar a[class*="github"] span,
+<<<<<<< HEAD
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
+=======
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+#sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
+}
+>>>>>>> b0065a4fe9f5e08d6466ea37a3d7b7ba854f6cce

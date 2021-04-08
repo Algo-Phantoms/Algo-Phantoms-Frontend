@@ -962,6 +962,7 @@ text-decoration: none;
 #social-sidebar a[class*="github"] span,
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
+
 /****************************404*****************************/
 
 
@@ -1051,4 +1052,12 @@ svg {
       text-align: center;
     }
   }
+
+
+#sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
+}
 

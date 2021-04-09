@@ -22,3 +22,10 @@ $("#faqaccordion").on("hide.bs.collapse show.bs.collapse", e => {
       .find("i:last-child")
       .toggleClass("fa-minus fa-plus");
   });
+
+  const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbarSupportedContent')
+  const bsCollapse = new bootstrap.Collapse(menuToggle)
+  navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+  })

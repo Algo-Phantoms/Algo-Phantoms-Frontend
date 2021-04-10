@@ -963,30 +963,21 @@ text-decoration: none;
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
 /****************************404*****************************/
-
-
-svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -400px;
-  }
-
-  img{
+ .image404{
       height:auto;
-      width: 70%;
-  }
+      width: 100%;
+      
+   }
   .message-box {
     height: 200px;
     width: 380px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -100px;
-    margin-left: 50px;
+    margin-top: -270px;
+    margin-left: 2px;
     color: white;
-    font-family: Roboto;
+    font-family: Poppins;
     font-weight: 300;
   }
   .message-box h2 {
@@ -1041,7 +1032,7 @@ svg {
       top: 50%;
       left: 50%;
       margin-top: -250px;
-      margin-left: -190px;
+      margin-left: -100px;
     }
     .message-box {
       top: 50%;
@@ -1051,4 +1042,3 @@ svg {
       text-align: center;
     }
   }
-

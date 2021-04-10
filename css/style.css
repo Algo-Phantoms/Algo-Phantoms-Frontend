@@ -263,8 +263,6 @@ header {
   ); /* adding linear color to the scroll-thumb */
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-
-            background-position: center 2px;
             background-position: center 4px;
             background-size: 8px 8px;
             background-image: url(../images/uparrow.png);
@@ -272,8 +270,6 @@ header {
         }
 
         ::-webkit-scrollbar-button:single-button:vertical:increment {
-
-            background-position: center 2px;
             background-position: center 4px;
             background-size: 8px 8px;
             background-image: url(../images/downarrow.png);

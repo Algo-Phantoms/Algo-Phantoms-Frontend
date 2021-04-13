@@ -882,6 +882,7 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
+  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;

@@ -346,7 +346,8 @@ hr {
 }
 
 .skills-section th:hover {
-  background-color: #fff;
+    cursor: pointer;
+    background-color: #27d8a3;
 }
 
 .skills-section th,
@@ -362,8 +363,18 @@ td {
   color: #05272e;
 }
 
-.skills-section tr:nth-child(odd) {
+.skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
+}
+.skills-section tr:nth-child(odd) th:hover{
+    background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-section tr:nth-child(even) th:hover{
+    background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
 
 .skills-section hr {

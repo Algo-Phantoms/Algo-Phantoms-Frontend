@@ -632,6 +632,7 @@ HEAD .round-2 {
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
+  border-radius: 50%;
 }
 .socialicon:hover {
   text-decoration: none;

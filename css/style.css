@@ -319,7 +319,7 @@ h1 {
 }
 
 hr {
-  border: 1px solid #3caea3;
+  border: 0.5px solid #49b1ad;
   display: block;
   width: 80px;
   margin: auto;

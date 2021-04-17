@@ -20,8 +20,15 @@
     
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
 
+
     <title>Practice Questions</title>
+
     <style>
+            
+ header {
+    overflow: hidden;
+    height: 20vh;
+}
         body {
             background-color: #3caea3;
             margin: 10px 10px 10px 10px;
@@ -34,10 +41,64 @@
 
         }
     </style>
+    <script>
+        window.onload = function () {
+            var preloader = document.getElementById("preloader")
+            preloader.style.display = 'none';
+        }
+    </script>
+
 
 </head>
 
 <body>
+
+
+     <!-- header starts -->
+     <header class="fix">
+       
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
+                    height="50px"><span class="brand1"> <strong>Algo</span>Phantoms</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="index.html#footer">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+                            <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+                        </div>
+                    </ul>
+
+            </div>
+        </nav>
+      
+    </header>
+
+    <!-- header ends -->
 
         <iframe title="PracticeDSA" style="border:none" width="1400px" height="3000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDw1bOBFu39nOauhGWbF1vMF7ZkfLlyC8HUl1BxcB1sZwWrHhAYLk0iYUu1a-_Ow/pubhtml?widget=true&amp;headers=false"></iframe>
         

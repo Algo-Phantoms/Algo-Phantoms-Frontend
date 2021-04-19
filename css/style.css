@@ -751,6 +751,28 @@ HEAD .round-2 {
     font-weight: bold;
   }
   /*********Section-Sharpen your skills ends**********/
+
+
+  /***********FAQ SECTION starts **********************/
+  .fnq h1 {
+    margin-top: -70px;
+    font-size: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+  }
+  
+  .fnq .card-header {
+    box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
+  }
+  
+  .fnq a {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+  }
+
+  /***********FAQ SECTION ends **********************/
   
   }
 

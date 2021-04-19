@@ -719,6 +719,40 @@ HEAD .round-2 {
 
 /*
 ...........responsive.............*/
+@media only screen and (max-width: 600px) {
+
+  /********Section-Sharpen your skills starts*********/
+  #sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+  }
+  
+  .skills-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .skills-section th,td {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 2px 2px #0000;
+  }
+  
+  .skills-section h1 {
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  /*********Section-Sharpen your skills ends**********/
+  
+  }
 
 @media (min-width: 575px) and (max-width: 1200px) {
   .about {
@@ -983,11 +1017,3 @@ HEAD .round-2 {
   background: #9c7a5b;
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
-
-#sharpen-skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 7rem;
-}
-}

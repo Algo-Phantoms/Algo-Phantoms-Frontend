@@ -984,6 +984,12 @@ HEAD .round-2 {
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
+
 #sharpen-skills .container{
     display: flex;
     flex-direction: column;

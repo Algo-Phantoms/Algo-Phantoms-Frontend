@@ -83,6 +83,10 @@ header {
   margin: auto;
 }
 
+.top{
+  background: transparent;
+}
+
 .nav-item:hover hr:nth-child(2) {
   border-bottom: 1px solid #3caea3;
   display: block;

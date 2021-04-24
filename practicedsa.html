@@ -19,6 +19,12 @@
     <meta name="theme-color" content="#ffffff">
     
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <title>Practice Questions</title>
     <style>
@@ -51,7 +57,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="index.html">Home </a>
                     </li>
                     <li class="nav-item">
@@ -77,15 +83,14 @@
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
 
                         </div>
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
                     </li>
-                    </ul>
-
+                </ul>
             </div>
         </nav>
         <script>
-            const navbar=document.getElementById("nav");
+            const navbar = document.getElementsByTagName("nav");
             let scrolled=false;
             window.onscroll=function(){
                 if(window.pageYOffset>100)
@@ -105,7 +110,7 @@
                     scrolled=false;
                 }
             };
-            </script>
+        </script>
     </section>
 
 

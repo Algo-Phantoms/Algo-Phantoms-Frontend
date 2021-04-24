@@ -34,9 +34,7 @@
     !-- header starts -->
     <section>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
-            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50"
-                    height="50"><span class="brand1">Algo</span>Phantoms
-            </a>
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50" height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,22 +43,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home </a>
+                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                                <hr class="hr">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
+                        <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team<span
-                                class="sr-only"></span></a>
+                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                        <hr class="hr">
                     </li>
                     
                     <li class="nav-item dropdown">
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
+                            <hr class="hr">
                         <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -68,46 +69,47 @@
                                 to Project</a>
 
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
-
+                             <a class="dropdown-item" href="booklist.html">Suggested Books</a>
                         </div>
                         <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                        <hr class="hr">
                     </li>
                     </ul>
-
             </div>
         </nav>
         <script>
-            const navbar=document.getElementById("nav");
-            let scrolled=false;
-            window.onscroll=function(){
-                if(window.pageYOffset>100)
+        const navbar=document.getElementById("nav");
+        let scrolled=false;
+        window.onscroll=function(){
+            if(window.pageYOffset>100)
+            {
+                navbar.classList.remove("top");
+                if(!scrolled)
                 {
-                    navbar.classList.remove("top");
-                    if(!scrolled)
-                    {
-                        navbar.style.transform="translateY(-70px)";
-                    }
-                    setTimeout(function(){
-                     navbar.style.transform = 'translateY(0)';
-                     scrolled = true;
-                    },200);
+                    navbar.style.transform="translateY(-70px)";
                 }
-                else{
-                    navbar.classList.add("top");
-                    scrolled=false;
-                }
-            };
-            </script>
+                setTimeout(function(){
+                 navbar.style.transform = 'translateY(0)';
+                 scrolled = true;
+                },200);
+            }
+            else{
+                navbar.classList.add("top");
+                scrolled=false;
+            }
+        };
+        </script>
+
     </section>
-    <center>
+	<div style="display:flex;justify-content:center">
     <section class="list--wrapper">
 		<br>
 		<br>
-        <h1  class="text-white font-weight-bold py-2">List of Suggested Books to Begin Your DSA JOURNEY</h1>
+        <h1  class="text-white font-weight-bold py-2" >List of Suggested Books to Begin Your DSA JOURNEY</h1>
 		<hr style="width:70%">
 		<br>
-        <ol class="list">
+        <ol class="list" style="text-align:center">
           <li class="list--item">
             <a href="https://www.amazon.in/Data-Structures-Algorithms-Made-Easy/dp/8192107558/ref=sr_1_2?crid=1HAYQQ0UCISYY&dchild=1&keywords=data+structure+and+algorithm+made+easy&qid=1617166618&sprefix=data+structure+and+algorithm%2Caps%2C469&sr=8-2" class="list--link">
               <h2 class="list--link__header"><span>Data Structures and Algorithms Made Easy (C/C++/Java) By Narasimha Karumanchi</span></h2>
@@ -128,7 +130,7 @@
           </li>
         </ol>
       </section>
-	  </center>
+	  	</div>
       <footer id="footer">
         <div class="container">
             <div class="row subscribe-box py-5">
@@ -160,7 +162,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
                     <ul>
-                        <a class="text-white mb-lg-3" href="#about">About</a><br>
+                        <a class="text-white mb-lg-3" href="index.html#about">About</a><br>
                         <a class="text-white mb-lg-3" href="./team.html">Our Team</a><br>
                         <a class="text-white mb-lg-3" href="#footer">Contact</a><br>
                         <a class="text-white mb-lg-3" href="./sitemap.html">SiteMap</a>

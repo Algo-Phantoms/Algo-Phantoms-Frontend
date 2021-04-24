@@ -57,6 +57,10 @@ li {
   list-style: none !important;
 }
 
+iframe {
+  margin-top: 12vh;
+}
+
 /******************* HEADER ******************/
 
 header {
@@ -77,6 +81,10 @@ header {
   display: block;
   width: 20%;
   margin: auto;
+}
+
+.top{
+  background: transparent;
 }
 
 .nav-item:hover hr:nth-child(2) {
@@ -991,5 +999,4 @@ HEAD .round-2 {
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
-}
 }

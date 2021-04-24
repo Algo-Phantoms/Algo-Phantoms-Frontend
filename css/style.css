@@ -58,7 +58,7 @@ li {
 }
 
 iframe {
-  margin-top: 14vh;
+  margin-top: 12vh;
 }
 
 /******************* HEADER ******************/
@@ -1033,5 +1033,4 @@ HEAD .round-2 {
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
-}
 }

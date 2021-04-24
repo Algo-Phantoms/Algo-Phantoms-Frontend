@@ -297,7 +297,6 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -721,9 +720,7 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
-  .about {
-    height: 1100px;
-  }
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -740,7 +737,6 @@ HEAD .round-2 {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
-    height: 900px;
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -894,6 +890,7 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
+  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
@@ -982,6 +979,12 @@ HEAD .round-2 {
   background: #9c7a5b;
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
 
 #sharpen-skills .container{
     display: flex;

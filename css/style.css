@@ -266,6 +266,19 @@ header {
     #07b4b4
   ); /* adding linear color to the scroll-thumb */
 }
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/uparrow.png);
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/downarrow.png);
+            background-repeat: no-repeat;
+        }
 
 /************ Typing Effect ***********/
 .cursor {
@@ -288,7 +301,6 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -404,61 +416,6 @@ td {
 }
 
 /*********FAQ section ends**********/
-
-/* ******Team ********** */
-.Team {
-  height: 750px;
-  text-align: center;
-  background-image: linear-gradient(
-    to top,
-    #012b2e,
-    #053235,
-    #0a383c,
-    #103f44,
-    #15464b,
-    #17494e,
-    #1a4d52,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055
-  );
-  color: #fff;
-}
-
-.Team h1 {
-  font-size: 50px;
-  font-weight: bold;
-  padding-top: 30px;
-}
-
-.Team p {
-  font-size: 20px;
-}
-
-.slide-image {
-  width: 15%;
-  border-radius: 60%;
-  margin: 20px;
-}
-
-.carousel-item {
-  padding-top: 20px;
-}
-.carousel-item p {
-  padding: 0% 12%;
-  word-spacing: 6px;
-}
-
-hr {
-  border: 1px solid #3caea3;
-  display: block;
-  width: 90px;
-  margin: auto;
-}
-
-/* ******Team ends ****** */
 
 /************* TEAM **************/
 
@@ -678,6 +635,7 @@ HEAD .round-2 {
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
+  border-radius: 50%;
 }
 .socialicon:hover {
   text-decoration: none;
@@ -766,9 +724,7 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
-  .about {
-    height: 1100px;
-  }
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -785,7 +741,6 @@ HEAD .round-2 {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
-    height: 900px;
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -939,6 +894,7 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
+  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
@@ -1027,6 +983,12 @@ HEAD .round-2 {
   background: #9c7a5b;
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
 
 #sharpen-skills .container{
     display: flex;

@@ -57,6 +57,10 @@ li {
   list-style: none !important;
 }
 
+iframe {
+  margin-top: 12vh;
+}
+
 /******************* HEADER ******************/
 
 .top{
@@ -81,6 +85,10 @@ header {
   display: block;
   width: 20%;
   margin: auto;
+}
+
+.top{
+  background: transparent;
 }
 
 .nav-item:hover hr:nth-child(2) {
@@ -301,7 +309,6 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -323,7 +330,7 @@ h1 {
 }
 
 hr {
-  border: 1px solid #3caea3;
+  border: 0.5px solid #49b1ad;
   display: block;
   width: 80px;
   margin: auto;
@@ -350,7 +357,8 @@ hr {
 }
 
 .skills-section th:hover {
-  background-color: #fff;
+    cursor: pointer;
+    background-color: #27d8a3;
 }
 
 .skills-section th,
@@ -366,8 +374,18 @@ td {
   color: #05272e;
 }
 
-.skills-section tr:nth-child(odd) {
+.skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
+}
+.skills-section tr:nth-child(odd) th:hover{
+    background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-section tr:nth-child(even) th:hover{
+    background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
 
 .skills-section hr {
@@ -625,6 +643,7 @@ HEAD .round-2 {
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
+  border-radius: 50%;
 }
 .socialicon:hover {
   text-decoration: none;
@@ -713,9 +732,7 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
-  .about {
-    height: 1100px;
-  }
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -732,7 +749,6 @@ HEAD .round-2 {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
-    height: 900px;
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -886,6 +902,7 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
+  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
@@ -975,10 +992,15 @@ HEAD .round-2 {
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
+
 #sharpen-skills .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
-}
 }

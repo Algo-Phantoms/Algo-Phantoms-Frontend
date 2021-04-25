@@ -19,6 +19,12 @@
     <meta name="theme-color" content="#ffffff">
     
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <title>Practice Questions</title>
     <style>
@@ -39,9 +45,78 @@
 
 <body>
 
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top">
+            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50"
+                    height="50"><span class="brand1">Algo</span>Phantoms
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
+
+                            <a class="dropdown-item" href="https://github.com/Algo-Phantoms" target="_blank">Contribute
+                                to Project</a>
+
+                            <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
+
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script>
+            const navbar = document.getElementsByTagName("nav")[0];
+            let scrolled=false;
+            window.onscroll=function(){
+                if(window.pageYOffset>100)
+                {
+                    navbar.classList.remove("top");
+                    if(!scrolled)
+                    {
+                        navbar.style.transform="translateY(-70px)";
+                    }
+                    setTimeout(function(){
+                     navbar.style.transform = 'translateY(0)';
+                     scrolled = true;
+                    },200);
+                }
+                else{
+                    navbar.classList.add("top");
+                    scrolled=false;
+                }
+            };
+        </script>
+    </section>
+
+
         <iframe title="PracticeDSA" style="border:none" width="1400px" height="3000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQDw1bOBFu39nOauhGWbF1vMF7ZkfLlyC8HUl1BxcB1sZwWrHhAYLk0iYUu1a-_Ow/pubhtml?widget=true&amp;headers=false"></iframe>
         
-         <!--footer ends-->
+         <!--footer starts-->
 
         <footer id="footer">
             <div class="container">

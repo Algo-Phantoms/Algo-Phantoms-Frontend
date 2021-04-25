@@ -1,10 +1,11 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -56,7 +57,7 @@
     <!-- header starts -->
     <header class="fix">
         <img src="video/background.gif" class="vid-bg" alt="background-gif">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
             <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50" height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -143,15 +144,15 @@
         </a>
 
     </header>
-
     <!-- header ends -->
+    
     <!--social media sidebar starts-->
     <ul id="social-sidebar">
         <li>
             <a class="entypo-facebook" href="#" target="_blank"><span>Facebook</span></a>
         </li>
         <li>
-            <a class="entypo-github" href="#" target="_blank"><span>Github</span></a>
+            <a class="entypo-github" href="https://github.com/Algo-Phantoms" target="_blank"><span>Github</span></a>
         </li>
         <li>
             <a class="entypo-gplus" href="#" target="_blank"><span>Google+</span></a>
@@ -166,28 +167,32 @@
             <a class="entypo-twitter" href="#" target="_blank"><span>Twitter</span></a>
         </li>
     </ul>
-    <!--social media sidebae ends-->
+   <!--social media sidebae ends-->
 
    <!-- about starts -->
-  <section id="about" class="about">
-    <div class="container">
-      <h1 class="text-center">About Us</h1>
-      <hr>
-
-      <p class="about-content">
-        “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
-
-        <br> <br>
-      <p class="text-justify">
-        We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and
-        change code according
-        to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
-    </div>
+   <section id="about" class="about">
+   <div class="container">
+        <h1 class="text-center">About Us</h1>
+        <hr>
+        <div class="row">
+            <div class="col-lg-7">
+                <p class="about-content">
+                    “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
+                    <br> <br>
+                  <p class="text-justify">
+                    We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and
+                    change code according
+                    to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
+            </div>
+            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                <img src="images/about_us_background.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+   </div>
   </section>
-
-  <!-- about ends -->
-
-   <!--Section-Sharpen your skills starts-->
+<!-- about ends -->
+    
+<!--Section-Sharpen your skills starts-->
 <section id="sharpen-skills" class="skills-section">
     <div class="container">
         <h1 class="text-center">Sharpen Your Skills</h1>
@@ -195,19 +200,19 @@
     <br><br>
     <table class="center">
       <tr>
-        <th><i class="fas fa-atom"></i>&nbsp; <a href="#">Data Structures</a></th>
-        <th><i class="fas fa-project-diagram"></i>&nbsp; <a href="#">Algorithms</a></th>
-        <th><i class="fab fa-python"></i>&nbsp; <a href="#">Python</a></th>
+        <th><i class="fas fa-atom"></i>&nbsp; <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">Data Structures</a></th>
+        <th><i class="fas fa-project-diagram"></i>&nbsp; <a href="https://leetcode.com/problemset/algorithms/" target="_blank">Algorithms</a></th>
+        <th><i class="fab fa-python"></i>&nbsp; <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python</a></th>                 
       </tr>
       <tr>
-         <th><i class="fab fa-cuttlefish"></i>&nbsp; <a href="#">C</a></th>
-        <th><i class="devicon-cplusplus-line-wordmark fa-lg"></i>&nbsp; <a href="#">C++</a></th>
-        <th><i class="fab fa-java fa-lg"></i>&nbsp; <a href="#">Java</a></th>
+        <th><i class="fab fa-cuttlefish"></i>&nbsp; <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank">C</a></th>
+        <th><i class="devicon-cplusplus-line-wordmark fa-lg"></i>&nbsp; <a href="https://www.cplusplus.com/" target="_blank">C++</a></th>                   
+        <th><i class="fab fa-java fa-lg"></i>&nbsp; <a href="https://www.youtube.com/watch?v=eTXd89t8ngI&list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0" target="_blank">Java</a></th>
       </tr>
       <tr>
-        <th><i class="fas fa-gem"></i>&nbsp; <a href="#">Ruby</a></th>
-        <th><i class="fas fa-square-root-alt"></i>&nbsp; <a href="#">Mathematics</a></th>
-        <th><i class="fa fa-database"></i>&nbsp; <a href="#">Databases</a></th>
+        <th><i class="far fa-gem"></i>&nbsp; <a href="https://www.youtube.com/watch?v=t_ispmWmdjY" target="_blank">Ruby</a></th>
+        <th><i class="fab fa-gofore"></i>&nbsp; <a href="https://www.youtube.com/watch?v=YS4e4q9oBaU" target="_blank">Golang</a></th>  
+        <th><i class="fab fa-swift"></i>&nbsp; <a href="https://www.youtube.com/watch?v=Ulp1Kimblg0"  target="_blank">Swift</a></th>  
       </tr>
       </table>
     </div>

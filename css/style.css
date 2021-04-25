@@ -57,7 +57,15 @@ li {
   list-style: none !important;
 }
 
+iframe {
+  margin-top: 12vh;
+}
+
 /******************* HEADER ******************/
+
+.top{
+  background: transparent;
+}
 
 header {
   overflow: hidden;
@@ -78,6 +86,10 @@ header {
   display: block;
   width: 20%;
   margin: auto;
+}
+
+.top{
+  background: transparent;
 }
 
 .nav-item:hover hr:nth-child(2) {
@@ -350,9 +362,11 @@ header {
 
 .about {
 
+
   padding: 150px 0px;
 
   height: 650px;
+
   text-align: center;
 }
 
@@ -371,7 +385,7 @@ h1 {
 
 
 hr {
-  border: 1px solid #3caea3;
+  border: 0.5px solid #49b1ad;
   display: block;
   width: 80px;
   margin: auto;
@@ -866,9 +880,7 @@ HEAD .round-2 {
   }
 
 @media (min-width: 575px) and (max-width: 1200px) {
-  .about {
-    height: 1100px;
-  }
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -894,7 +906,6 @@ HEAD .round-2 {
     }
 
   .about {
-    height: 900px;
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -1209,4 +1220,4 @@ HEAD .round-2 {
     align-items: center;
     margin-left: 7rem;
 }
-}
+

@@ -78,6 +78,7 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+
 }
 .hr {
   border: 1px solid #3caea3;
@@ -97,6 +98,7 @@ header {
   width: 30%;
   margin-left: 2.65rem;
   padding-right: 2rem !important;
+
 }
 .navbar-nav a {
   font-size: 18px;
@@ -105,6 +107,9 @@ header {
 
 .nav-col {
   background-color: #0e2431;
+
+  opacity: 0.8;
+
 }
 
 .navbar-light .navbar-brand {
@@ -122,9 +127,11 @@ header {
 }
 
 .nav-items {
+
   color: white !important;
   margin-left: 2.65rem;
   padding-right: 2rem !important;
+
 }
 
 .navbar-nav .nav-link {
@@ -132,7 +139,11 @@ header {
 }
 
 .navbar-nav {
-  text-align: center;
+
+    text-align: center;
+    width: 75% !important;
+
+
 }
 
 .nav-link {
@@ -163,11 +174,27 @@ header {
 }
 
 .banner-text {
+
   position: absolute;
   top: 35%;
   z-index: 1;
   margin-left: 6rem;
   margin-right: 6rem;
+
+}
+
+.banner-text .main-head {
+  color: #fff;
+  font-size: 4rem;
+  margin-left: 2vw;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    margin-left:6rem;
+    margin-right:6rem;
+}
+
+
 }
 
 .banner-text .main-head {
@@ -181,6 +208,27 @@ header {
 }
 
 .banner-text p {
+
+
+  color: #b8d5cd;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.below-head {
+  margin-left: 3vw;
+}
+
+.below-head span {
+    color: #b8d5cd;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.below-head{
+    margin-left: 3vw;
+
   color: #b8d5cd;
   font-size: 30px;
   font-weight: bold;
@@ -193,6 +241,7 @@ header {
 .below-head span {
   color: #3caea3;
 }
+
 
 .scroll-down {
   position: absolute;
@@ -261,6 +310,7 @@ header {
   }
 }
 
+
 ::-webkit-scrollbar {
   width: 15px; /* adjusting the width of the scrollbar */
 }
@@ -270,8 +320,10 @@ header {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     300deg,
+
     #078ea3,
     #07b4b4
+
   ); /* adding linear color to the scroll-thumb */
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
@@ -309,25 +361,28 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  padding: 6.8% 0% 7%;
+
+
+  padding: 150px 0px;
+
+  height: 650px;
+
   text-align: center;
 }
 
 h1 {
   text-align: center;
+
 }
 
 .about h1 {
   font-size: 50px;
   font-weight: bold;
+
   backdrop-filter: blur(20px);
 }
 
-.about h1 {
-  font-size: 50px;
-  font-weight: bold;
-  backdrop-filter: blur(20px);
-}
+
 
 hr {
   border: 0.5px solid #49b1ad;
@@ -342,6 +397,7 @@ hr {
 
 .about-content {
   margin-top: 50px;
+
   text-align: center;
 }
 
@@ -393,6 +449,7 @@ td {
   display: block;
   width: 80px;
   margin: auto;
+
 }
 .skills-section h1 {
   font-size: 50px;
@@ -404,6 +461,7 @@ td {
   margin-bottom: 10em;
 }
 /*********Section-Sharpen your skills ends**********/
+
 
 /*********FAQ section starts**********/
 .fnq h1 {
@@ -424,6 +482,7 @@ td {
 }
 
 /*********FAQ section ends**********/
+
 
 /************* TEAM **************/
 
@@ -457,9 +516,15 @@ td {
   background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
+
+.round-2 {
+  position: absolute;
+  top: 50%;
+
 HEAD .round-2 {
   position: absolute;
   top: 40%;
+
   right: 4%;
   width: 20rem;
   height: 20rem;
@@ -488,6 +553,7 @@ HEAD .round-2 {
   backdrop-filter: blur(20px);
   margin-bottom: 50px !important;
   margin-top: 40px !important;
+
 }
 .flip-card {
   background-color: transparent;
@@ -531,6 +597,7 @@ HEAD .round-2 {
   color: #fff;
   font-size: 2rem;
   transform: rotateY(180deg);
+
 }
 
 .box-raghav {
@@ -538,13 +605,15 @@ HEAD .round-2 {
 }
 
 .profile-img {
+
   margin-top: 70px;
+
   width: 200px !important;
   height: 200px !important;
   border-radius: 5px !important;
   overflow: hidden;
   object-fit: cover;
-  margin-left: 50px;
+
 }
 
 /* .profile-img img {
@@ -553,17 +622,40 @@ HEAD .round-2 {
 } */
 
 .box h2 {
+
+
   color: #3caea3;
   text-transform: uppercase;
   margin: 20px 0;
   font-size: 25px;
   font-weight: bold;
   letter-spacing: 0.1rem;
+
 }
 
 .custom-size {
   font-size: 30px;
 }
+
+.box p {
+  color: #ffffff90;
+  font-size: 14px;
+}
+
+.socials {
+  margin-top: 35px;
+}
+
+.socials i {
+  margin: 0 10px;
+  font-size: 25px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #ffffff90;
+}
+
 
 .socials a {
   margin: 0 5px;
@@ -654,6 +746,7 @@ HEAD .round-2 {
 }
 .socialicons a:hover {
   text-decoration: none;
+
 }
 
 .subscribe-box {
@@ -662,6 +755,7 @@ HEAD .round-2 {
 }
 
 .subscribe-button {
+
   background: #3caea3 !important;
   cursor: pointer;
   width: auto;
@@ -670,20 +764,53 @@ HEAD .round-2 {
 .subscribe-button:hover {
   background-color: transparent !important;
   transition: 0.4s;
-}
+
+    cursor: pointer;}
 
 .subscribe-button:hover {
   background-color: #439b98 !important;
   cursor: pointer;
 }
 
+
+
+
 .copyright-text {
   font-size: 14px;
   letter-spacing: 0.6px !important;
 }
 
+
+  font-size: 14px;
+  letter-spacing: 0.6px !important;
+}
+
 /* for scroll to top button */
+
+
 #back-to-top-btn {
+
+
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition:all 0.4s ease-in;
+    align-items: center;
+    opacity: 0;
+}
+#back-to-top-btn.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+
   position: fixed;
   bottom: 3%;
   right: 3%;
@@ -699,18 +826,16 @@ HEAD .round-2 {
   align-items: center;
   opacity: 0;
 }
-#back-to-top-btn.active {
-  bottom: 32px;
-  pointer-events: auto;
-  opacity: 1;
-}
+
 
 #back-to-top-btn:hover,
 #back-to-top-btn:focus {
   background-color: #333;
   color: #fff;
   border: 2px solid #fff;
+
 }
+
 
 .mt-small-2 {
   margin-top: 0rem !important;
@@ -731,6 +856,29 @@ HEAD .round-2 {
 /*
 ...........responsive.............*/
 
+
+@media (min-width: 575px) and (max-width: 767px) {
+  .about {
+    height: 1100px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 574px) {
+  .about {
+    height: 900px;
+    padding: 0 20px;
+  }
+
+  .banner-text .main-head {
+    font-size: 50px;
+  }
+  .banner-text .below-head {
+    font-size: 30px;
+  }
+  #social-sidebar {
+    display: none;
+  }
+
 @media (min-width: 575px) and (max-width: 1200px) {
 
   .dropdown-menu {
@@ -748,6 +896,15 @@ HEAD .round-2 {
 }
 
 @media (min-width: 460px) and (max-width: 574px) {
+
+    
+    .dropdown-menu{
+        width:50vw;
+    }
+    .dropdown-item{
+        font-size:1rem;
+    }
+
   .about {
     padding: 0 20px;
   }
@@ -763,6 +920,7 @@ HEAD .round-2 {
   .nav-item:hover hr:nth-child(2) {
     display: none;
   }
+
 }
 
 @media (max-width: 479px) {
@@ -781,13 +939,62 @@ HEAD .round-2 {
   .about p {
     font-size: 20px;
   }
+
+}
+
+
+#coding {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+      justify-content: center; 
+  }
+  #left, #right{
+    animation: typing 0.2s cubic-bezier(.18,.85,.72,.22) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+  @keyframes typing {
+    0% {
+      transform: rotateZ(-10deg);
+    }
+    100% {
+      transform: rotateZ(10deg);
+    }
+  }
+  @keyframes move-head {
+   0% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      transform: translateY(5px);
+    }
+  }
+  
+  #head {
+    animation: move-head 1s cubic-bezier(.41,.16,.24,.71) infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  
+
+
+    .about p {
+        font-size: 20px;
+    }   
+
   .hr {
     display: none;
   }
   .nav-item:hover hr:nth-child(2) {
     display: none;
   }
+
 }
+
 /**** team responsive ****/
 
 @media (max-width: 1200px) {
@@ -886,6 +1093,7 @@ HEAD .round-2 {
 }
 
 @media (max-width: 768px) {
+
   .mobile-heading {
     font-size: 40px !important;
   }
@@ -902,7 +1110,6 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
-  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
@@ -990,6 +1197,15 @@ HEAD .round-2 {
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
+
+    .mobile-heading {
+        font-size: 40px !important;
+    }
+    .margin-top-mobile {
+        padding-top: 15px;
+    }
+}
+
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
 @media (max-width: 720px){
@@ -1004,3 +1220,4 @@ HEAD .round-2 {
     align-items: center;
     margin-left: 7rem;
 }
+

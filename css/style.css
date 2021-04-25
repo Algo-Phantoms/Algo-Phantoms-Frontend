@@ -63,6 +63,10 @@ iframe {
 
 /******************* HEADER ******************/
 
+.top{
+  background: transparent;
+}
+
 header {
   overflow: hidden;
   height: 100vh;

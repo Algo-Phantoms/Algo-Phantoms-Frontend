@@ -40,7 +40,7 @@
         -moz-box-shadow: none !important;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
-        border: 1px solid #d500f9 !important;
+        border: 1px solid #046328 !important;
         outline-width: 0;
         font-weight: 400;
       }
@@ -172,6 +172,7 @@
 
         .card2 {
           padding: 50px;
+          background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
         }
 
         .right {
@@ -201,28 +202,17 @@
                   <img id="logo" src="images/icon.png" />
                 </div>
                 <h3 class="mb-5 text-center heading">We are Algo Phantom</h3>
-                <h6 class="msg-info">Create a new account</h6>
+                <h6 class="msg-info">Please login to your account</h6>
                 <div class="form-group">
-                  <label class="form-control-label text-muted">Name</label>
+                  <label class="form-control-label text-muted">Username</label>
                   <input
                     type="text"
                     id="email"
                     name="email"
-                    placeholder="Username"
+                    placeholder="Username or email id"
                     class="form-control"
                   />
                 </div>
-                <div class="form-group">
-                  <label class="form-control-label text-muted">Email-Id</label>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Email id"
-                    class="form-control"
-                  />
-                </div>
-
                 <div class="form-group">
                   <label class="form-control-label text-muted">Password</label>
                   <input
@@ -234,19 +224,23 @@
                   />
                 </div>
                 <div class="row justify-content-center my-3 px-3">
-                  <button class="btn-block btn-color">Sign Up</button>
+                  <button class="btn-block btn-color">Sign In</button>
+                </div>
+                <div class="row justify-content-center my-2">
+                  <a href="#"
+                    ><small class="text-muted">Forgot Password?</small></a
+                  >
                 </div>
               </div>
             </div>
             <div class="bottom text-center mb-5">
               <p href="#" class="sm-text mx-auto mb-3">
-                Already have an account?<button class="btn btn-white ml-2">
-                  <a href="sign-in.html">Sign In</a>
+                Don't have an account?<button class="btn btn-white ml-2">
+                  <a href="sign-up.html">Create new</a>
                 </button>
               </p>
             </div>
           </div>
-
           <div class="card card2">
             <div class="my-auto mx-md-5 px-md-5 right">
               <h3 class="text-white">We are more than just a company</h3>

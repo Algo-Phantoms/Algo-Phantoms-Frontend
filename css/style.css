@@ -57,7 +57,18 @@ li {
   list-style: none !important;
 }
 
+<<<<<<< HEAD
+=======
+iframe {
+  margin-top: 12vh;
+}
+
+>>>>>>> upstream1/master
 /******************* HEADER ******************/
+
+.top{
+  background: transparent;
+}
 
 header {
   overflow: hidden;
@@ -70,6 +81,7 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+<<<<<<< HEAD
 }
 .hr {
   border: 1px solid #3caea3;
@@ -99,6 +111,35 @@ header {
 
 .top {
   background: transparent;
+=======
+}
+.hr {
+  border: 1px solid #3caea3;
+  border-radius: 5px;
+  display: block;
+  width: 20%;
+  margin: auto;
+}
+
+.top{
+  background: transparent;
+}
+
+.nav-item:hover hr:nth-child(2) {
+  border-bottom: 1px solid #3caea3;
+  display: block;
+  width: 30%;
+  margin-left: 2.65rem;
+  padding-right: 2rem !important;
+}
+.navbar-nav a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-col {
+  background-color: #0e2431;
+>>>>>>> upstream1/master
 }
 
 .navbar-light .navbar-brand {
@@ -126,7 +167,11 @@ header {
 }
 
 .navbar-nav {
+<<<<<<< HEAD
   text-align: right;
+=======
+  text-align: center;
+>>>>>>> upstream1/master
 }
 
 .nav-link {
@@ -139,6 +184,22 @@ header {
 .dropdown-menu {
   background-color: #000;
 }
+<<<<<<< HEAD
+=======
+@media only screen and (max-width: 991px) {
+  .dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+.navbar-nav .dropdown-menu {
+  position: relative;
+  float: none;
+}
+>>>>>>> upstream1/master
 .dropdown-item {
   color: #3caea3;
 }
@@ -254,12 +315,45 @@ header {
     #078ea3,
     #07b4b4
   ); /* adding linear color to the scroll-thumb */
+<<<<<<< HEAD
+=======
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/uparrow.png);
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/downarrow.png);
+            background-repeat: no-repeat;
+        }
+
+/************ Typing Effect ***********/
+.cursor {
+    animation: blink 0.5s infinite linear;
+}
+
+.cursor .typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+>>>>>>> upstream1/master
 }
 
 /******************* ABOUT ***********************/
 
 .about {
-  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -281,7 +375,11 @@ h1 {
 }
 
 hr {
+<<<<<<< HEAD
   border: 1px solid #3caea3;
+=======
+  border: 0.5px solid #49b1ad;
+>>>>>>> upstream1/master
   display: block;
   width: 80px;
   margin: auto;
@@ -308,7 +406,12 @@ hr {
 }
 
 .skills-section th:hover {
+<<<<<<< HEAD
   background-color: #fff;
+=======
+    cursor: pointer;
+    background-color: #27d8a3;
+>>>>>>> upstream1/master
 }
 
 .skills-section th,
@@ -324,9 +427,10 @@ td {
   color: #05272e;
 }
 
-.skills-section tr:nth-child(odd) {
+.skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
 }
+<<<<<<< HEAD
 
 .skills-section hr {
   border: 0.5px solid #49b1ad;
@@ -375,14 +479,44 @@ td {
 
 .Team p {
   font-size: 20px;
+=======
+.skills-section tr:nth-child(odd) th:hover{
+    background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-section tr:nth-child(even) th:hover{
+    background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
 
-.slide-image {
-  width: 15%;
-  border-radius: 60%;
-  margin: 20px;
+.skills-section hr {
+  border: 0.5px solid #49b1ad;
+  display: block;
+  width: 80px;
+  margin: auto;
+}
+.skills-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+  backdrop-filter: blur(20px);
+}
+.span {
+  display: block;
+  margin-bottom: 10em;
+>>>>>>> upstream1/master
+}
+/*********Section-Sharpen your skills ends**********/
+
+/*********FAQ section starts**********/
+.fnq h1 {
+  font-size: 50px;
+  font-weight: bold;
+  backdrop-filter: blur(20px);
 }
 
+<<<<<<< HEAD
 .carousel-item {
   padding-top: 20px;
 }
@@ -399,6 +533,20 @@ hr {
 }
 
 /* ******Team ends ****** */
+=======
+.fnq .card-header {
+  box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
+}
+
+.fnq a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+/*********FAQ section ends**********/
+>>>>>>> upstream1/master
 
 /************* TEAM **************/
 
@@ -432,7 +580,11 @@ hr {
   background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
+<<<<<<< HEAD
 .round-2 {
+=======
+HEAD .round-2 {
+>>>>>>> upstream1/master
   position: absolute;
   top: 40%;
   right: 4%;
@@ -442,7 +594,6 @@ hr {
   box-shadow: 0 0 50px #5622ff;
   background: linear-gradient(-180deg, #5622ff, #49b1ad);
 }
-
 .box {
   width: 350px;
   height: 500px;
@@ -619,6 +770,10 @@ hr {
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
+<<<<<<< HEAD
+=======
+  border-radius: 50%;
+>>>>>>> upstream1/master
 }
 .socialicon:hover {
   text-decoration: none;
@@ -707,9 +862,13 @@ hr {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
+<<<<<<< HEAD
   .about {
     height: 1100px;
   }
+=======
+
+>>>>>>> upstream1/master
   .dropdown-menu {
     width: 40vw;
   }
@@ -726,7 +885,10 @@ hr {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
+<<<<<<< HEAD
     height: 900px;
+=======
+>>>>>>> upstream1/master
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -880,10 +1042,18 @@ hr {
   left: 0;
   position: fixed;
   top: 30%;
+<<<<<<< HEAD
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
 }
+=======
+  z-index: +2;
+}
+#social-sidebar li:first-child a {
+  border-top-right-radius: 5px;
+}
+>>>>>>> upstream1/master
 #social-sidebar li:last-child a {
   border-bottom-right-radius: 5px;
 }
@@ -967,6 +1137,7 @@ hr {
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
+<<<<<<< HEAD
 
 /*--------------------------------------------------
 ------FORM---------------------------------------------------------------------------------------------*/
@@ -1052,4 +1223,19 @@ input[type="checkbox"] {
 
 *:focus {
   outline: none;
+=======
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
+
+#sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
+>>>>>>> upstream1/master
 }

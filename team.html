@@ -39,10 +39,9 @@
 
     <!-- header starts -->
     <section>
-
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top" id="nav">
-            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50px"
-                    height="50px"><span class="brand1">Algo</span>Phantoms
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
+            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50"
+                    height="50"><span class="brand1">Algo</span>Phantoms
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,8 +70,12 @@
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             More
                         </a>
+<<<<<<< HEAD
                         <hr class="hr">
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+=======
+                        <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
+>>>>>>> 953d461633973f2c0d46b219262d4c9e77bed7bf
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
                             <a class="dropdown-item" href="https://github.com/Algo-Phantoms" target="_blank">Contribute
@@ -124,7 +127,6 @@
         <div class="round-1"></div>
         <div class="wrapper">
             <div class="box">
-                
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
@@ -340,18 +342,13 @@
                       </div>
                     </div>
                   </div>
-
-    
-
-
-
         </div>
         </div>
     </section>
 
     <!--  team ends -->
 
-    <!-- footer starts -->
+  <!--Footer starts-->  
     <footer id="footer">
         <div class="container">
             <div class="row subscribe-box py-5">
@@ -359,11 +356,11 @@
                     <h2 class="text-white font-weight-bold py-2">Contact Us</h2>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <form action="">
+                    <form action="#">
                         <div class="input-group">
-                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email" required>
                             <div class="input-group-append">
-                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button type="submit" class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
                                 </button>
                             </div>
@@ -376,30 +373,42 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-lg-3 col-12">
                     <div class="">
-                        <img src="./images/icon.png" alt="" class="img-fluid mb-lg-4" width="100px" height="100px">
+                        <img src="./images/icon.png" alt="" class="img-fluid mb-lg-4" width="100" height="100">
                     </div>
                     <p class="text-white">An Open Source organization focuses on Data Structure and Algorithms.</p>
                 </div>
                 <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
                     <ul>
-                        <a class="text-white mb-lg-3" href="index.html">About</a><br>
-                        <a class="text-white mb-lg-3" href="./team.html">Our Team</a></br>
-                        <a class="text-white mb-lg-3" href="#footer">Contact</a><br>
-                        <a class="text-white mb-lg-3" href="./sitemap.html">SiteMap</a>
+                        <li>
+                            <a class="text-white mb-lg-3" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="text-white mb-lg-3" href="./team.html">Our Team</a>
+                        </li>
+                        <li>
+                            <a class="text-white mb-lg-3" href="#footer">Contact</a>
+                        </li>
+                        <li>
+                            <a class="text-white mb-lg-3" href="./sitemap.html">SiteMap</a>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
-                    <ul>
-                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a><br/>
-                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br/>
-                        <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree" target="_blank">DSA Guidance</a><br/>
-                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a><br/>
-                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a>
 
-                    </ul>
+                    <ul>
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a><br>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br>
+                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a><br>
+
+
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a><br>
+                        <a class="text-white mb-lg-3" href="DSA.html" >RoadMap to your DSA</a><br>  
+                        <a class="text-white mb-lg-3" href="practicedsa.html" >DSA Problems</a><br> 
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 socialicons">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
                     <a href="https://github.com/Algo-Phantoms" target="_blank"><i  class="fa fa-github p-2 socialicon " aria-hidden="true"
@@ -421,14 +430,11 @@
                 Copyright &copy; 2021 <a href="#" style="color: #3caea3; text-decoration: none;" target="_blank"><span
                         class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
         </div>
-        </div>
     </footer>
-    <!--footer ends-->
+<!--Footer Ends-->
 
     <!-- Back to top button -->
     <button id="back-to-top-btn" style="background:#3caea3;"><i class=" fas fa-angle-double-up"></i></button>
-
-    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/3.5.1/tilt.jquery.min.js"></script>
     <script src="js/tilt.jquery.js"></script>

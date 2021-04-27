@@ -172,7 +172,7 @@ header {
 
 .banner-text .main-head {
   color: #fff;
-  font-size: 5.5vw;
+  font-size: 5.7vw;
   margin-left: 2vw;
 }
 
@@ -187,8 +187,8 @@ header {
 }
 
 .banner-text .below-head {
-  margin: 50px 0 0 3vw;
-  font-size: 3.2vw;
+  margin: 50px 1.5vw 0 1.5vw;
+  font-size: 3vw;
 }
 
 .below-head span {

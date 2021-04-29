@@ -730,6 +730,62 @@ HEAD .round-2 {
 
 /*
 ...........responsive.............*/
+@media only screen and (max-width: 600px) {
+
+  /********Section-Sharpen your skills starts*********/
+  #sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0rem;
+  }
+  
+  .skills-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 50%;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  .skills-section th,td {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 2px 2px #0000;
+  }
+  
+  .skills-section h1 {
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  /*********Section-Sharpen your skills ends**********/
+
+
+  /***********FAQ SECTION starts **********************/
+  .fnq h1 {
+    margin-top: -70px;
+    font-size: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(20px);
+  }
+  
+  .fnq .card-header {
+    box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
+  }
+  
+  .fnq a {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+  }
+
+  /***********FAQ SECTION ends **********************/
+  
+  }
 
 @media (min-width: 575px) and (max-width: 1200px) {
 

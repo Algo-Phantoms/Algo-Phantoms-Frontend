@@ -425,6 +425,53 @@ td {
 
 /*********FAQ section ends**********/
 
+/************* CONTACT US **************/
+.contact h1{
+  font-family: 'Poppins', sans-serif;
+  margin-top: 150px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.btn.btn-common_head4{
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: -380px;
+  margin-bottom: 50px;
+  color: #0e2431;
+  background-color: #ffffff;
+  background-image: none;
+  border-color: #0e2431;
+  height: 50px;
+  width: 150px;
+}
+.btn.btn-common_head4:hover{
+color: #ffffff;
+background-color: #0e2431;
+border-color: #0e2431;
+}
+.contact span {
+  margin-left: 2px;
+  color: #181E19;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.contact label {
+  font-family: 'Noto Serif', serif;
+  font-size: 1rem;
+  color: #5F695F;
+  font-weight: 700;
+}
+.contact span {
+  color: #ff0000;
+  font-weight: normal;
+}
+
+/************* TEAM **************/
+
+
 /************* TEAM **************/
 
 .team {
@@ -784,7 +831,6 @@ HEAD .round-2 {
   }
 
   /***********FAQ SECTION ends **********************/
-  
   }
 
 @media (min-width: 575px) and (max-width: 1200px) {
@@ -1052,11 +1098,4 @@ HEAD .round-2 {
   #social-sidebar{
     display: none;
   }
-}
-
-#sharpen-skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 7rem;
 }

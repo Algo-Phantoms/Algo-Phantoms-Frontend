@@ -641,22 +641,28 @@ HEAD .round-2 {
   background-color: #3caea3;
   border-radius: 50%;
 }
-.socialicon:hover {
+.socialicon.fa-instagram:hover {
   text-decoration: none;
-  color: #3caea3;
-
-  background-color: white;
+  background-color: #ea4c89;
   border-radius: 50%;
 }
-.socialicons a:hover {
+.socialicon.fa-linkedin:hover {
   text-decoration: none;
+  background-color: #0a416e;
+  border-radius: 50%;
 }
 
-.subscribe-box {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+.socialicon.fa-twitter:hover {
+  text-decoration: none;
+  background-color: #00aced;
+  border-radius: 50%;
 }
 
+.socialicon.fa-github:hover {
+  text-decoration: none;
+  background-color: #9c7a5b;
+  border-radius: 50%;
+}
 .subscribe-button {
   background: #3caea3 !important;
   cursor: pointer;

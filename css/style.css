@@ -63,10 +63,6 @@ iframe {
 
 /******************* HEADER ******************/
 
-.top{
-  background: transparent;
-}
-
 header {
   overflow: hidden;
   height: 100vh;
@@ -172,7 +168,7 @@ header {
 
 .banner-text .main-head {
   color: #fff;
-  font-size: 5.7vw;
+  font-size: 4rem;
   margin-left: 2vw;
 }
 
@@ -186,9 +182,8 @@ header {
   font-weight: bold;
 }
 
-.banner-text .below-head {
-  margin: 50px 1.5vw 0 1.5vw;
-  font-size: 3vw;
+.below-head {
+  margin-left: 3vw;
 }
 
 .below-head span {
@@ -310,7 +305,6 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  margin: 1vw;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -641,28 +635,40 @@ HEAD .round-2 {
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 /*styling social icons*/
-.socialicon {
+.socialicon{
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
   border-radius: 50%;
-}
-.socialicon:hover {
   text-decoration: none;
-  color: #3caea3;
-
-  background-color: white;
-  border-radius: 50%;
 }
+
 .socialicons a:hover {
   text-decoration: none;
 }
 
-.subscribe-box {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+.socialicon.fa-instagram:hover {
+  background-color: #ea4c89;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.socialicon.fa-linkedin:hover {
+  background-color: #0a416e;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
+.socialicon.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialicon.fa-github:hover {
+  background-color: #9c7a5b;
+  border-radius: 50%;
+  text-decoration: none;
+}
 .subscribe-button {
   background: #3caea3 !important;
   cursor: pointer;
@@ -732,62 +738,6 @@ HEAD .round-2 {
 
 /*
 ...........responsive.............*/
-@media only screen and (max-width: 600px) {
-
-  /********Section-Sharpen your skills starts*********/
-  #sharpen-skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0rem;
-  }
-  
-  .skills-section table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 50%;
-    border: 1px solid #ddd;
-    margin-right: 10px;
-  }
-  
-  .skills-section th,td {
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 15px;
-    text-shadow: 2px 2px #0000;
-  }
-  
-  .skills-section h1 {
-    margin-top: 150px;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  /*********Section-Sharpen your skills ends**********/
-
-
-  /***********FAQ SECTION starts **********************/
-  .fnq h1 {
-    margin-top: -70px;
-    font-size: 30px;
-    font-weight: bold;
-    backdrop-filter: blur(20px);
-  }
-  
-  .fnq .card-header {
-    box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
-  }
-  
-  .fnq a {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-  }
-
-  /***********FAQ SECTION ends **********************/
-  
-  }
 
 @media (min-width: 575px) and (max-width: 1200px) {
 

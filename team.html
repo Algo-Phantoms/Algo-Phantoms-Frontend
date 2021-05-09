@@ -39,10 +39,9 @@
 
     <!-- header starts -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col">
-            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50"
-                    height="50"><span class="brand1">Algo</span>Phantoms
-            </a>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
+            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50" 
+                height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,21 +51,24 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link font-weight-bold nav-items" href="index.html">Home </a>
+                                <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#team">Team<span
-                                class="sr-only">(current)</span></a>
+                            class="sr-only">(current)</span></a>
+                        <hr class="hr">
                     </li>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
+                            <hr class="hr">
                         <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -74,13 +76,13 @@
                                 to Project</a>
 
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
-
+                             <a class="dropdown-item" href="booklist.html">Suggested Books</a>
                         </div>
                         <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                        <hr class="hr">
                     </li>
                     </ul>
-
             </div>
         </nav>
         <script>
@@ -339,7 +341,7 @@
 
     <!--  team ends -->
 
-    <!-- footer starts -->
+  <!--Footer starts-->  
     <footer id="footer">
         <div class="container">
             <div class="row subscribe-box py-5">
@@ -349,9 +351,9 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                     <form action="#">
                         <div class="input-group">
-                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email" required>
                             <div class="input-group-append">
-                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button type="submit" class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
                                 </button>
                             </div>
@@ -385,15 +387,21 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
-                    <ul class="list-group">
-                        <li><a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a></li>
-                        <li><a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a></li>
-                        <li><a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree" target="_blank">DSA Guidance</a></li>
-                        <li><a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a></li>
-                    </ul>
+
+                    <ul>
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a><br>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br>
+                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a><br>
+
+
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a><br>
+                        <a class="text-white mb-lg-3" href="DSA.html" >RoadMap to your DSA</a><br>  
+                        <a class="text-white mb-lg-3" href="practicedsa.html" >DSA Problems</a><br> 
                 </div>
+
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 socialicons">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
                     <a href="https://github.com/Algo-Phantoms" target="_blank"><i  class="fa fa-github p-2 socialicon " aria-hidden="true"
@@ -416,7 +424,7 @@
                         class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
         </div>
     </footer>
-    <!--footer ends-->
+<!--Footer Ends-->
 
     <!-- Back to top button -->
     <button id="back-to-top-btn" style="background:#3caea3;"><i class=" fas fa-angle-double-up"></i></button>

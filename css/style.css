@@ -57,6 +57,10 @@ li {
   list-style: none !important;
 }
 
+iframe {
+  margin-top: 12vh;
+}
+
 /******************* HEADER ******************/
 
 header {
@@ -77,6 +81,10 @@ header {
   display: block;
   width: 20%;
   margin: auto;
+}
+
+.top{
+  background: transparent;
 }
 
 .nav-item:hover hr:nth-child(2) {
@@ -262,6 +270,19 @@ header {
     #07b4b4
   ); /* adding linear color to the scroll-thumb */
 }
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/uparrow.png);
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/downarrow.png);
+            background-repeat: no-repeat;
+        }
 
 /************ Typing Effect ***********/
 .cursor {
@@ -284,7 +305,6 @@ header {
 /******************* ABOUT ***********************/
 
 .about {
-  height: 650px;
   padding: 6.8% 0% 7%;
   text-align: center;
 }
@@ -306,7 +326,7 @@ h1 {
 }
 
 hr {
-  border: 1px solid #3caea3;
+  border: 0.5px solid #49b1ad;
   display: block;
   width: 80px;
   margin: auto;
@@ -333,7 +353,8 @@ hr {
 }
 
 .skills-section th:hover {
-  background-color: #fff;
+    cursor: pointer;
+    background-color: #27d8a3;
 }
 
 .skills-section th,
@@ -349,8 +370,18 @@ td {
   color: #05272e;
 }
 
-.skills-section tr:nth-child(odd) {
+.skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
+}
+.skills-section tr:nth-child(odd) th:hover{
+    background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-section tr:nth-child(even) th:hover{
+    background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
 
 .skills-section hr {
@@ -389,61 +420,6 @@ td {
 }
 
 /*********FAQ section ends**********/
-
-/* ******Team ********** */
-.Team {
-  height: 750px;
-  text-align: center;
-  background-image: linear-gradient(
-    to top,
-    #012b2e,
-    #053235,
-    #0a383c,
-    #103f44,
-    #15464b,
-    #17494e,
-    #1a4d52,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055
-  );
-  color: #fff;
-}
-
-.Team h1 {
-  font-size: 50px;
-  font-weight: bold;
-  padding-top: 30px;
-}
-
-.Team p {
-  font-size: 20px;
-}
-
-.slide-image {
-  width: 15%;
-  border-radius: 60%;
-  margin: 20px;
-}
-
-.carousel-item {
-  padding-top: 20px;
-}
-.carousel-item p {
-  padding: 0% 12%;
-  word-spacing: 6px;
-}
-
-hr {
-  border: 1px solid #3caea3;
-  display: block;
-  width: 90px;
-  margin: auto;
-}
-
-/* ******Team ends ****** */
 
 /************* TEAM **************/
 
@@ -659,27 +635,40 @@ HEAD .round-2 {
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 /*styling social icons*/
-.socialicon {
+.socialicon{
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
-}
-.socialicon:hover {
-  text-decoration: none;
-  color: #3caea3;
-
-  background-color: white;
   border-radius: 50%;
+  text-decoration: none;
 }
+
 .socialicons a:hover {
   text-decoration: none;
 }
 
-.subscribe-box {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+.socialicon.fa-instagram:hover {
+  background-color: #ea4c89;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.socialicon.fa-linkedin:hover {
+  background-color: #0a416e;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
+.socialicon.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialicon.fa-github:hover {
+  background-color: #9c7a5b;
+  border-radius: 50%;
+  text-decoration: none;
+}
 .subscribe-button {
   background: #3caea3 !important;
   cursor: pointer;
@@ -751,9 +740,7 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
-  .about {
-    height: 1100px;
-  }
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -770,7 +757,6 @@ HEAD .round-2 {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
-    height: 900px;
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -924,6 +910,7 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
+  z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
@@ -1013,10 +1000,15 @@ HEAD .round-2 {
 }
 #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
+@media (max-width: 720px){
+  #social-sidebar{
+    display: none;
+  }
+}
+
 #sharpen-skills .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
-}
 }

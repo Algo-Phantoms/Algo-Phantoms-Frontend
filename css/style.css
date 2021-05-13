@@ -66,10 +66,6 @@ iframe {
 >>>>>>> upstream1/master
 /******************* HEADER ******************/
 
-.top{
-  background: transparent;
-}
-
 header {
   overflow: hidden;
   height: 100vh;
@@ -766,31 +762,46 @@ HEAD .round-2 {
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 /*styling social icons*/
-.socialicon {
+.socialicon{
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
 <<<<<<< HEAD
 =======
   border-radius: 50%;
+<<<<<<< HEAD
 >>>>>>> upstream1/master
-}
-.socialicon:hover {
+=======
   text-decoration: none;
-  color: #3caea3;
-
-  background-color: white;
-  border-radius: 50%;
+>>>>>>> upstream/master
 }
+
 .socialicons a:hover {
   text-decoration: none;
 }
 
-.subscribe-box {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+.socialicon.fa-instagram:hover {
+  background-color: #ea4c89;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.socialicon.fa-linkedin:hover {
+  background-color: #0a416e;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
+.socialicon.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialicon.fa-github:hover {
+  background-color: #9c7a5b;
+  border-radius: 50%;
+  text-decoration: none;
+}
 .subscribe-button {
   background: #3caea3 !important;
   cursor: pointer;
@@ -1237,5 +1248,9 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     margin-left: 7rem;
+<<<<<<< HEAD
 >>>>>>> upstream1/master
 }
+=======
+}
+>>>>>>> upstream/master

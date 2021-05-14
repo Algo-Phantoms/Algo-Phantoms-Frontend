@@ -56,12 +56,9 @@ body {
 li {
   list-style: none !important;
 }
-
-<<<<<<< HEAD ======= iframe {
+iframe {
   margin-top: 12vh;
 }
-
->>>>>>> upstream1/master
 /******************* HEADER ******************/
 
 header {

@@ -56,9 +56,11 @@ body {
 li {
   list-style: none !important;
 }
+
 iframe {
   margin-top: 12vh;
 }
+
 /******************* HEADER ******************/
 
 header {
@@ -81,11 +83,14 @@ header {
   margin: auto;
 }
 
+.top {
+  background: transparent;
+}
+
 .nav-item:hover hr:nth-child(2) {
   border-bottom: 1px solid #3caea3;
   display: block;
   width: 30%;
-  /* margin-left:auto;*/
   margin-left: 2.65rem;
   padding-right: 2rem !important;
 }
@@ -96,11 +101,6 @@ header {
 
 .nav-col {
   background-color: #0e2431;
-  opacity: 0.8;
-}
-
-.top {
-  background: transparent;
 }
 
 .navbar-light .navbar-brand {
@@ -141,7 +141,6 @@ header {
 .dropdown-menu {
   background-color: #000;
 }
-
 @media only screen and (max-width: 991px) {
   .dropdown-menu-center {
     right: auto;
@@ -155,7 +154,6 @@ header {
   position: relative;
   float: none;
 }
-
 .dropdown-item {
   color: #3caea3;
 }
@@ -516,6 +514,7 @@ HEAD .round-2 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  transform: rotateX(0deg); /* Fixes card flip issue in firefox */
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -917,9 +916,8 @@ HEAD .round-2 {
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
 }
-
-#social-sidebar li:first-child a {
-  border-top-right-radius: 5px;
+#social-sidebar li:last-child a {
+  border-bottom-right-radius: 5px;
 }
 
 #social-sidebar a {

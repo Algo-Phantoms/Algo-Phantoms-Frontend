@@ -513,6 +513,7 @@ HEAD .round-2 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  transform: rotateX(0deg); /* Fixes card flip issue in firefox */
 }
 
 /* Style the front side (fallback if image is missing) */

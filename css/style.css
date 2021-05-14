@@ -505,15 +505,6 @@ HEAD .round-2 {
   transform: rotateY(-180deg);
 }
 
-/*Fixes card flip issue in firefox*/
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  transform: rotateX(0deg);
-}
-
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
@@ -522,6 +513,7 @@ HEAD .round-2 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  transform: rotateX(0deg); /* Fixes card flip issue in firefox */
 }
 
 /* Style the front side (fallback if image is missing) */

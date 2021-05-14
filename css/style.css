@@ -57,9 +57,7 @@ li {
   list-style: none !important;
 }
 
-<<<<<<< HEAD
-=======
-iframe {
+<<<<<<< HEAD ======= iframe {
   margin-top: 12vh;
 }
 
@@ -77,7 +75,6 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-<<<<<<< HEAD
 }
 .hr {
   border: 1px solid #3caea3;
@@ -107,35 +104,6 @@ header {
 
 .top {
   background: transparent;
-=======
-}
-.hr {
-  border: 1px solid #3caea3;
-  border-radius: 5px;
-  display: block;
-  width: 20%;
-  margin: auto;
-}
-
-.top{
-  background: transparent;
-}
-
-.nav-item:hover hr:nth-child(2) {
-  border-bottom: 1px solid #3caea3;
-  display: block;
-  width: 30%;
-  margin-left: 2.65rem;
-  padding-right: 2rem !important;
-}
-.navbar-nav a {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.nav-col {
-  background-color: #0e2431;
->>>>>>> upstream1/master
 }
 
 .navbar-light .navbar-brand {
@@ -163,11 +131,7 @@ header {
 }
 
 .navbar-nav {
-<<<<<<< HEAD
-  text-align: right;
-=======
   text-align: center;
->>>>>>> upstream1/master
 }
 
 .nav-link {
@@ -180,8 +144,7 @@ header {
 .dropdown-menu {
   background-color: #000;
 }
-<<<<<<< HEAD
-=======
+
 @media only screen and (max-width: 991px) {
   .dropdown-menu-center {
     right: auto;
@@ -195,7 +158,7 @@ header {
   position: relative;
   float: none;
 }
->>>>>>> upstream1/master
+
 .dropdown-item {
   color: #3caea3;
 }
@@ -311,40 +274,38 @@ header {
     #078ea3,
     #07b4b4
   ); /* adding linear color to the scroll-thumb */
-<<<<<<< HEAD
-=======
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-            background-position: center 4px;
-            background-size: 8px 8px;
-            background-image: url(../images/uparrow.png);
-            background-repeat: no-repeat;
-        }
+  background-position: center 4px;
+  background-size: 8px 8px;
+  background-image: url(../images/uparrow.png);
+  background-repeat: no-repeat;
+}
 
-        ::-webkit-scrollbar-button:single-button:vertical:increment {
-            background-position: center 4px;
-            background-size: 8px 8px;
-            background-image: url(../images/downarrow.png);
-            background-repeat: no-repeat;
-        }
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-position: center 4px;
+  background-size: 8px 8px;
+  background-image: url(../images/downarrow.png);
+  background-repeat: no-repeat;
+}
 
 /************ Typing Effect ***********/
 .cursor {
-    animation: blink 0.5s infinite linear;
+  animation: blink 0.5s infinite linear;
 }
 
 .cursor .typing {
-    animation: none;
+  animation: none;
 }
 
 @keyframes blink {
-    0%,100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
->>>>>>> upstream1/master
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /******************* ABOUT ***********************/
@@ -371,11 +332,7 @@ h1 {
 }
 
 hr {
-<<<<<<< HEAD
-  border: 1px solid #3caea3;
-=======
   border: 0.5px solid #49b1ad;
->>>>>>> upstream1/master
   display: block;
   width: 80px;
   margin: auto;
@@ -402,12 +359,8 @@ hr {
 }
 
 .skills-section th:hover {
-<<<<<<< HEAD
-  background-color: #fff;
-=======
-    cursor: pointer;
-    background-color: #27d8a3;
->>>>>>> upstream1/master
+  cursor: pointer;
+  background-color: #27d8a3;
 }
 
 .skills-section th,
@@ -426,65 +379,15 @@ td {
 .skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
 }
-<<<<<<< HEAD
-
-.skills-section hr {
-  border: 0.5px solid #49b1ad;
-  display: block;
-  width: 80px;
-  margin: auto;
+.skills-section tr:nth-child(odd) th:hover {
+  background-color: #1e918d;
+  transition-delay: 100ms;
+  border-top: 2px solid #0c3b3a;
 }
-.skills-section h1 {
-  font-size: 50px;
-  font-weight: bold;
-  backdrop-filter: blur(20px);
-}
-.span {
-  display: block;
-  margin-bottom: 10em;
-}
-/*********Section-Sharpen your skills ends**********/
-
-/* ******Team ********** */
-.Team {
-  height: 750px;
-  text-align: center;
-  background-image: linear-gradient(
-    to top,
-    #012b2e,
-    #053235,
-    #0a383c,
-    #103f44,
-    #15464b,
-    #17494e,
-    #1a4d52,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055
-  );
-  color: #fff;
-}
-
-.Team h1 {
-  font-size: 50px;
-  font-weight: bold;
-  padding-top: 30px;
-}
-
-.Team p {
-  font-size: 20px;
-=======
-.skills-section tr:nth-child(odd) th:hover{
-    background-color: #1e918d;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
-}
-.skills-section tr:nth-child(even) th:hover{
-    background-color: #a6adad;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
+.skills-section tr:nth-child(even) th:hover {
+  background-color: #a6adad;
+  transition-delay: 100ms;
+  border-top: 2px solid #0c3b3a;
 }
 
 .skills-section hr {
@@ -501,7 +404,6 @@ td {
 .span {
   display: block;
   margin-bottom: 10em;
->>>>>>> upstream1/master
 }
 /*********Section-Sharpen your skills ends**********/
 
@@ -512,24 +414,6 @@ td {
   backdrop-filter: blur(20px);
 }
 
-<<<<<<< HEAD
-.carousel-item {
-  padding-top: 20px;
-}
-.carousel-item p {
-  padding: 0% 12%;
-  word-spacing: 6px;
-}
-
-hr {
-  border: 1px solid #3caea3;
-  display: block;
-  width: 90px;
-  margin: auto;
-}
-
-/* ******Team ends ****** */
-=======
 .fnq .card-header {
   box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
 }
@@ -542,7 +426,6 @@ hr {
 }
 
 /*********FAQ section ends**********/
->>>>>>> upstream1/master
 
 /************* TEAM **************/
 
@@ -576,11 +459,7 @@ hr {
   background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
-<<<<<<< HEAD
-.round-2 {
-=======
 HEAD .round-2 {
->>>>>>> upstream1/master
   position: absolute;
   top: 40%;
   right: 4%;
@@ -762,18 +641,12 @@ HEAD .round-2 {
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 /*styling social icons*/
-.socialicon{
+.socialicon {
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
-<<<<<<< HEAD
-=======
   border-radius: 50%;
-<<<<<<< HEAD
->>>>>>> upstream1/master
-=======
   text-decoration: none;
->>>>>>> upstream/master
 }
 
 .socialicons a:hover {
@@ -873,13 +746,6 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
-<<<<<<< HEAD
-  .about {
-    height: 1100px;
-  }
-=======
-
->>>>>>> upstream1/master
   .dropdown-menu {
     width: 40vw;
   }
@@ -896,10 +762,6 @@ HEAD .round-2 {
 
 @media (min-width: 460px) and (max-width: 574px) {
   .about {
-<<<<<<< HEAD
-    height: 900px;
-=======
->>>>>>> upstream1/master
     padding: 0 20px;
   }
   .dropdown-menu {
@@ -1053,20 +915,14 @@ HEAD .round-2 {
   left: 0;
   position: fixed;
   top: 30%;
-<<<<<<< HEAD
-}
-#social-sidebar li:first-child a {
-  border-top-right-radius: 5px;
-}
-=======
   z-index: +2;
 }
 #social-sidebar li:first-child a {
   border-top-right-radius: 5px;
 }
->>>>>>> upstream1/master
-#social-sidebar li:last-child a {
-  border-bottom-right-radius: 5px;
+
+#social-sidebar li:first-child a {
+  border-top-right-radius: 5px;
 }
 
 #social-sidebar a {
@@ -1148,109 +1004,19 @@ HEAD .round-2 {
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
-<<<<<<< HEAD
-
-/*--------------------------------------------------
-------FORM---------------------------------------------------------------------------------------------*/
-
-.row1 {
-  margin: 15px 0;
+#social-sidebar a[class*="github"] span:before {
+  background: #9c7a5b;
 }
 
-.row1 h1::after {
-  display: block;
-  height: 0.5px;
-  background-color: #012b2e;
-  content: " ";
-  width: 180px;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding: 1.22px;
-}
-
-.contact-form {
-  width: 60%;
-  margin: 0 25%;
-}
-
-.row1 label {
-  font-size: 120%;
-}
-
-input[type="text"],
-input[type="email"],
-select,
-textarea {
-  width: 70%;
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid rgba(9, 56, 9, 0.849);
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type="submit"] {
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 400;
-  text-decoration: none;
-  border-radius: 200px;
-  background-color: #0a373a;
-}
-
-input[type="submit"]:link,
-input[type="submit"]:visited {
-  background-color: #05272e;
-  border: 1px solid #05272e;
-  color: #05272e;
-  margin-right: 15px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:active {
-  background-image: linear-gradient(
-    to top,
-    #012b2e,
-    #053235,
-    #0a383c,
-    #103f44,
-    #15464b,
-    #17494e,
-    #1a4d52,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055,
-    #1c5055
-  );
-}
-
-input[type="checkbox"] {
-  margin: 10px 5px 10px 0;
-}
-
-*:focus {
-  outline: none;
-=======
-#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
-
-@media (max-width: 720px){
-  #social-sidebar{
+@media (max-width: 720px) {
+  #social-sidebar {
     display: none;
   }
 }
 
-#sharpen-skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 7rem;
-<<<<<<< HEAD
->>>>>>> upstream1/master
+#sharpen-skills .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 7rem;
 }
-=======
-}
->>>>>>> upstream/master

@@ -214,7 +214,7 @@ header {
 }
 
 /*animated scroll arrow animation*/
-
+/* For Chrome */
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -283,6 +283,12 @@ header {
             background-image: url(../images/downarrow.png);
             background-repeat: no-repeat;
         }
+/* For Firefox */
+:root {
+	overflow-y: scroll;
+	scrollbar-color: #0fadc5 rgb(255, 255, 255);
+	scrollbar-width: 5px;
+} 
 
 /************ Typing Effect ***********/
 .cursor {

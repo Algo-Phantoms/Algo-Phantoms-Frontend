@@ -83,7 +83,7 @@ header {
   margin: auto;
 }
 
-.top {
+.top{
   background: transparent;
 }
 
@@ -271,36 +271,35 @@ header {
   ); /* adding linear color to the scroll-thumb */
 }
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
-  background-position: center 4px;
-  background-size: 8px 8px;
-  background-image: url(../images/uparrow.png);
-  background-repeat: no-repeat;
-}
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/uparrow.png);
+            background-repeat: no-repeat;
+        }
 
-::-webkit-scrollbar-button:single-button:vertical:increment {
-  background-position: center 4px;
-  background-size: 8px 8px;
-  background-image: url(../images/downarrow.png);
-  background-repeat: no-repeat;
-}
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/downarrow.png);
+            background-repeat: no-repeat;
+        }
 
 /************ Typing Effect ***********/
 .cursor {
-  animation: blink 0.5s infinite linear;
+    animation: blink 0.5s infinite linear;
 }
 
 .cursor .typing {
-  animation: none;
+    animation: none;
 }
 
 @keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 /******************* ABOUT ***********************/
@@ -354,8 +353,8 @@ hr {
 }
 
 .skills-section th:hover {
-  cursor: pointer;
-  background-color: #27d8a3;
+    cursor: pointer;
+    background-color: #27d8a3;
 }
 
 .skills-section th,
@@ -374,15 +373,15 @@ td {
 .skills-section tr:nth-child(odd) th {
   background-color: #49b1ad;
 }
-.skills-section tr:nth-child(odd) th:hover {
-  background-color: #1e918d;
-  transition-delay: 100ms;
-  border-top: 2px solid #0c3b3a;
+.skills-section tr:nth-child(odd) th:hover{
+    background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
-.skills-section tr:nth-child(even) th:hover {
-  background-color: #a6adad;
-  transition-delay: 100ms;
-  border-top: 2px solid #0c3b3a;
+.skills-section tr:nth-child(even) th:hover{
+    background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
 }
 
 .skills-section hr {
@@ -425,7 +424,17 @@ td {
 /************* TEAM **************/
 
 .team {
-  margin-top: 200px;
+  margin-top: 150px;
+}
+
+/* Styling for the team-logo */
+#team-logo{
+position: absolute;
+top: 15%;
+left: 12%;
+width:18vw;
+height:23vh;
+margin-right:5px;
 }
 
 .wrapper {
@@ -441,17 +450,6 @@ td {
   min-height: 60vh;
   margin: 0 auto;
   position: relative;
-}
-
-.round-1 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 14rem;
-  height: 14rem;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #3caea3;
-  background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
 HEAD .round-2 {
@@ -637,7 +635,7 @@ HEAD .round-2 {
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
 /*styling social icons*/
-.socialicon {
+.socialicon{
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
@@ -742,6 +740,7 @@ HEAD .round-2 {
 ...........responsive.............*/
 
 @media (min-width: 575px) and (max-width: 1200px) {
+
   .dropdown-menu {
     width: 40vw;
   }
@@ -810,8 +809,8 @@ HEAD .round-2 {
     max-width: 700px;
     flex-direction: column;
   }
-  .round-1 {
-    display: none;
+  #team-logo{
+    display:none;
   }
   .box {
     margin-bottom: 20px;
@@ -999,19 +998,17 @@ HEAD .round-2 {
 #social-sidebar a[class*="github"] span:before {
   background: #9c7a5b;
 }
-#social-sidebar a[class*="github"] span:before {
-  background: #9c7a5b;
-}
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
 
-@media (max-width: 720px) {
-  #social-sidebar {
+@media (max-width: 720px){
+  #social-sidebar{
     display: none;
   }
 }
 
-#sharpen-skills .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 7rem;
+#sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
 }

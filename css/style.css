@@ -815,6 +815,10 @@ HEAD .round-2 {
   .box {
     margin-bottom: 20px;
   }
+  .container
+  {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 720px) {
@@ -829,6 +833,10 @@ HEAD .round-2 {
   }
   .round-1 {
     display: none;
+  }
+  .container
+  {
+    flex-direction: column;
   }
 }
 

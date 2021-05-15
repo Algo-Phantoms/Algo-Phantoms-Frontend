@@ -424,7 +424,17 @@ td {
 /************* TEAM **************/
 
 .team {
-  margin-top: 200px;
+  margin-top: 150px;
+}
+
+/* Styling for the team-logo */
+#team-logo{
+position: absolute;
+top: 15%;
+left: 12%;
+width:18vw;
+height:23vh;
+margin-right:5px;
 }
 
 .wrapper {
@@ -440,17 +450,6 @@ td {
   min-height: 60vh;
   margin: 0 auto;
   position: relative;
-}
-
-.round-1 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 14rem;
-  height: 14rem;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #3caea3;
-  background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
 HEAD .round-2 {
@@ -810,8 +809,8 @@ HEAD .round-2 {
     max-width: 700px;
     flex-direction: column;
   }
-  .round-1 {
-    display: none;
+  #team-logo{
+    display:none;
   }
   .box {
     margin-bottom: 20px;

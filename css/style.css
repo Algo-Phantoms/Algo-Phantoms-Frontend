@@ -640,6 +640,13 @@ HEAD .round-2 {
   background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+@media (max-width: 767px){
+#footer{
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+}
 /*styling social icons*/
 .socialicon{
   color: #fff;

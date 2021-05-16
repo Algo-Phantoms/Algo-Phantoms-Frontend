@@ -189,6 +189,20 @@ header {
 .below-head span {
   color: #3caea3;
 }
+@media only screen and (max-width: 600px) {
+  .below-head {
+    position: absolute;
+    top: 70%;
+  }
+  .banner-text .main-head {
+    font-size: 2.5rem;
+    bottom: 20%;
+  }
+  .banner-text {
+    bottom: 40%;
+  }
+}
+
 
 .scroll-down {
   position: absolute;

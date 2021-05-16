@@ -1020,14 +1020,8 @@ HEAD .round-2 {
 }
 
 /* 404 error page   */
-.error-center {
-  text-align: center;
-}
-.error-page {
-  background-color: #0e2431;
-  width: 100vw;
-  height: 100vh;
-}
+  /* background-color: #0e2431; */
+
 .error-img{
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
   width: 500px;
@@ -1052,13 +1046,17 @@ HEAD .round-2 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 1rem;
-  padding: 1%;
+  padding: 0.5% 1%;
   font-size: 20px;
-  margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 .link_404{
   outline: none;
   color: white;
+  text-decoration: none;
+}
+.link_404:hover{
   text-decoration: none;
 }
 @-webkit-keyframes up-down {

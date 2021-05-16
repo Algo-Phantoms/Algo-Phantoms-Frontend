@@ -119,16 +119,17 @@ header {
 .nav-items {
     color: white !important;
     margin-left: 2.65rem;
-    padding-right: 2rem !important;
+    padding-right: 3rem !important;
 }
+
 
 .navbar-nav .nav-link {
     color: #fff;
 }
 
 .navbar-nav {
-    text-align: right;
-    
+    text-align: center;
+    margin-right: 2rem;  
 }
 
 .nav-link {
@@ -145,6 +146,24 @@ header {
     color:#3caea3;
 
 }
+.signup{
+  background-color: #3CAEA3;
+    color: white;
+    padding: 0.5rem 2rem;
+ 
+   }
+.signup:hover{
+    background-color: #0a8d80;
+}
+/* .login{
+    background-color: #3CAEA3;
+    color: white;
+    padding: 0.5rem 2.5rem;
+
+}
+.login:hover{
+        background-color: #0a8d80;
+} */
 
 .banner-text {
     position: absolute;

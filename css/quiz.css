@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 
 body{
 	font-size: 20px;
@@ -25,29 +25,19 @@ h1{
 h3{
   text-align: left;
   color:#000;
-  font-size: 30px;
-  
+  font-size: 30px; 
 }
 #test{
-  
-  background-color: #f9f9fa;
+   background-color: #f9f9fa;
   margin:1rem 10rem;
    padding:3px 10px 3px 100px; 
    color: #000;
-
 }
-
- 
-  h4{
-    text-align: left;
-    padding: 10px 0px;
-    width:500px;
-    background-color: #f1f1f1;
-     box-shadow: 0 8px 6px -6px black; 
-     
-    
-    
-    border-radius: 15px;
+ h4{
+  text-align: left;padding: 10px 0px;width:500px;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 6px -6px black; 
+  border-radius: 15px;
   }
 
 button{
@@ -65,11 +55,6 @@ button{
 button:hover{
 	background-color: #3cae3c;
 }
-
-
-
-
-
 .container{
   position: relative;
   height: 200px;

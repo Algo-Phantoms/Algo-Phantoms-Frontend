@@ -59,8 +59,6 @@ function displayQuestion() {
     opC = questions[pos][3];
     opD = questions[pos][4];
 	
-	
-	
     test.innerHTML = "<h3>Que" +(pos+1)+". "+question + "</h3>";
     test.innerHTML += "<h4><input type='radio' name='options' value='A'>" + opA + "</h4>";
     test.innerHTML += "<h4><input type='radio' name='options' value='B'>" + opB + "</h4>";
@@ -70,7 +68,9 @@ function displayQuestion() {
 }
 
 function checkAnswer() {
-    options = document.getElementsByName("options");
+    
+    var options = document.getElementsByName("options");
+    
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
             option = options[i].value;

@@ -125,7 +125,7 @@ body {
     position: absolute;
     top: 50%;
     left: 500px;
-    transform: translate3d(-40%, -50%, 0);
+    transform: translate3d(0, -50%, 0);
     max-width: calc(100% - 500px);
     padding: 10px 13px;
     border: 1px solid;
@@ -136,6 +136,7 @@ body {
     display: block;
   }
 }
+
 #footer {
   margin-top:20vh;
   padding: 100px 0px 40px 0px;

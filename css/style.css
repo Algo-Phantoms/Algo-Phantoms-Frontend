@@ -177,6 +177,20 @@ header {
 .below-head span{
     color: #3caea3;
 }
+@media only screen and (max-width: 600px) {
+  .below-head {
+    position: absolute;
+    top: 70%;
+  }
+  .banner-text .main-head {
+    font-size: 2.5rem;
+    bottom: 20%;
+  }
+  .banner-text {
+    bottom: 40%;
+  }
+}
+
 
 .scroll-down {
     position: absolute;
@@ -203,7 +217,7 @@ header {
 
 
 /*animated scroll arrow animation*/
-
+/* For Chrome */
 @-webkit-keyframes fade_move_down {
     0% {
         -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -233,11 +247,65 @@ header {
 }
 
 @keyframes fade_move_down {
-    0% {
-        transform: translate(0, -10px) rotate(45deg);
-        opacity: 0;
-    }
-    50% {
+
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* adjusting the width of the scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: #212529; /* adding background to the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    300deg,
+    #078ea3,
+    #07b4b4
+  ); /* adding linear color to the scroll-thumb */
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/uparrow.png);
+            background-repeat: no-repeat;
+        }
+
+        ::-webkit-scrollbar-button:single-button:vertical:increment {
+            background-position: center 4px;
+            background-size: 8px 8px;
+            background-image: url(../images/downarrow.png);
+            background-repeat: no-repeat;
+        }
+/* For Firefox */
+:root {
+	overflow-y: scroll;
+	scrollbar-color: #0fadc5 rgb(255, 255, 255);
+	scrollbar-width: 5px;
+} 
+
+/************ Typing Effect ***********/
+.cursor {
+    animation: blink 0.5s infinite linear;
+}
+
+.cursor .typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%,100%{
+
         opacity: 1;
     }
     100% {
@@ -412,6 +480,7 @@ hr {
 }
 .team {
     margin-top: 200px;
+
 }
 
 .wrapper {
@@ -429,6 +498,7 @@ hr {
     position: relative;
 }
 
+
 .round-1 {
     position: absolute;
     top: 10%;
@@ -438,6 +508,17 @@ hr {
     border-radius: 50%;
     box-shadow: 0 0 40px #3caea3;
     background: linear-gradient(-180deg, #22ffed, #49b1ad);
+
+HEAD .round-2 {
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #5622ff;
+  background: linear-gradient(-180deg, #5622ff, #49b1ad);
+
 }
 .box {
     width: 350px;
@@ -478,19 +559,23 @@ hr {
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
+
     transform: rotateY(-180deg);
 }
-  
-  /* Position the front and back side */
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transform: rotateX(0deg); /* Fixes card flip issue in firefox */
 }
-  
-  /* Style the front side (fallback if image is missing) */
+
+
 .flip-card-front {
     background-color:#212529;
     align-items: center;
@@ -603,8 +688,16 @@ hr {
     background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
     /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+@media (max-width: 767px){
+#footer{
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+}
 /*styling social icons*/
 .socialicon{
+
     color:#fff;
     cursor: pointer;
     background-color: #3caea3;
@@ -624,8 +717,41 @@ hr {
 .subscribe-box {
     background: rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+
+  color: #fff;
+  cursor: pointer;
+  background-color: #3caea3;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
+.socialicons a:hover {
+  text-decoration: none;
+}
+
+.socialicon.fa-instagram:hover {
+  background-color: #ea4c89;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.socialicon.fa-linkedin:hover {
+  background-color: #0a416e;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialicon.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+
+}
+
+.socialicon.fa-github:hover {
+  background-color: #9c7a5b;
+  border-radius: 50%;
+  text-decoration: none;
+}
 .subscribe-button {
     background: #3caea3 !important;
     cursor: pointer;
@@ -764,7 +890,7 @@ hr {
     }
 }
 
-@media (max-width: 992px) {
+
     .wrapper {
         max-width: 700px;
         flex-direction: column;
@@ -775,6 +901,7 @@ hr {
     .box {
         margin-bottom: 20px;
     }
+
 }
 
 @media (max-width: 720px) {

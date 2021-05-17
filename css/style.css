@@ -1039,3 +1039,56 @@ HEAD .round-2 {
     align-items: center;
     margin-left: 7rem;
 }
+.skills-table{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  width: 90%;
+}
+
+.skills-table .skill{
+  background-color: #49b1ad;
+  text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px #0000;
+    cursor: pointer;
+}
+.skills-table .skill:hover{
+  background-color: #1e918d;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-table .skill:nth-child(4){
+  background-color: white;
+}
+.skills-table .skill:nth-child(4):hover{
+  background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+
+.skills-table .skill:nth-child(5){
+  background-color: white;
+}
+.skills-table .skill:nth-child(5):hover{
+  background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+.skills-table .skill:nth-child(6){
+  background-color: white;
+}
+.skills-table .skill:nth-child(6):hover{
+  background-color: #a6adad;
+    transition-delay: 100ms;
+    border-top: 2px solid #0c3b3a;
+}
+@media screen and (max-width: 800px) {
+  #sharpen-skills .container{
+    margin-left: 0;
+  }
+  .skills-table{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

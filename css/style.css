@@ -63,10 +63,6 @@ iframe {
 
 /******************* HEADER ******************/
 
-.top{
-  background: transparent;
-}
-
 header {
   overflow: hidden;
   height: 100vh;
@@ -193,6 +189,20 @@ header {
 .below-head span {
   color: #3caea3;
 }
+@media only screen and (max-width: 600px) {
+  .below-head {
+    position: absolute;
+    top: 70%;
+  }
+  .banner-text .main-head {
+    font-size: 2.5rem;
+    bottom: 20%;
+  }
+  .banner-text {
+    bottom: 40%;
+  }
+}
+
 
 .scroll-down {
   position: absolute;
@@ -218,7 +228,7 @@ header {
 }
 
 /*animated scroll arrow animation*/
-
+/* For Chrome */
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -287,6 +297,12 @@ header {
             background-image: url(../images/downarrow.png);
             background-repeat: no-repeat;
         }
+/* For Firefox */
+:root {
+	overflow-y: scroll;
+	scrollbar-color: #0fadc5 rgb(255, 255, 255);
+	scrollbar-width: 5px;
+} 
 
 /************ Typing Effect ***********/
 .cursor {
@@ -468,14 +484,24 @@ border-color: #0e2431;
   color: #ff0000;
   font-weight: normal;
 }
+/************* CONTACT US ENDS **************/
 
-/************* TEAM **************/
 
 
 /************* TEAM **************/
 
 .team {
-  margin-top: 200px;
+  margin-top: 150px;
+}
+
+/* Styling for the team-logo */
+#team-logo{
+position: absolute;
+top: 15%;
+left: 12%;
+width:18vw;
+height:23vh;
+margin-right:5px;
 }
 
 .wrapper {
@@ -491,17 +517,6 @@ border-color: #0e2431;
   min-height: 60vh;
   margin: 0 auto;
   position: relative;
-}
-
-.round-1 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 14rem;
-  height: 14rem;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #3caea3;
-  background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
 HEAD .round-2 {
@@ -564,6 +579,7 @@ HEAD .round-2 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  transform: rotateX(0deg); /* Fixes card flip issue in firefox */
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -685,29 +701,48 @@ HEAD .round-2 {
   background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+@media (max-width: 767px){
+#footer{
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+}
 /*styling social icons*/
-.socialicon {
+.socialicon{
   color: #fff;
   cursor: pointer;
   background-color: #3caea3;
   border-radius: 50%;
-}
-.socialicon:hover {
   text-decoration: none;
-  color: #3caea3;
-
-  background-color: white;
-  border-radius: 50%;
 }
+
 .socialicons a:hover {
   text-decoration: none;
 }
 
-.subscribe-box {
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+.socialicon.fa-instagram:hover {
+  background-color: #ea4c89;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.socialicon.fa-linkedin:hover {
+  background-color: #0a416e;
+  border-radius: 50%;
+  text-decoration: none;
 }
 
+.socialicon.fa-twitter:hover {
+  background-color: #00aced;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.socialicon.fa-github:hover {
+  background-color: #9c7a5b;
+  border-radius: 50%;
+  text-decoration: none;
+}
 .subscribe-button {
   background: #3caea3 !important;
   cursor: pointer;
@@ -777,61 +812,6 @@ HEAD .round-2 {
 
 /*
 ...........responsive.............*/
-@media only screen and (max-width: 600px) {
-
-  /********Section-Sharpen your skills starts*********/
-  #sharpen-skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0rem;
-  }
-  
-  .skills-section table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 50%;
-    border: 1px solid #ddd;
-    margin-right: 10px;
-  }
-  
-  .skills-section th,td {
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 15px;
-    text-shadow: 2px 2px #0000;
-  }
-  
-  .skills-section h1 {
-    margin-top: 150px;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  /*********Section-Sharpen your skills ends**********/
-
-
-  /***********FAQ SECTION starts **********************/
-  .fnq h1 {
-    margin-top: -70px;
-    font-size: 30px;
-    font-weight: bold;
-    backdrop-filter: blur(20px);
-  }
-  
-  .fnq .card-header {
-    box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
-  }
-  
-  .fnq a {
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    cursor: pointer;
-  }
-
-  /***********FAQ SECTION ends **********************/
-  }
 
 @media (min-width: 575px) and (max-width: 1200px) {
 
@@ -903,8 +883,8 @@ HEAD .round-2 {
     max-width: 700px;
     flex-direction: column;
   }
-  .round-1 {
-    display: none;
+  #team-logo{
+    display:none;
   }
   .box {
     margin-bottom: 20px;
@@ -1098,4 +1078,11 @@ HEAD .round-2 {
   #social-sidebar{
     display: none;
   }
+}
+
+#sharpen-skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
 }

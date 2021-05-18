@@ -1011,27 +1011,18 @@ HEAD .round-2 {
 /***************suggested coding sites***************/
 
 .coding_site{
-  position: relative;
+  background-image: linear-gradient(#96ece4, #01302c);
   justify-content: center;
-  background-image:url("../images/coding_bg.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size:cover;
-  
-}
-
-.coding_site::before{
-position: absolute;
-background-color: rgba(224, 106, 106, 0.4);
 }
 
 .coding_site h1{
+  font-weight: 700;
   margin-top: 3rem;
-color: rgb(48, 195, 240);
+color: #2c8a87;
 }
 
 .coding_site h2{
-  color: rgb(154, 175, 180);
+  color: rgb(85, 224, 206);
 }
 
 .coding_site h2 a{
@@ -1042,11 +1033,11 @@ color: rgb(48, 195, 240);
   text-align: left;
   font-size: 1.4rem;
   color: #e2ebeb;
-  font-weight: 600;
 }
 
 .coding_site h2 a:hover{
-  color: #3caea3;
+  font-weight: 900;
+  color: #091312;
 }
 
 .cards{
@@ -1063,25 +1054,13 @@ padding: 2.5rem 2.2rem;
   margin-top: -5rem;
 }
 
-.card1 h5{
-  font-size: 2.2rem;
-  margin-left: 3.4rem;
-  color: #f2f3f3;
-}
-.card1 h5 a{
-  color: #f2f3f3;
-}
-
-.card1 h5 a:hover{
-  color: #3caea3;
-}
 
 
 .card1 h3{
-  color: #092b47;
+  color: #73dbd6;
   margin-left: 12rem;
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -1135,14 +1114,15 @@ padding: 2.5rem 2.2rem;
   display: block;
   width: 100%;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 .list--link__header {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 0 0 6px;
-  font-size: inherit;
+  font-size: 2rem;
+  color: white;
 }
 
 .list--link__description {
@@ -1191,10 +1171,7 @@ padding: 2.5rem 2.2rem;
     width: calc(800px - 100%);
     border-bottom: 1px solid;
   }
-  .list--link:hover .list--link__header span::after,
-  .list--link:focus .list--link__header span::after{
-    display: block;
-  }
+  
   .list--link__description {
     display: none;
     position: absolute;
@@ -1212,7 +1189,8 @@ padding: 2.5rem 2.2rem;
   }
 }
 .list--link:hover{
-  color: #07b4b4;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 @media (max-width: 720px){

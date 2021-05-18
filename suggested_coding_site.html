@@ -39,11 +39,10 @@
 </head>
 
 <body>
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-col top">
-            <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="Algo Phantoms" width="50"
-                    height="50"><span class="brand1">Algo</span>Phantoms
-            </a>
+    <section class="fix">
+        
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50" height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,23 +50,26 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home </a>
+                    <li class="nav-item active">
+                        <a class="nav-link font-weight-bold nav-items" href="index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                                <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
+                        <hr class="hr">
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team<span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link  font-weight-bold nav-items" href="team.html">Team</a>
+                        <hr class="hr">
                     </li>
-                    
+
                     <li class="nav-item dropdown">
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            More
-                        </a>
+                            More</a>
+                            <hr class="hr">
                         <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -76,72 +78,74 @@
 
                             <a class="dropdown-item" href="practicedsa.html">DSA Problems</a>
                             <a class="dropdown-item" href="booklist.html">Suggested Books</a>
-                            <a class="dropdown-item" href="coding_site.html">Suggested Coding sites</a>
-
+                            <a class="dropdown-item" href="#">Suggested Coding sites</a>
                         </div>
-                    <li class="nav-item">
+                        <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
+                        <hr class="hr">
                     </li>
-                </ul>
+                    </ul>
             </div>
         </nav>
         <script>
-            const navbar = document.getElementsByTagName("nav")[0];
-            let scrolled=false;
-            window.onscroll=function(){
-                if(window.pageYOffset>100)
+        const navbar=document.getElementById("nav");
+        let scrolled=false;
+        window.onscroll=function(){
+            if(window.pageYOffset>100)
+            {
+                navbar.classList.remove("top");
+                if(!scrolled)
                 {
-                    navbar.classList.remove("top");
-                    if(!scrolled)
-                    {
-                        navbar.style.transform="translateY(-70px)";
-                    }
-                    setTimeout(function(){
-                     navbar.style.transform = 'translateY(0)';
-                     scrolled = true;
-                    },200);
+                    navbar.style.transform="translateY(-70px)";
                 }
-                else{
-                    navbar.classList.add("top");
-                    scrolled=false;
-                }
-            };
+                setTimeout(function(){
+                 navbar.style.transform = 'translateY(0)';
+                 scrolled = true;
+                },200);
+            }
+            else{
+                navbar.classList.add("top");
+                scrolled=false;
+            }
+        };
         </script>
-    </section>
+        
 
+    </section>
     <!--suggesting coding sites-->
     <div class="d-flex justify-content-center coding_site">
         <section class="list--wrapper mt-5">
         <h1>Best and Free Online Websites to Learn Coding for Beginners</h1>
+       
         <div class="cards">
-        <h2>1. <a href="https://www.bitdegree.org/learn/">BitDegree</a></h2>
+        <h2 style="color:white;">1. <a href="https://www.bitdegree.org/learn/" target="_blank">BitDegree</a></h2>
         <p class="about">
             BitDegree offers a ton of free courses that range from programming to game development.
             They offer standard online courses and gamified courses. Gamified courses help to bring achievements and interaction into the learning process. All you have to do is choose your language and start learning.
         </p>
         </div>
         <div class="card1">
-            <h2>2. <a href="https://www.coursera.org/in">Coursera</a></h2>
+            <h2 style="color:white;">2. <a href="https://www.coursera.org/in" target="_blank">Coursera</a></h2>
             <p class="about">
                 Coursera provides coding-based courses, tutorials, and resources taught by professors at leading universities. You’ll find hundreds of different coding-related courses to choose from.
 To develop these courses, they partnered with some of the best teachers at top-tier universities.
             </p>
         </div>
         <div class="card1">
-            <h2>3.<a href="https://www.codecademy.com/">Codecademy</a></h2>
+            <h2 style="color:white;">3.<a href="https://www.codecademy.com/" target="_blank">Codecademy</a></h2>
             <p class="about">
                 Code Academy is one of the most popular sites where people learn to code for free. More than 24 million people have learned to code using this platform.
 They offer courses ranging from introductory programming to more advanced languages.
             </p>
         </div>
         <div class="card1">
-            <h2>4. <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></h2>
+            <h2 style="color:white;">4. <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></h2>
             <p class="about">
                 Prepare for an interview with millions of articles and courses designed by experts. Gain and share your knowledge & skills with a variety of learning platforms offered by GeeksforGeeks.
             </p>
         </div>
         <div class="card1">
-            <h2>5. <a href="https://www.w3schools.com/">w3schools</a></h2>
+            <h2 style="color:white;">5. <a href="https://www.w3schools.com/" target="_blank">w3schools</a></h2>
             <p class="about">
                 W3Schools has focus on simplicity. Also helps to make practice easy learning.
 W3Schools uses simple code examples and simple illustrations of how to use it.
@@ -153,62 +157,62 @@ W3Schools' tutorials start from basic level and move all the way up to professio
             <section class="list--wrapper mt-5">
                 
                   <li class="list--item">
-                    <a href="https://www.codechef.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Codechef</span></h2>
+                    <a href="https://www.codechef.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Codechef</span></h2>
                       <p class="list--link__description">CodeChef was created as a platform to help programmers make it big in the world of algorithms, computer programming, and programming contests</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://codeforces.com/" class="list--link">
-                      <h2 class="list--link__header"><span>CodeForces</span></h2>
+                    <a href="https://codeforces.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>CodeForces</span></h2>
                       <p class="list--link__description">Codeforces is one of the best platforms for competitive coding and is usually known for its short challenges/contests where programmers from every corner of the world participate.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://leetcode.com/" class="list--link">
-                      <h2 class="list--link__header"><span>LeetCode</span></h2>
+                    <a href="https://leetcode.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>LeetCode</span></h2>
                       <p class="list--link__description">LeetCode is for software engineers who are looking to practice technical questions and advance their skills.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.hackerrank.com/" class="list--link">
-                      <h2 class="list--link__header"><span>HackerRank</span></h2>
+                    <a href="https://www.hackerrank.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>HackerRank</span></h2>
                       <p class="list--link__description">HackerRank is more focussed on bridging the gap between rockstar developers and companies willing to hire such individuals.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.hackerearth.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Hackerearth</span></h2>
+                    <a href="https://www.hackerearth.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Hackerearth</span></h2>
                       <p class="list--link__description">Best part of hackerearth is it provide you platform for one to one competition with other. </p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.freecodecamp.org/" class="list--link">
-                      <h2 class="list--link__header"><span>Freecodecamp</span></h2>
+                    <a href="https://www.freecodecamp.org/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Freecodecamp</span></h2>
                       <p class="list--link__description"> If you are a self-learner, freeCodeCamp is a great place to start learning.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://coderbyte.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Coderbyte</span></h2>
+                    <a href="https://coderbyte.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Coderbyte</span></h2>
                       <p class="list--link__description">Coderbyte is a web application built to help you practice programming and improve your coding skills.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.datacamp.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Datacamp</span></h2>
+                    <a href="https://www.datacamp.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Datacamp</span></h2>
                       <p class="list--link__description">One platform for coding and learning: Unlike other learning platforms, Datacamp has embedded coding platform after each short lecture.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.codingame.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Codingame</span></h2>
+                    <a href="https://www.codingame.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Codingame</span></h2>
                       <p class="list--link__description">CodinGame helps programmers improve their coding skills by solving problems and learning new concepts through game-like challenges.</p>
                     </a>
                   </li>
                   <li class="list--item">
-                    <a href="https://www.codewars.com/" class="list--link">
-                      <h2 class="list--link__header"><span>Codewars</span></h2>
+                    <a href="https://www.codewars.com/" class="list--link" target="_blank">
+                      <h2 class="list--link__header" style="color:white;"><span>Codewars</span></h2>
                       <p class="list--link__description">Codewars is a platform for software developers on which people can solve programming puzzles known also as “katas”.The aim of programming katas is to help programmers hone their skills through practice and repetition.</p>
                     </a>
                   </li>

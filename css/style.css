@@ -118,9 +118,10 @@ header {
 }
 
 .nav-items {
-  color: white !important;
-  margin-left: 2.65rem;
-  padding-right: 2rem !important;
+    color: white !important;
+    margin-left: 2.65rem;
+    padding-right: 3rem !important;
+
 }
 
 .navbar-nav .nav-link {
@@ -128,7 +129,10 @@ header {
 }
 
 .navbar-nav {
-  text-align: center;
+
+    text-align: center;
+    margin-right: 2rem;  
+
 }
 
 .nav-link {
@@ -157,6 +161,24 @@ header {
 .dropdown-item {
   color: #3caea3;
 }
+.signup{
+  background-color: #3CAEA3;
+    color: white;
+    padding: 0.5rem 2rem;
+ 
+   }
+.signup:hover{
+    background-color: #0a8d80;
+}
+/* .login{
+    background-color: #3CAEA3;
+    color: white;
+    padding: 0.5rem 2.5rem;
+
+}
+.login:hover{
+        background-color: #0a8d80;
+} */
 
 .banner-text {
   position: absolute;
@@ -369,7 +391,7 @@ hr {
   border-spacing: 0;
   width: 90%;
   border: 1px solid #ddd;
-  align: centre;
+ text-align: centre;
 }
 
 .skills-section th:hover {

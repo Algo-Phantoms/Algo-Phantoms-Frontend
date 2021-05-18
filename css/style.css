@@ -369,7 +369,7 @@ hr {
   border-spacing: 0;
   width: 90%;
   border: 1px solid #ddd;
-  align: centre;
+ text-align: centre;
 }
 
 .skills-section th:hover {

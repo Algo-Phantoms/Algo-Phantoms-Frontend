@@ -189,6 +189,20 @@ header {
 .below-head span {
   color: #3caea3;
 }
+@media only screen and (max-width: 600px) {
+  .below-head {
+    position: absolute;
+    top: 70%;
+  }
+  .banner-text .main-head {
+    font-size: 2.5rem;
+    bottom: 20%;
+  }
+  .banner-text {
+    bottom: 40%;
+  }
+}
+
 
 .scroll-down {
   position: absolute;
@@ -214,7 +228,7 @@ header {
 }
 
 /*animated scroll arrow animation*/
-
+/* For Chrome */
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -283,6 +297,12 @@ header {
             background-image: url(../images/downarrow.png);
             background-repeat: no-repeat;
         }
+/* For Firefox */
+:root {
+	overflow-y: scroll;
+	scrollbar-color: #0fadc5 rgb(255, 255, 255);
+	scrollbar-width: 5px;
+} 
 
 /************ Typing Effect ***********/
 .cursor {
@@ -424,7 +444,17 @@ td {
 /************* TEAM **************/
 
 .team {
-  margin-top: 200px;
+  margin-top: 150px;
+}
+
+/* Styling for the team-logo */
+#team-logo{
+position: absolute;
+top: 15%;
+left: 12%;
+width:18vw;
+height:23vh;
+margin-right:5px;
 }
 
 .wrapper {
@@ -440,17 +470,6 @@ td {
   min-height: 60vh;
   margin: 0 auto;
   position: relative;
-}
-
-.round-1 {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 14rem;
-  height: 14rem;
-  border-radius: 50%;
-  box-shadow: 0 0 40px #3caea3;
-  background: linear-gradient(-180deg, #22ffed, #49b1ad);
 }
 
 HEAD .round-2 {
@@ -635,6 +654,13 @@ HEAD .round-2 {
   background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+@media (max-width: 767px){
+#footer{
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+}
 /*styling social icons*/
 .socialicon{
   color: #fff;
@@ -810,8 +836,8 @@ HEAD .round-2 {
     max-width: 700px;
     flex-direction: column;
   }
-  .round-1 {
-    display: none;
+  #team-logo{
+    display:none;
   }
   .box {
     margin-bottom: 20px;
@@ -1216,6 +1242,70 @@ padding: 2.5rem 2.2rem;
 .about{
   margin-top: -2rem;
 }
+}
 
+/* 404 error page   */
+  /* background-color: #0e2431; */
+
+.error-img{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  width: 500px;
+  height: 500px;
+}
+.error-heading {
+  text-shadow: rgb(178, 169, 143) 0px 3px 0px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 24px 2px, rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  color: #3caea3;
+  letter-spacing: normal;
+  font-size: 3.5em;
+  margin-top: -3%;
+  font-weight: normal;
+}
+.error-para {
+  color: #3caea3;
+  font-size: 1.5em;
+}
+.error-btn {
+  background-color: #3caea3;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 0.5% 1%;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.link_404{
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+.link_404:hover{
+  text-decoration: none;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .error-img{
+    margin-bottom: 5%;
+  }
+  .error-heading {
+    font-size: 2.5em;
+  }
 }
 

@@ -365,11 +365,17 @@ hr {
 
 /********Section-Sharpen your skills starts*********/
 
-.tr{
+.course{
+  width:100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.course-section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.skills-section .td {
+.skills-section .course-content {
   text-align: left;
   padding: 30px;
   font-weight: bold;
@@ -380,10 +386,10 @@ hr {
 .skills-section a {
   color: #05272e;
 }
-.skills-section .td:nth-child(odd)  {
+.skills-section .course-content:nth-child(odd)  {
   background-color: #49b1ad;
 }
-.skills-section .td:hover  {
+.skills-section .course-content:hover  {
     opacity: 0.9;
     cursor: pointer;
     transition-delay: 100ms;
@@ -846,7 +852,7 @@ HEAD .round-2 {
   }
 }
 @media (max-width: 760px) {
-  .tr{
+  .course-section{
     grid-template-columns:1fr;
   }
 }

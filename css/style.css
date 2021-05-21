@@ -437,6 +437,11 @@ td {
   letter-spacing: 0.2rem;
   cursor: pointer;
 }
+.fnq .effect {
+	background-color:#49b1ad;
+	color:white;
+	transition:990ms ease-in-out;
+}
 
 /*********FAQ section ends**********/
 

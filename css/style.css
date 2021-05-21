@@ -431,9 +431,6 @@ td {
 .fnq .card-header {
   box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
 }
-.fnq .card-header:hover{
-	background-color:lightgray;
-}
 .fnq a {
   font-size: 1.5rem;
   font-weight: bold;

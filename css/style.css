@@ -150,6 +150,11 @@ header {
     transform: translate(-50%, 0);
   }
 }
+@media only screen and (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu{   
+    display:block;
+  }
+  }
 .navbar-nav .dropdown-menu {
   position: relative;
   float: none;
@@ -800,8 +805,14 @@ HEAD .round-2 {
     display: none;
   }
 }
+@media (max-width: 760px) {
+  .course-section{
+    grid-template-columns:1fr;
+  }
+}
 
 @media (max-width: 576px) {
+
   .wrapper {
     max-width: 400px;
     flex-direction: column;
@@ -825,6 +836,9 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+  .skills-section h1 {
+    font-size: 40px;
   }
 }
 
@@ -855,6 +869,11 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .skills-section h1 {
+    font-size: 30px;
   }
 }
 

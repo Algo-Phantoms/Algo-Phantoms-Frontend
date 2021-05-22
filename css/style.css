@@ -431,8 +431,12 @@ td {
 .fnq .card-header {
   box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
 }
-.fnq .card:focus{
-	background-color:lightgray!important;
+.fnq .card{
+	border-radius:10px!important;
+	text-align:center;
+}
+.fnq .card:hover{
+	background-color:#e8e6e6!important;
 }
 
 .fnq a {

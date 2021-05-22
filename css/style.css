@@ -445,15 +445,10 @@ td {
   letter-spacing: 0.2rem;
   cursor: pointer;
 }
-/* .fnq .effect {
-	background-color:#49b1ad;
-	color:white;
-	transition:990ms ease-in-out;
-} */
 .fnq .collapse.show {
 	background-color:#49b1ad!important;
 	color:white!important;
-	transition:background-color 1000ms ease-in-out!important;
+	transition:background-color 1200ms ease-in-out!important;
 }
 
 /*********FAQ section ends**********/

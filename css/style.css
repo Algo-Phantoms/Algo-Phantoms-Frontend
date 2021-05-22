@@ -443,9 +443,9 @@ td {
 	transition:990ms ease-in-out;
 } */
 .fnq .collapse.show {
-	background-color:#49b1ad;
-	color:white;
-	transition:990ms ease-in-out;
+	background-color:red!important;
+	color:white!important;
+	transition:990ms ease-in-out!important;
 }
 
 /*********FAQ section ends**********/

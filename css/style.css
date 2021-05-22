@@ -433,7 +433,7 @@ td {
 }
 .fnq .card{
 	border-radius:10px!important;
-	text-align:center;
+	
 }
 .fnq .card:hover{
 	background-color:#e8e6e6!important;
@@ -453,7 +453,7 @@ td {
 .fnq .collapse.show {
 	background-color:#49b1ad!important;
 	color:white!important;
-	transition:background-color 1500ms ease-in-out!important;
+	transition:background-color 1000ms ease-in-out!important;
 }
 
 /*********FAQ section ends**********/

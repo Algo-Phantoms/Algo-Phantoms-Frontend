@@ -363,64 +363,6 @@ hr {
 
 /******about end ******** */
 
-/********Section-Sharpen your skills starts*********/
-.skills-section table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 90%;
-  border: 1px solid #ddd;
-  align: centre;
-}
-
-.skills-section th:hover {
-    cursor: pointer;
-    background-color: #27d8a3;
-}
-
-.skills-section th,
-td {
-  text-align: left;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 2px 2px #0000;
-}
-
-.skills-section a {
-  color: #05272e;
-}
-
-.skills-section tr:nth-child(odd) th {
-  background-color: #49b1ad;
-}
-.skills-section tr:nth-child(odd) th:hover{
-    background-color: #1e918d;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
-}
-.skills-section tr:nth-child(even) th:hover{
-    background-color: #a6adad;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
-}
-
-.skills-section hr {
-  border: 0.5px solid #49b1ad;
-  display: block;
-  width: 80px;
-  margin: auto;
-}
-.skills-section h1 {
-  font-size: 50px;
-  font-weight: bold;
-  backdrop-filter: blur(20px);
-}
-.span {
-  display: block;
-  margin-bottom: 10em;
-}
-/*********Section-Sharpen your skills ends**********/
-
 /*********FAQ section starts**********/
 .fnq h1 {
   font-size: 50px;
@@ -1104,7 +1046,7 @@ HEAD .round-2 {
   }
 }
 
-/* Style the counter cards */
+/* Style the skill section  */
 .skill-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;

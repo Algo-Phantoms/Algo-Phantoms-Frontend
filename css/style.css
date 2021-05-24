@@ -150,6 +150,11 @@ header {
     transform: translate(-50%, 0);
   }
 }
+@media only screen and (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu{   
+    display:block;
+  }
+  }
 .navbar-nav .dropdown-menu {
   position: relative;
   float: none;
@@ -363,64 +368,6 @@ hr {
 
 /******about end ******** */
 
-/********Section-Sharpen your skills starts*********/
-.skills-section table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 90%;
-  border: 1px solid #ddd;
-  align: centre;
-}
-
-.skills-section th:hover {
-    cursor: pointer;
-    background-color: #27d8a3;
-}
-
-.skills-section th,
-td {
-  text-align: left;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 2px 2px #0000;
-}
-
-.skills-section a {
-  color: #05272e;
-}
-
-.skills-section tr:nth-child(odd) th {
-  background-color: #49b1ad;
-}
-.skills-section tr:nth-child(odd) th:hover{
-    background-color: #1e918d;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
-}
-.skills-section tr:nth-child(even) th:hover{
-    background-color: #a6adad;
-    transition-delay: 100ms;
-    border-top: 2px solid #0c3b3a;
-}
-
-.skills-section hr {
-  border: 0.5px solid #49b1ad;
-  display: block;
-  width: 80px;
-  margin: auto;
-}
-.skills-section h1 {
-  font-size: 50px;
-  font-weight: bold;
-  backdrop-filter: blur(20px);
-}
-.span {
-  display: block;
-  margin-bottom: 10em;
-}
-/*********Section-Sharpen your skills ends**********/
-
 /*********FAQ section starts**********/
 .fnq h1 {
   font-size: 50px;
@@ -440,7 +387,6 @@ td {
 }
 
 /*********FAQ section ends**********/
-
 /************* CONTACT US **************/
 .contact h1{
   font-family: 'Poppins', sans-serif;
@@ -905,8 +851,14 @@ HEAD .round-2 {
     display: none;
   }
 }
+@media (max-width: 760px) {
+  .course-section{
+    grid-template-columns:1fr;
+  }
+}
 
 @media (max-width: 576px) {
+
   .wrapper {
     max-width: 400px;
     flex-direction: column;
@@ -930,6 +882,9 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+  .skills-section h1 {
+    font-size: 40px;
   }
 }
 
@@ -960,6 +915,11 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .skills-section h1 {
+    font-size: 30px;
   }
 }
 
@@ -1084,5 +1044,109 @@ HEAD .round-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 7rem;
 }
+
+/* 404 error page   */
+  /* background-color: #0e2431; */
+
+.error-img{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  width: 500px;
+  height: 500px;
+}
+.error-heading {
+  text-shadow: rgb(178, 169, 143) 0px 3px 0px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 24px 2px, rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  color: #3caea3;
+  letter-spacing: normal;
+  font-size: 3.5em;
+  margin-top: -3%;
+  font-weight: normal;
+}
+.error-para {
+  color: #3caea3;
+  font-size: 1.5em;
+}
+.error-btn {
+  background-color: #3caea3;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 0.5% 1%;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.link_404{
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+.link_404:hover{
+  text-decoration: none;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .error-img{
+    margin-bottom: 5%;
+  }
+  .error-heading {
+    font-size: 2.5em;
+  }
+}
+
+/* Style the skill section  */
+.skill-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  width: 20vw;
+  text-align: center;
+  background-color: #0e2431;
+  margin-bottom: 4%;
+  min-height: 80px;
+  color:white;
+}
+.skills-section a{
+  color: #fff;
+}
+@media screen and (max-width: 766px) {
+  .skill-card{
+    width: 50vw !important;
+    margin-left: 14%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skill-card{
+    width: 50vw !important;
+    margin-left: 20%;
+  }
+}
+.skill-card:hover
+{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(0.8);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(0.8);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(0.8);
+    transition: all 200ms ease-in;
+    transform: scale(0.8);
+    background-color: #3caea3;
+} 

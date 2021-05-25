@@ -1,0 +1,51 @@
+*{margin: 0;}
+
+.control-panel {
+    background: lightgray;
+    text-align: right;
+    padding-top: 300px;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+#test {
+    padding-top: 65px;
+    padding-bottom: 10px;
+}
+
+.languages {
+    background: white;
+    border: 1px solid gray;
+}
+
+#editor { height: 400px; }
+
+.button-container {
+    text-align: center;
+    padding: 14px;
+}
+
+.btn {
+    background: tomato;
+    color: white;
+    padding: 8px;
+    border: 0;
+}
+
+.input {
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 100px;
+    width: 99%;
+    resize: none;
+}
+
+.output {
+        padding: 4px;
+        border: 2px solid gray;
+        background-color: white;
+        min-height: 100px;
+        width: 99%;
+        resize: none;
+
+}

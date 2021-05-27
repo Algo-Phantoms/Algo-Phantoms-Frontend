@@ -150,6 +150,11 @@ header {
     transform: translate(-50%, 0);
   }
 }
+@media only screen and (min-width: 992px) {
+  .dropdown:hover>.dropdown-menu{   
+    display:block;
+  }
+  }
 .navbar-nav .dropdown-menu {
   position: relative;
   float: none;
@@ -189,6 +194,20 @@ header {
 .below-head span {
   color: #3caea3;
 }
+@media only screen and (max-width: 600px) {
+  .below-head {
+    position: absolute;
+    top: 70%;
+  }
+  .banner-text .main-head {
+    font-size: 2.5rem;
+    bottom: 20%;
+  }
+  .banner-text {
+    bottom: 40%;
+  }
+}
+
 
 .scroll-down {
   position: absolute;
@@ -214,7 +233,7 @@ header {
 }
 
 /*animated scroll arrow animation*/
-
+/* For Chrome */
 @-webkit-keyframes fade_move_down {
   0% {
     -webkit-transform: translate(0, -10px) rotate(45deg);
@@ -283,6 +302,12 @@ header {
             background-image: url(../images/downarrow.png);
             background-repeat: no-repeat;
         }
+/* For Firefox */
+:root {
+	overflow-y: scroll;
+	scrollbar-color: #0fadc5 rgb(255, 255, 255);
+	scrollbar-width: 5px;
+} 
 
 /************ Typing Effect ***********/
 .cursor {
@@ -342,62 +367,6 @@ hr {
 }
 
 /******about end ******** */
-
-/********Section-Sharpen your skills starts*********/
-.slide1{
-  display: flex !important;
-  justify-content: space-between!;
-  align-items: center;
-}
-
-.slide1 a div{
-  margin: 15px 120px;
-  width:200px;
-  height: 100px;
-  text-align: center;
-  padding: 35px;
-  background-color: #05272e;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px   rgba(13, 87, 13, 0.384);
-}
-
-.slide1 a div:hover{
-  background-color: #123840;
-}
-
-.slide1 a{
-  text-decoration: none;
-  color: white;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.slide1 a:hover{
-  color: var(--teal);
-}
-
-.carousel-indicators{
-  position: absolute;
-  height: 20px;
-  width: 110px;
-  margin: -100px auto;
-  background-color: #05272e;
-  border-radius: 5px;
-  box-shadow: 1px 20px 20px rgba(13, 87, 13, 0.384);
-}
-
-@media (max-width: 1456px){
-  .slide1{
-    flex-direction: column;
-    justify-content: center;  
-   }
-} 
-
-.span {
-  display: block;
-  margin-bottom: 10em;
-}
-/*********Section-Sharpen your skills ends**********/
 
 /*********FAQ section starts**********/
 .fnq h1 {
@@ -632,6 +601,13 @@ HEAD .round-2 {
   background-image: linear-gradient(130deg, #05272e 40%, #183a36 100%);
   /* background-image:linear-gradient(130deg, #ffa159 10%, #ff39b4 51%, #ffa159 100%);    */
 }
+@media (max-width: 767px){
+#footer{
+	text-align:center;
+	display:block;
+	margin:auto;
+}
+}
 /*styling social icons*/
 .socialicon{
   color: #fff;
@@ -829,8 +805,14 @@ HEAD .round-2 {
     display: none;
   }
 }
+@media (max-width: 760px) {
+  .course-section{
+    grid-template-columns:1fr;
+  }
+}
 
 @media (max-width: 576px) {
+
   .wrapper {
     max-width: 400px;
     flex-direction: column;
@@ -854,6 +836,9 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+  .skills-section h1 {
+    font-size: 40px;
   }
 }
 
@@ -884,6 +869,11 @@ HEAD .round-2 {
   }
   .box i {
     font-size: 15px;
+  }
+}
+@media (max-width: 450px) {
+  .skills-section h1 {
+    font-size: 30px;
   }
 }
 
@@ -1008,5 +998,109 @@ HEAD .round-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 7rem;
 }
+
+/* 404 error page   */
+  /* background-color: #0e2431; */
+
+.error-img{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  width: 500px;
+  height: 500px;
+}
+.error-heading {
+  text-shadow: rgb(178, 169, 143) 0px 3px 0px, rgba(0, 0, 0, 0.15) 0px 14px 10px,
+    rgba(0, 0, 0, 0.1) 0px 24px 2px, rgba(0, 0, 0, 0.1) 0px 34px 30px;
+  color: #3caea3;
+  letter-spacing: normal;
+  font-size: 3.5em;
+  margin-top: -3%;
+  font-weight: normal;
+}
+.error-para {
+  color: #3caea3;
+  font-size: 1.5em;
+}
+.error-btn {
+  background-color: #3caea3;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 0.5% 1%;
+  font-size: 20px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.link_404{
+  outline: none;
+  color: white;
+  text-decoration: none;
+}
+.link_404:hover{
+  text-decoration: none;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .error-img{
+    margin-bottom: 5%;
+  }
+  .error-heading {
+    font-size: 2.5em;
+  }
+}
+
+/* Style the skill section  */
+.skill-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  width: 20vw;
+  text-align: center;
+  background-color: #0e2431;
+  margin-bottom: 4%;
+  min-height: 80px;
+  color:white;
+}
+.skills-section a{
+  color: #fff;
+}
+@media screen and (max-width: 766px) {
+  .skill-card{
+    width: 50vw !important;
+    margin-left: 14%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .skill-card{
+    width: 50vw !important;
+    margin-left: 20%;
+  }
+}
+.skill-card:hover
+{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(0.8);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(0.8);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(0.8);
+    transition: all 200ms ease-in;
+    transform: scale(0.8);
+    background-color: #3caea3;
+} 

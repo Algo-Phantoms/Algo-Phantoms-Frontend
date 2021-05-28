@@ -378,12 +378,24 @@ hr {
 .fnq .card-header {
   box-shadow: 0px 10px 40px rgba(141, 139, 139, 0.4);
 }
+.fnq .card{
+	border-radius:10px!important;
+	
+}
+.fnq .card:hover{
+	background-color:#e8e6e6!important;
+}
 
 .fnq a {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.2rem;
   cursor: pointer;
+}
+.fnq .collapse.show {
+	background-color:#49b1ad!important;
+	color:white!important;
+	transition:background-color 1200ms ease-in-out!important;
 }
 
 /*********FAQ section ends**********/

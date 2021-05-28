@@ -589,12 +589,12 @@ HEAD .round-2 {
 }
 
 .text-center{
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .slide1{
   display: flex !important;
-  justify-content: space-between!;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -961,6 +961,7 @@ HEAD .round-2 {
 #social-sidebar {
   left: 0;
   position: fixed;
+  padding-left: 0;
   top: 30%;
   z-index: +2;
 }

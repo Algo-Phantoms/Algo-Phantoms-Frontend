@@ -27,6 +27,9 @@
 - Bootstrap
 - Javascript
 
+## Steps to add Inline JS Support to ESlint
+go to vscode > extensions > install HTMLHint 
+
 ## Contribution Guidelines ⚙️
 
 * Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
@@ -64,3 +67,4 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+

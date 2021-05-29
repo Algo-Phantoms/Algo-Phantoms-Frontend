@@ -18,15 +18,15 @@ backToTopButton.addEventListener("click", () => {
 
 $("#faqaccordion").on("hide.bs.collapse show.bs.collapse", e => {
     $(e.target)
-      .prev()
-      .find("i:last-child")
-      .toggleClass("fa-minus fa-plus");
-  });
+        .prev()
+        .find("i:last-child")
+        .toggleClass("fa-minus fa-plus");
+});
 
 //close navbar when clicked on link
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarSupportedContent')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
+const navLinks = document.querySelectorAll(".nav-item");
+const menuToggle = document.getElementById("navbarSupportedContent");
+const bsCollapse = new bootstrap.Collapse(menuToggle);          // eslint-disable-line
 navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+    l.addEventListener("click", () => { bsCollapse.toggle(); });
+});

@@ -17,6 +17,6 @@ function typingEffect(){
             count = 0;
             document.querySelector("#typed-text").innerHTML = "";
             typingEffect();
-        },2000)
+        },2000);
     }
 }

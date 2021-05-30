@@ -424,7 +424,128 @@ border-color: #0e2431;
 }
 /************* CONTACT US ENDS **************/
 
+/*# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+.map{
+  border-radius: 11px;
+  margin-top: 2px;
+  box-shadow: 5px 5px 5px grey;
+  margin-bottom: 50px;
+}
+.section-bg{
+  padding:52px 0px;
+}
+.contact .info-box i {
+  font-size: 32px;
+  color: #5846f9;
+  border-radius: 50%;
+  padding: 8px;
+}
 
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+  height: 368px;
+    width: 1104px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 5px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #5846f9;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #26b0a9;
+  border: 2px solid white;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 33px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: white;
+  border: 3px solid #26b0a9;
+  color: #26b0a9;
+  font-weight: 200px;
+}
 
 /************* TEAM **************/
 
@@ -1284,4 +1405,20 @@ font-weight: 500;
     transform: scale(0.8);
     background-color: #3caea3;
 } 
+@media (max-width:1276px) and (min-width:774px){
+  .map{
+    width: 647px;
+  }
+}
+@media (max-width:774px){
+  .map{
+    width:514px;
+  }
+}
+@media (min-width:800px)and (max-width:1204px){
+  .contact .php-email-form{
+    width:656px;
+    justify-content: center;
+}
+}
 

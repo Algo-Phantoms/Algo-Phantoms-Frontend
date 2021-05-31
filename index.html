@@ -1,4 +1,4 @@
-﻿﻿﻿<!doctype html>
+﻿﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -196,62 +199,36 @@
 <!--Section-Sharpen your skills starts-->
 <section id="sharpen-skills" class="skills-section">
     <div class="container">
-        <h1 class="text-center">Sharpen Your Skills</h1>
-        <hr><br><br>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fas fa-atom"></i>&nbsp; <a href="https://www.geeksforgeeks.org/data-structures/"target="_blank">Data Structures</a></h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fas fa-project-diagram"></i>&nbsp; <a href="https://leetcode.com/problemset/algorithms/" target="_blank">Algorithms</a></h5>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fab fa-python"></i>&nbsp; <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python</a></h5>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="fab fa-cuttlefish"></i>&nbsp; <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank">C</a></h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="devicon-cplusplus-line-wordmark fa-lg"></i>&nbsp; <a href="https://www.cplusplus.com/" target="_blank">C++</a></h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="fab fa-java fa-lg"></i>&nbsp; <a href="https://www.youtube.com/watch?v=eTXd89t8ngI&list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0" target="_blank">Java</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="far fa-gem"></i>&nbsp; <a href="https://www.youtube.com/watch?v=t_ispmWmdjY" target="_blank">Ruby</a></h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="fab fa-gofore"></i>&nbsp; <a href="https://www.youtube.com/watch?v=YS4e4q9oBaU" target="_blank">Golang</a></h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card skill-card">
-                        <h5><i class="fab fa-swift"></i>&nbsp; <a href="https://www.youtube.com/watch?v=Ulp1Kimblg0" target="_blank">Swift</a></h5>
-                    </div>
-                </div>
-            </div>
+       <h1 class="text-center">Sharpen Your Skills</h1>
+       <hr>
+   <br><br>
+   <div id="indicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#indicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#indicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#indicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+       <div class="carousel-inner">
+         <div class="slide1 carousel-item active">
+           <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank"><div class="slide-card">Data Structures</div></a>
+           <a href="https://leetcode.com/problemset/algorithms/" target="_blank"><div class="slide-card">Algorithms</div></a>
+           <a href="https://docs.python.org/3/tutorial/index.html" target="_blank"><div class="slide-card">Python</div></a>  
+         </div>
+         <div class="carousel-item slide1">
+           <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank"><div class="slide-card">C</div></a>
+           <a href="https://www.cplusplus.com/" target="_blank"><div class="slide-card">C++</div></a>
+           <a href="https://www.youtube.com/watch?v=eTXd89t8ngI&list=PLd3UqWTnYXOmx_J1774ukG_rvrpyWczm0" target="_blank"><div class="slide-card">Java</div></a>
+         </div>
+         <div class="carousel-item slide1">
+           <a href="https://www.youtube.com/watch?v=t_ispmWmdjY" target="_blank"><div class="slide-card">Ruby</div></a>         
+           <a href="https://www.youtube.com/watch?v=YS4e4q9oBaU" target="_blank"><div class="slide-card">Golang</div></a>
+           <a href="https://www.youtube.com/watch?v=Ulp1Kimblg0"  target="_blank"><div class="slide-card">Swift</div></a>
         </div>
-    </div>
-    </section>
+       </div>
+     </div>  
+   </div>   
+</section>
+  <span class="span"></span>
 
   <!--Section-Sharpen your skills ends-->
 

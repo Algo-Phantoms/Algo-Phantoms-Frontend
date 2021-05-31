@@ -621,6 +621,71 @@ HEAD .round-2 {
   color: #ffffff90;
 }
 
+/* skills section */
+
+.skills-section{
+  height: 375px;
+}
+
+.text-center{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.slide1{
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide1 a div{
+  margin: 15px 120px;
+  width:200px;
+  height: 100px;
+  text-align: center;
+  padding: 35px;
+  background-color: #05272e;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px   rgba(13, 87, 13, 0.384);
+ 
+}
+
+.slide1 a div:hover{
+  background-color: #123840;
+}
+
+.slide1 a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.slide1 a:hover{
+  color: var(--teal);
+}
+
+.carousel-indicators{
+  position: absolute;
+  height: 20px;
+  width: 110px;
+  margin: -100px auto;
+  background-color: #05272e;
+  border-radius: 5px;
+  box-shadow: 1px 20px 20px rgba(13, 87, 13, 0.384);
+}
+
+@media (max-width: 1456px){
+  .slide1{
+    flex-direction: column;
+    justify-content: center;  
+   }
+
+   .skills-section{
+     height: 600px;
+   }
+} 
+
 /*********** footer ***********/
 
 .email {
@@ -929,6 +994,7 @@ HEAD .round-2 {
 #social-sidebar {
   left: 0;
   position: fixed;
+  padding-left: 0;
   top: 30%;
   z-index: +2;
 }

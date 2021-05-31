@@ -323,11 +323,10 @@ h1 {
   font-weight: bold;
   backdrop-filter: blur(20px);
 }
-
-.about h1 {
+.skills {
   font-size: 50px;
   font-weight: bold;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px)
 }
 
 hr {

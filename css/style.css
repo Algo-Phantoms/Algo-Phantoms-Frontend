@@ -428,7 +428,7 @@ border-color: #0e2431;
 /************* TEAM **************/
 
 .team {
-  margin-top: 200px;
+  margin-top: 98px;
 }
 
 .wrapper {
@@ -1283,4 +1283,7 @@ font-weight: 500;
     transform: scale(0.8);
     background-color: #3caea3;
 } 
+.books{
+  margin-top: 78px;
+}
 

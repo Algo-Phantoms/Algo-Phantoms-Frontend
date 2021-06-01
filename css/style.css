@@ -1247,7 +1247,7 @@ font-weight: 500;
 /* Style the skill section  */
 .skill-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 25px 16px 16px 16px;
   width: 20vw;
   text-align: center;
   background-color: #0e2431;
@@ -1255,6 +1255,7 @@ font-weight: 500;
   min-height: 80px;
   color:white;
 }
+
 .skills-section a{
   color: #fff;
 }

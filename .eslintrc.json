@@ -11,7 +11,7 @@
     "ignorePatterns": ["lib/*","tilt.jquery.js"],
     "rules": {
         "indent": [
-            "error",
+            "warn",
             4
         ],
         "linebreak-style": [
@@ -19,7 +19,7 @@
             "unix"
         ],
         "quotes": [
-            "error",
+            "warn",
             "double"
         ],
         "semi": [

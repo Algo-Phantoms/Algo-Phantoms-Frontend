@@ -27,9 +27,6 @@
 - Bootstrap
 - Javascript
 
-## Steps to add Inline JS Support to ESlint
-go to vscode > extensions > install HTMLHint 
-
 ## Contribution Guidelines ⚙️
 
 * Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.

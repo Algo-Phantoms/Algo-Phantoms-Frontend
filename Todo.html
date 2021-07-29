@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="./css/todo-style.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="wrapper">
+    <header>Todo App</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+       <footer id="footer">
+        <div class="container">
+            <div class="row subscribe-box py-5">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 offset-lg-1">
+                    <h2 class="text-white font-weight-bold py-2">Contact Us</h2>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="email" class="form-control py-3" placeholder="Enter your Email">
+                            <div class="input-group-append">
+                                <button class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pt-lg-5">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-lg-3 col-12">
+                    <div class="">
+                        <img src="./images/icon.png" alt="" class="img-fluid mb-lg-4" width="100px" height="100px">
+                    </div>
+                    <p class="text-white">An Open Source organization focuses on Data Structure and Algorithms.</p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-1">
+                    <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Useful Links</h5>
+                    <ul>
+                        <a class="text-white mb-lg-3" href="#about">About</a><br>
+                        <a class="text-white mb-lg-3" href="./team.html">Our Team</a><br>
+                        <a class="text-white mb-lg-3" href="#footer">Contact</a><br>
+                        <a class="text-white mb-lg-3" href="./sitemap.html">SiteMap</a>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
+                    <ul class="list-group">
+
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code
+                            Editor</a>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/"
+                            target="_blank">Quizzes</a>
+                        <a class="text-white mb-lg-3" href="https://github.com/Algo-Phantoms/Algo-Tree"
+                            target="_blank">DSA Guidance</a>
+                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
+                    <a href="#" target="_blank"><i class="fa fa-github p-2 text-white" aria-hidden="true"
+                            style="background:#3caea3; border-radius: 50%;"></i>
+                    </a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram p-2 text-white" aria-hidden="true"
+                            style="background:#3caea3; border-radius: 50%;"></i>
+                    </a>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin p-2 text-white" aria-hidden="true"
+                            style="background:#3caea3; border-radius: 50%;"></i>
+                    </a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter p-2 text-white" aria-hidden="true"
+                            style="background:#3caea3; border-radius: 50%;"></i>
+                    </a>
+                </div>
+            </div>
+            <hr style="background: white;" class="mt-5">
+            <div class="text-center text-white mt-lg-4 pt-lg-2 copyright-text">
+                Copyright &copy; 2021 <a href="#" style="color: #3caea3; text-decoration: none;" target="_blank"><span
+                        class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
+        </div>
+    </footer>
+  </div>
+
+   <script src="./js/todo.js"></script> 
+
+</body>
+</html>

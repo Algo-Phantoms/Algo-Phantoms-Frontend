@@ -7,18 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="Content-Type" content="text/html" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bd43ee06c8.js" crossorigin="anonymous"></script>
     <!-- style.css For Custom Styling -->
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +28,7 @@
 
     <title>Algo Phantoms</title>
     <script>
-        window.onload = function () {
+        window.onload = function() {
             var preloader = document.getElementById("preloader")
             preloader.style.display = 'none';
         }
@@ -56,11 +49,12 @@
     </div>
     <!-- header starts -->
     <header class="fix">
-        <img src="video/background.gif" class="vid-bg" alt="background-gif">
+        <video style="width:100%; height:auto;" class="vid-bg" autoplay muted loop id="myVideo">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
             <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50" height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -69,7 +63,7 @@
                     <li class="nav-item active">
                         <a class="nav-link font-weight-bold nav-items" href="#">Home <span
                                 class="sr-only">(current)</span></a>
-                                <hr class="hr">
+                        <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="#about">About</a>
@@ -82,10 +76,9 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             More</a>
-                            <hr class="hr">
+                        <hr class="hr">
                         <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -97,33 +90,30 @@
                             <a class="dropdown-item" href="suggested_coding_site.html">Suggested Coding sites</a>
                         </div>
                         <li class="nav-item">
-                        <a class="nav-link  font-weight-bold nav-items" href="contact.html">Contact</a>
-                        <hr class="hr">
-                    </li>
-                    </ul>
+                            <a class="nav-link  font-weight-bold nav-items" href="contact.html">Contact</a>
+                            <hr class="hr">
+                        </li>
+                </ul>
             </div>
         </nav>
         <script>
-        const navbar=document.getElementById("nav");
-        let scrolled=false;
-        window.onscroll=function(){
-            if(window.pageYOffset>100)
-            {
-                navbar.classList.remove("top");
-                if(!scrolled)
-                {
-                    navbar.style.transform="translateY(-70px)";
+            const navbar = document.getElementById("nav");
+            let scrolled = false;
+            window.onscroll = function() {
+                if (window.pageYOffset > 100) {
+                    navbar.classList.remove("top");
+                    if (!scrolled) {
+                        navbar.style.transform = "translateY(-70px)";
+                    }
+                    setTimeout(function() {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200);
+                } else {
+                    navbar.classList.add("top");
+                    scrolled = false;
                 }
-                setTimeout(function(){
-                 navbar.style.transform = 'translateY(0)';
-                 scrolled = true;
-                },200);
-            }
-            else{
-                navbar.classList.add("top");
-                scrolled=false;
-            }
-        };
+            };
         </script>
         <div class="banner-text text-center">
             <p class="main-head">We are
@@ -168,52 +158,51 @@
             <a class="entypo-twitter" href="#" target="_blank"><span>Twitter</span></a>
         </li>
     </ul>
-   <!--social media sidebae ends-->
+    <!--social media sidebae ends-->
 
-   <!-- about starts -->
-   <section id="about" class="about">
-   <div class="container">
-        <h1 class="text-center">About Us</h1>
-        <hr>
-        <div class="row">
-            <div class="col-lg-7">
-                <p class="about-content">
-                    “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
-                    <br> <br>
-                  <p class="text-justify">
-                    We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and
-                    change code according
-                    to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
-            </div>
-            <div class="col-lg-5 d-flex align-items-center justify-content-center">
-                <img src="images/about_us_background.jpg" alt="" class="img-fluid">
+    <!-- about starts -->
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="text-center">About Us</h1>
+            <hr>
+            <div class="row">
+                <div class="col-lg-7">
+                    <p class="about-content">
+                        “Algorithms are not arbiters of objective truth and fairness simply because they're math.” - <i><b>Zoe Quinn</b></i>
+                        <br> <br>
+                        <p class="text-justify">
+                            We are an organization of people who focuses on Data Structure and Algorithms. It is our goal to provide access to well written, well-explained programs and knowledge that improve people's lives. We want to enable people to adapt and change code according
+                            to their own ideas through an Open Access approach. We bring amazing people together to code algorithms and share our work for the benefit of all.
+                </div>
+                <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                    <img src="images/about_us_background.jpg" alt="" class="img-fluid">
+                </div>
             </div>
         </div>
-   </div>
-  </section>
-<!-- about ends -->
+    </section>
+    <!-- about ends -->
 
-<!--Section-Sharpen your skills starts-->
-<section id="sharpen-skills" class="skills-section">
-    <div class="container">
-        <h1 class="text-center skills">Sharpen Your Skills</h1>
-        <hr><br><br>
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fas fa-atom"></i>&nbsp; <a href="https://www.geeksforgeeks.org/data-structures/"target="_blank">Data Structures</a></h5>
+    <!--Section-Sharpen your skills starts-->
+    <section id="sharpen-skills" class="skills-section">
+        <div class="container">
+            <h1 class="text-center skills">Sharpen Your Skills</h1>
+            <hr><br><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card skill-card">
+                        <h5><i class="fas fa-atom"></i>&nbsp; <a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">Data Structures</a></h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fas fa-project-diagram"></i>&nbsp; <a href="https://leetcode.com/problemset/algorithms/" target="_blank">Algorithms</a></h5>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card skill-card">
+                        <h5><i class="fas fa-project-diagram"></i>&nbsp; <a href="https://leetcode.com/problemset/algorithms/" target="_blank">Algorithms</a></h5>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="card skill-card">
-                    <h5><i class="fab fa-python"></i>&nbsp; <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python</a></h5>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="card skill-card">
+                        <h5><i class="fab fa-python"></i>&nbsp; <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">Python</a></h5>
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
@@ -250,87 +239,89 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </section>
 
-  <!---Section-Sharpen your skills ends-->
+    <!---Section-Sharpen your skills ends-->
 
-                                                                   <!--FAQ Section Starts-->
+    <!--FAQ Section Starts-->
 
-<section class="fnq" id="fnq">
+    <section class="fnq" id="fnq">
         <div class="container my-5">
             <h1 class="text-center">Frequently Asked Questions</h1>
             <hr>
             <br><br>
-        <div class="row">
-            <div class="col-12">
-                <div class="accordion" id="faqaccordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  style="color: black">
-                                    <i class="fas fa-plus"></i>  What prerequisites are required for Data Structure and Algorithms?
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#faqaccordion">
-                            <div class="card-body">
-                                You should be aware of basics of any one of programming languages like C++, C, Python, Java, etc.
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="faqaccordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: black">
+                                        <i class="fas fa-plus"></i> What prerequisites are required for Data Structure and Algorithms?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#faqaccordion">
+                                <div class="card-body">
+                                    You should be aware of basics of any one of programming languages like C++, C, Python, Java, etc.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: black">
-                                    <i class="fas fa-plus"></i>  What if I have already studied basics of Data Structure and Algorithms will this organization help me to advance my skills in DSA?
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqaccordion">
-                            <div class="card-body">
-                                We cater for all levels of coding ability, and are always delighted to meet students who have already attended other coding courses or taught themselves some programming. Rest assured, students of any coding level will find plenty of challenges to keep them busy!
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: black">
+                                        <i class="fas fa-plus"></i> What if I have already studied basics of Data Structure and Algorithms will this organization help me to advance my skills in DSA?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqaccordion">
+                                <div class="card-body">
+                                    We cater for all levels of coding ability, and are always delighted to meet students who have already attended other coding courses or taught themselves some programming. Rest assured, students of any coding level will find plenty of challenges to keep
+                                    them busy!
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: black">
-                                    <i class="fas fa-plus"></i>Where does coding and contribution takes place?
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqaccordion">
-                            <div class="card-body">
-                                All our coding contributions and coding take place online via github. 
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: black">
+                                        <i class="fas fa-plus"></i>Where does coding and contribution takes place?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqaccordion">
+                                <div class="card-body">
+                                    All our coding contributions and coding take place online via github.
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: black">
-                                    <i class="fas fa-plus"></i>  Tell me about this organization?
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqaccordion">
-                            <div class="card-body">
-                                Algo Phantom is an open source organization which focuses on Data Structure and Algorithm contribution by assignees to projects provided on github by organization. This organization not only helps you to enrich your learned skills but also pushes you to learn new skills and concepts out of your comfort zone.
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                    <a data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: black">
+                                        <i class="fas fa-plus"></i> Tell me about this organization?
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqaccordion">
+                                <div class="card-body">
+                                    Algo Phantom is an open source organization which focuses on Data Structure and Algorithm contribution by assignees to projects provided on github by organization. This organization not only helps you to enrich your learned skills but also pushes you
+                                    to learn new skills and concepts out of your comfort zone.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-  <!--Footer starts-->
+    <!--Footer starts-->
     <footer id="footer">
         <div class="container mt-5 pt-lg-5">
             <div class="row">
@@ -369,8 +360,8 @@
 
 
                         <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a><br>
-                        <a class="text-white mb-lg-3" href="DSA.html" >RoadMap to your DSA</a><br>
-                        <a class="text-white mb-lg-3" href="practicedsa.html" >DSA Problems</a><br>
+                        <a class="text-white mb-lg-3" href="DSA.html">RoadMap to your DSA</a><br>
+                        <a class="text-white mb-lg-3" href="practicedsa.html">DSA Problems</a><br>
                     </ul>
                 </div>
 
@@ -396,7 +387,7 @@
                         class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
         </div>
     </footer>
-<!--Footer Ends-->
+    <!--Footer Ends-->
 
     <!-- Back to top button -->
     <button id="back-to-top-btn" style="background:#3caea3;"><i class=" fas fa-angle-double-up"></i></button>

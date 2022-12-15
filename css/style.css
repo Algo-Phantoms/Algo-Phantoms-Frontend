@@ -1130,44 +1130,49 @@ HEAD .round-2 {
 
 }
 
-.container {
+.upper{
   margin-top: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.2rem;
   box-sizing: border-box;
   margin-bottom: 5rem;
-  /* max-width: fit-content; */
+
+ 
 
 }
 
-.card {
+.upper-cards{
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
+  padding: 8px 25px;
   font-family: "poppins";
   border-radius: 10px;
-  /* box-shadow: 2px 0 5px white; */
-justify-content: center;
+ background-color: white;
+ justify-content: space-between;
+ resize: both;
 }
-.card h2{
+.upper-cards h2{
   text-align: center;
   font-weight: 700;
   text-decoration: underline;
   text-decoration-color: #00bf72;
 }
 
-.card .text {
-  width: 200px;
-  text-align: center;
+.upper-cards .text {
+  width: 350px;
+  text-align: justify;
   max-width: 1000px;
-  min-width: 300px;
+  min-width: 200px;
   line-height: 1.9;
-  line-break: auto;
+  line-break:strict;
   padding-bottom: 10px;
  
  
+}
+.upper-cards .sites-img{
+  padding-left: 6rem;
 }
 span{
   font-weight: 700;

@@ -1126,53 +1126,53 @@ HEAD .round-2 {
   padding-top: 2rem;
   color: white;
   font-weight: 700;
+ align-items: center;
 
 }
 
 .container {
   margin-top: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
   gap: 1.2rem;
-  
+  box-sizing: border-box;
   margin-bottom: 5rem;
+  /* max-width: fit-content; */
 
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 0 25px;
-  padding: 10px auto;
-
   font-family: "poppins";
   border-radius: 10px;
-  box-shadow: 2px 0 5px white;
-
+  /* box-shadow: 2px 0 5px white; */
+justify-content: center;
+}
+.card h2{
+  text-align: center;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #00bf72;
 }
 
 .card .text {
   width: 200px;
-  text-align: justify;
+  text-align: center;
   max-width: 1000px;
   min-width: 300px;
   line-height: 1.9;
   line-break: auto;
-  margin: auto;
+  padding-bottom: 10px;
+ 
+ 
 }
-
-.gfg,
-.ca {
-  padding-top: 4rem;
-}
-
-.img {
-  padding: 1.8rem 2rem;
+span{
+  font-weight: 700;
+  color: #00bf72;
+  font-size: 22px;
 }
 
 .button-btn {
@@ -1200,7 +1200,7 @@ HEAD .round-2 {
 .coding_site {
 
   justify-content: center;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-image: linear-gradient(to right top, #051937 , #004d7a, #008793, #00bf72 );
   
 }
 

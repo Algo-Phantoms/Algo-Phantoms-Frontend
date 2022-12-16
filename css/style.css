@@ -1151,7 +1151,8 @@ HEAD .round-2 {
   border-radius: 10px;
  background-color: white;
  justify-content: space-between;
- resize: both;
+ 
+ 
 }
 .upper-cards h2{
   text-align: center;
@@ -1168,18 +1169,23 @@ HEAD .round-2 {
   line-height: 1.9;
   line-break:strict;
   padding-bottom: 10px;
- 
+  
+  
  
 }
 .upper-cards .sites-img{
-  padding-left: 6rem;
+  padding-left: 7rem;
 }
-span{
+.site-title{
   font-weight: 700;
   color: #00bf72;
   font-size: 22px;
 }
+.gfg , .ca
+ {
+  padding-top: 1rem;
 
+}
 .button-btn {
   border: 0;
   cursor: pointer;

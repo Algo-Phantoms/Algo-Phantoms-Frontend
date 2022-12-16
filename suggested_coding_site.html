@@ -9,8 +9,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -40,9 +40,10 @@
 
 <body>
     <section class="fix">
-        
+
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top top nav-col">
-            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50" height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
+            <a class="navbar-brand" href="#"><img src="images/icon.png" alt="Algo Phantoms" width="50"
+                    height="50"><strong><span class="brand1">Algo</span>Phantoms</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +54,7 @@
                     <li class="nav-item active">
                         <a class="nav-link font-weight-bold nav-items" href="index.html">Home <span
                                 class="sr-only">(current)</span></a>
-                                <hr class="hr">
+                        <hr class="hr">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link font-weight-bold nav-items" href="index.html#about">About</a>
@@ -69,7 +70,7 @@
                         <a class="nav-link font-weight-bold nav-items dropdown-toggle" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             More</a>
-                            <hr class="hr">
+                        <hr class="hr">
                         <div class="dropdown-menu dropdown-menu-center" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="DSA.html">RoadMap to your DSA</a>
 
@@ -80,143 +81,249 @@
                             <a class="dropdown-item" href="booklist.html">Suggested Books</a>
                             <a class="dropdown-item" href="#">Suggested Coding sites</a>
                         </div>
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link  font-weight-bold nav-items" href="#footer">Contact</a>
                         <hr class="hr">
                     </li>
-                    </ul>
+                </ul>
             </div>
         </nav>
         <script>
-        const navbar=document.getElementById("nav");
-        let scrolled=false;
-        window.onscroll=function(){
-            if(window.pageYOffset>100)
-            {
-                navbar.classList.remove("top");
-                if(!scrolled)
-                {
-                    navbar.style.transform="translateY(-70px)";
+            const navbar = document.getElementById("nav");
+            let scrolled = false;
+            window.onscroll = function () {
+                if (window.pageYOffset > 100) {
+                    navbar.classList.remove("top");
+                    if (!scrolled) {
+                        navbar.style.transform = "translateY(-70px)";
+                    }
+                    setTimeout(function () {
+                        navbar.style.transform = 'translateY(0)';
+                        scrolled = true;
+                    }, 200);
                 }
-                setTimeout(function(){
-                 navbar.style.transform = 'translateY(0)';
-                 scrolled = true;
-                },200);
-            }
-            else{
-                navbar.classList.add("top");
-                scrolled=false;
-            }
-        };
+                else {
+                    navbar.classList.add("top");
+                    scrolled = false;
+                }
+            };
         </script>
-        
+
 
     </section>
     <!--suggesting coding sites-->
+
+    <div class="section">
+        <div class="upper">
+            <h1 class="headline">Best and Free Online Websites to Learn Coding for Beginners</h1>
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <a href="#"><img src="images/suggested-sites/BitDegree.png" alt="" width="100px"></a>
+                </div>
+                <div class="text">
+                    <!-- <h2>1. BitDegree</h2> -->
+                    <p><span class="site-title">BitDegree</span> offers a ton of free courses that range from programming to game
+                        development.
+                        They offer standard online courses and gamified courses. Gamified courses help to bring
+                        achievements
+                        and interaction into the learning process. All you have to do is choose your language and start
+                        learning.</p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.bitdegree.org/learn/" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <img src="images/suggested-sites/coursera-vector-logo-2022.svg" alt="" width="100px">
+                </div>
+                <div class="text">
+                    <!-- <h2>2.Coursera</h2> -->
+                    <p>
+                        <span class="site-title">Coursera</span> provides coding-based courses, tutorials, and resources taught by
+                        professors at leading
+                        universities. You will find hundreds of different coding-related courses to choose from.
+                        To develop these courses, they partnered with some of the best teachers at top-tier
+                        universities. Start learning today for Free.
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.coursera.org/in" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <img src="images/suggested-sites/Codecademy.svg" alt="" width="200px" height="auto">
+                </div>
+                <div class="text ca">
+                    <!-- <h2>3.Code Academy</h2> -->
+                    <p>
+                        <span class="site-title">Code Academy</span> is one of the most popular sites where people learn to code for free.
+                        More than 24
+                        million people have learned to code using this platform.
+                        They offer courses ranging from introductory programming to more advanced languages.
+                        <!-- They offer courses ranging from introductory programming to more advanced languages. -->
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.codeacademy.com" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <img src="images/suggested-sites/gfg-new-logo.png" alt="" width="200px">
+                </div>
+                <div class="text gfg">
+                    <!-- <h2>4.GeeksforGeeks</h2> -->
+                    <p>
+
+                        <span class="site-title">GeeksforGeeks</span> is a learning platform which offers millions of aricles and courses
+                        designed by experts
+                        to help you prepare for for your Next Interview.You can also practise coding questions on this
+                        platform
+
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.geeksforgeeks.org" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <a href="#"><img src="images/suggested-sites/w3schools-logo-icon.svg" alt="" width="100px"></a>
+                </div>
+                <div class="text">
+                    <!-- <h2>5.W3Schools</h2> -->
+                    <p>
+                        <span class="site-title">W3Schools</span> has focus on simplicity. Also helps to make practice easy learning.
+                        W3Schools uses simple code examples and simple illustrations of how to use it.
+                        W3Schools' tutorials start from basic level and move all the way up to professional references.
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.w3schools.org" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+            <div class="upper-cards">
+                <div class="sites-img">
+                    <a href="#"><img src="images/suggested-sites/w3schools-logo-icon.svg" alt="" width="100px"></a>
+                </div>
+                <div class="text">
+                    <!-- <h2>6. Freecodecamp</h2> -->
+                    <p>
+                        <span class="site-title">freeCodeCamp</span> is a community of millions of people around
+                        the world who are learning to code together. You can learn to code with free online courses,
+                        programming projects, and interview preparation for developer jobs.
+                    </p>
+                </div>
+                <div class="btn">
+                    <a href="https://www.freecodecamp.org/" target="_blank"> <button class="button-btn">Know
+                            More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <div class="d-flex justify-content-center coding_site">
-        <section class="list--wrapper mt-5">
-        <h1>Best and Free Online Websites to Learn Coding for Beginners</h1>
-       
-        <div class="cards">
-        <h2 style="color:white;">1. <a href="https://www.bitdegree.org/learn/" target="_blank">BitDegree</a></h2>
-        <p class="about">
-            BitDegree offers a ton of free courses that range from programming to game development.
-            They offer standard online courses and gamified courses. Gamified courses help to bring achievements and interaction into the learning process. All you have to do is choose your language and start learning.
-        </p>
-        </div>
-        <div class="card1">
-            <h2 style="color:white;">2. <a href="https://www.coursera.org/in" target="_blank">Coursera</a></h2>
-            <p class="about">
-                Coursera provides coding-based courses, tutorials, and resources taught by professors at leading universities. You’ll find hundreds of different coding-related courses to choose from.
-To develop these courses, they partnered with some of the best teachers at top-tier universities.
-            </p>
-        </div>
-        <div class="card1">
-            <h2 style="color:white;">3.<a href="https://www.codecademy.com/" target="_blank">Codecademy</a></h2>
-            <p class="about">
-                Code Academy is one of the most popular sites where people learn to code for free. More than 24 million people have learned to code using this platform.
-They offer courses ranging from introductory programming to more advanced languages.
-            </p>
-        </div>
-        <div class="card1">
-            <h2 style="color:white;">4. <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></h2>
-            <p class="about">
-                Prepare for an interview with millions of articles and courses designed by experts. Gain and share your knowledge & skills with a variety of learning platforms offered by GeeksforGeeks.
-            </p>
-        </div>
-        <div class="card1">
-            <h2 style="color:white;">5. <a href="https://www.w3schools.com/" target="_blank">w3schools</a></h2>
-            <p class="about">
-                W3Schools has focus on simplicity. Also helps to make practice easy learning.
-W3Schools uses simple code examples and simple illustrations of how to use it.
-W3Schools' tutorials start from basic level and move all the way up to professional references.
-            </p>
-        </div>
-        <div class="card1">
-           <center> <h3>10 Best Websites to Practice Coding Online</h3></center>
-            <section class="list--wrapper1 mt-5">
-                <ol class="list" >
-                  <li class="list--item">
-                    <a href="https://www.codechef.com/" class="list--link" data-toggle="tooltip" target="_blank" data-placement="left" title="CodeChef was created as a platform to help programmers make it big in the world of algorithms, computer programming, and programming contests">
-                      <h2 class="list--link__header" style="color:white;"><span>Codechef</span></h2>
-                    
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://codeforces.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="Codeforces is one of the best platforms for competitive coding and is usually known for its short challenges/contests where programmers from every corner of the world participate.">
-                      <h2 class="list--link__header" style="color:white;"><span>CodeForces</span></h2>
-                    
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://leetcode.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="LeetCode is for software engineers who are looking to practice technical questions and advance their skills.">
-                      <h2 class="list--link__header" style="color:white;"><span>LeetCode</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.hackerrank.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="HackerRank is more focussed on bridging the gap between rockstar developers and companies willing to hire such individuals.">
-                      <h2 class="list--link__header" style="color:white;"><span>HackerRank</span></h2>
-                      
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.hackerearth.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="Best part of hackerearth is it provide you platform for one to one competition with other.">
-                      <h2 class="list--link__header" style="color:white;"><span>Hackerearth</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.freecodecamp.org/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title=" If you are a self-learner, freeCodeCamp is a great place to start learning.">
-                      <h2 class="list--link__header" style="color:white;"><span>Freecodecamp</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://coderbyte.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="Coderbyte is a web application built to help you practice programming and improve your coding skills.">
-                      <h2 class="list--link__header" style="color:white;"><span>Coderbyte</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.datacamp.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="One platform for coding and learning: Unlike other learning platforms, Datacamp has embedded coding platform after each short lecture.">
-                      <h2 class="list--link__header" style="color:white;"><span>Datacamp</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.codingame.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="CodinGame helps programmers improve their coding skills by solving problems and learning new concepts through game-like challenges.">
-                      <h2 class="list--link__header" style="color:white;"><span>Codingame</span></h2>
-                    </a>
-                  </li>
-                  <li class="list--item">
-                    <a href="https://www.codewars.com/" class="list--link" target="_blank" data-toggle="tooltip" data-placement="left" title="Codewars is a platform for software developers on which people can solve programming puzzles known also as “katas”.The aim of programming katas is to help programmers hone their skills through practice and repetition.">
-                      <h2 class="list--link__header" style="color:white;"><span>Codewars</span></h2>
-                     
-                    </a>
-                  </li>
-                </ol>
-              </section>
-</div>
-</section>
+        <section class="list--wrapper mt-5 ">
+            <div class="card1">
+                <center>
+                    <h3>10 Best Websites to Practice Coding Online</h3>
+                </center>
+                <section class="list--wrapper1 mt-5">
+                    <ol class="list">
+                        <li class="list--item">
+                            <a href="https://www.codechef.com/" class="list--link" data-toggle="tooltip" target="_blank"
+                                data-placement="left"
+                                title="CodeChef was created as a platform to help programmers make it big in the world of algorithms, computer programming, and programming contests">
+                                <h2 class="list--link__header" style="color:white;"><span>Codechef</span></h2>
+
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://codeforces.com/" class="list--link" target="_blank" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Codeforces is one of the best platforms for competitive coding and is usually known for its short challenges/contests where programmers from every corner of the world participate.">
+                                <h2 class="list--link__header" style="color:white;"><span>CodeForces</span></h2>
+
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://leetcode.com/" class="list--link" target="_blank" data-toggle="tooltip"
+                                data-placement="left"
+                                title="LeetCode is for software engineers who are looking to practice technical questions and advance their skills.">
+                                <h2 class="list--link__header" style="color:white;"><span>LeetCode</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.hackerrank.com/" class="list--link" target="_blank"
+                                data-toggle="tooltip" data-placement="left"
+                                title="HackerRank is more focussed on bridging the gap between rockstar developers and companies willing to hire such individuals.">
+                                <h2 class="list--link__header" style="color:white;"><span>HackerRank</span></h2>
+
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.hackerearth.com/" class="list--link" target="_blank"
+                                data-toggle="tooltip" data-placement="left"
+                                title="Best part of hackerearth is it provide you platform for one to one competition with other.">
+                                <h2 class="list--link__header" style="color:white;"><span>Hackerearth</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.freecodecamp.org/" class="list--link" target="_blank"
+                                data-toggle="tooltip" data-placement="left"
+                                title=" If you are a self-learner, freeCodeCamp is a great place to start learning.">
+                                <h2 class="list--link__header" style="color:white;"><span>Freecodecamp</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://coderbyte.com/" class="list--link" target="_blank" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Coderbyte is a web application built to help you practice programming and improve your coding skills.">
+                                <h2 class="list--link__header" style="color:white;"><span>Coderbyte</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.datacamp.com/" class="list--link" target="_blank" data-toggle="tooltip"
+                                data-placement="left"
+                                title="One platform for coding and learning: Unlike other learning platforms, Datacamp has embedded coding platform after each short lecture.">
+                                <h2 class="list--link__header" style="color:white;"><span>Datacamp</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.codingame.com/" class="list--link" target="_blank"
+                                data-toggle="tooltip" data-placement="left"
+                                title="CodinGame helps programmers improve their coding skills by solving problems and learning new concepts through game-like challenges.">
+                                <h2 class="list--link__header" style="color:white;"><span>Codingame</span></h2>
+                            </a>
+                        </li>
+                        <li class="list--item">
+                            <a href="https://www.codewars.com/" class="list--link" target="_blank" data-toggle="tooltip"
+                                data-placement="left"
+                                title="Codewars is a platform for software developers on which people can solve programming puzzles known also as “katas”.The aim of programming katas is to help programmers hone their skills through practice and repetition.">
+                                <h2 class="list--link__header" style="color:white;"><span>Codewars</span></h2>
+
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+
+
+
+
+        </section>
 
     </div>
-    
+
 
     <!--Footer starts-->
     <footer id="footer">
@@ -230,7 +337,8 @@ W3Schools' tutorials start from basic level and move all the way up to professio
                         <div class="input-group">
                             <input type="email" class="form-control py-3" placeholder="Enter your Email" required>
                             <div class="input-group-append">
-                                <button type="submit" class="input-group-text subscribe-button text-white px-5 font-weight-bold">
+                                <button type="submit"
+                                    class="input-group-text subscribe-button text-white px-5 font-weight-bold">
                                     Contact Us
                                 </button>
                             </div>
@@ -270,31 +378,33 @@ W3Schools' tutorials start from basic level and move all the way up to professio
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Features</h5>
 
                     <ul>
-                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code Editor</a><br>
-                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/" target="_blank">Quizzes</a><br>
-                        <a class="text-white mb-lg-3" href="https://dare2compete.com/" target="_blank">Opportunities</a><br>
+                        <a class="text-white mb-lg-3" href="https://www.codechef.com/ide" target="_blank">Code
+                            Editor</a><br>
+                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/data-structure-gq/"
+                            target="_blank">Quizzes</a><br>
+                        <a class="text-white mb-lg-3" href="https://dare2compete.com/"
+                            target="_blank">Opportunities</a><br>
 
 
-                        <a class="text-white mb-lg-3" href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm" target="_blank">Project Ideas</a><br>
-                        <a class="text-white mb-lg-3" href="DSA.html" >RoadMap to your DSA</a><br>
-                        <a class="text-white mb-lg-3" href="practicedsa.html" >DSA Problems</a><br>
+                        <a class="text-white mb-lg-3"
+                            href="https://www.geeksforgeeks.org/computer-science-projects/?ref=shm"
+                            target="_blank">Project Ideas</a><br>
+                        <a class="text-white mb-lg-3" href="DSA.html">RoadMap to your DSA</a><br>
+                        <a class="text-white mb-lg-3" href="practicedsa.html">DSA Problems</a><br>
 
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-12 socialicons">
                     <h5 class="font-weight-bold text-white mb-lg-4 pb-2 margin-top-mobile">Follow Us</h5>
-                    <a href="https://github.com/Algo-Phantoms" target="_blank"><i  class="fa fa-github p-2 socialicon " aria-hidden="true"
-                            ></i>
+                    <a href="https://github.com/Algo-Phantoms" target="_blank"><i class="fa fa-github p-2 socialicon "
+                            aria-hidden="true"></i>
                     </a>
-                    <a href="#" target="_blank"><i class="fa fa-instagram p-2 socialicon" aria-hidden="true"
-                        ></i>
+                    <a href="#" target="_blank"><i class="fa fa-instagram p-2 socialicon" aria-hidden="true"></i>
                     </a>
-                    <a href="#" target="_blank"><i class="fa fa-linkedin p-2 socialicon" aria-hidden="true"
-                           ></i>
+                    <a href="#" target="_blank"><i class="fa fa-linkedin p-2 socialicon" aria-hidden="true"></i>
                     </a>
-                    <a href="#" target="_blank"><i  class="fa fa-twitter p-2 socialicon " aria-hidden="true"
-                          ></i>
+                    <a href="#" target="_blank"><i class="fa fa-twitter p-2 socialicon " aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -304,16 +414,16 @@ W3Schools' tutorials start from basic level and move all the way up to professio
                         class="font-weight-bold">AlgoPhantoms.</span></a> All Rights Reserved</div>
         </div>
     </footer>
-<!--Footer Ends-->
+    <!--Footer Ends-->
 
     <!-- Back to top button -->
     <button id="back-to-top-btn" style="background:#3caea3;"><i class=" fas fa-angle-double-up"></i></button>
     <script src="js/index.js"></script>
     <script>
-$('[data-toggle="tooltip"]').tooltip({
-    trigger : 'hover'
-}) 
-</script>
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger: 'hover'
+        }) 
+    </script>
 
 
 </body>
